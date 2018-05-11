@@ -20,13 +20,16 @@
   <li><a href="contact.asp">LOGGA IN/REGISTRERA</a></li>
 </ul> 
 
-<div id = body>
-<img id = "frontIMG" src="../Projektet/img/header.jpg">
-
-<img id = "middleIMG" src="../Projektet"
+<img id = "frontIMG" src="\\filer.ekonomikum.uu.se\labbwebb\ZimmergrenJulia\Projektet\img\header.jpg">
 <p> Här ska det stå något </p>
 
-<div>
+<header>
+        <div id="Välkommen">
+<p2> VÄLKOMMEN TILL <br><p3>" "HÄLSOCOACHEN</p3></br>
+</p2>
+        </div>
+</header>
+
 
         </body>
 
