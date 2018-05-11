@@ -1,0 +1,42 @@
+h {
+    font-family: Calibri;
+    font-size:40px;
+}
+
+#header {
+    width: 1200px;
+    height: 40px;
+    background-color:white;
+}
+
+ul {
+    /* navigation-bar kommer fästas i toppen om man bläddrar ner */
+    list-style-type: none;
+    overflow: hidden;
+    background-color:white;
+    padding-right: 50px;
+    border-bottom: 1px solid black;
+}
+
+li {
+    float: right;
+
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 15px 0px 0px 50px;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    opacity: 0.5;
+}
+
+p{
+    text-align: center;
+    font-size: 50px;
+    color: black; 
+}
