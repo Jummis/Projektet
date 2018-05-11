@@ -9,6 +9,11 @@ h {
     background-color:white;
 }
 
+headerIMG {
+float: left;
+width: 100px;
+}
+
 ul {
     /* navigation-bar kommer fästas i toppen om man bläddrar ner */
     list-style-type: none;
@@ -30,7 +35,7 @@ li a {
     text-decoration: none;
 }
 
-img{
+#frontIMG{
     width: 100%;
     opacity: 0.5;
 }
