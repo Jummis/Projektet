@@ -11,7 +11,6 @@
         <body>
 <div id = "header">
 <h>HÄLSOCOACHEN</h1>
-<img id = "headerIMG" src ="https://preview.ibb.co/duvS6J/lansering_halsostrategerna_st_2e16d0ba_fill_825x380_c100.jpg">
 
 </div>
 
