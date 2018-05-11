@@ -26,7 +26,7 @@
 bra text som ser snygg ut<br>
 med någon bra bild bakom</p>
 
-<img id = "välIMG" src="\\filer.ekonomikum.uu.se\labbwebb\ZimmergrenJulia\Projektet\img\cirkel.png">
+<img id = "välIMG" src="https://image.ibb.co/gkR95d/cirkel.png">
 
 <header>
 <div id="Välkommen">
