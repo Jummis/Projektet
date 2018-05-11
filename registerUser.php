@@ -20,7 +20,7 @@ $fname_error = $lname_error = $email_error = $password_error = "";
     $Password = mysqli_real_escape_string($connection, $_POST['password']);
 
     //to check if user already exists
-    $sql = "SELECT * FROM _Users WHERE email = '$Email'";
+    $sql = "SELECT * FROM u WHERE email = '$Email'";
     $result = $connection->query($sql);
     $resultCheck = mysqli_num_rows($result);
 
@@ -60,13 +60,14 @@ $fname_error = $lname_error = $email_error = $password_error = "";
             $unique_salt = unique_salt();
             $hash = sha1($unique_salt . $password);
 
-            $insert = "INSERT INTO _Users (fNamn, eNamn, email, passowrd, salt) VALUES 
-            ('".$FirstName."', '".$LastName."', '".$email."', '".$hash."','".$unique_salt."');";
-            $connection->query($insert);
+            $insert = "INSERT INTO u (fname, lname, email, password, salt) VALUES ('".$FirstName."', '".$LastName."', '".$Email."', '".$hash."','".$unique_salt."');";
+            $resultat = $connection->query($insert);
+
+            echo $resultat;
 
             $fname = $lname = $email = $password = "";
 
-            header ("Location: index.php");
+            //header ("Location: index.php");
 
             }
             

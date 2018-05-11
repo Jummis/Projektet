@@ -12,7 +12,7 @@ $name_error = $email_error = $password_error = "";
     $Password = mysqli_real_escape_string($connection, $_POST['password']);
 
     //check if the user exists
-    $sql = "SELECT * FROM _Users WHERE email = '$Email'";
+    $sql = "SELECT * FROM u WHERE email = '$Email'";
     $result = $connection->query($sql);
     $resultCheck = mysqli_num_rows($result);
 
@@ -42,7 +42,7 @@ $name_error = $email_error = $password_error = "";
             {
 
             //hämta salt från databasen       
-            $saltFromDatabase = "SELECT salt FROM _Users WHERE email = '$Email'";
+            $saltFromDatabase = "SELECT salt FROM u WHERE email = '$Email'";
             $result = $connection->query($saltFromDatabase); 
 
             while ($row = $result->fetch_row()){
@@ -53,7 +53,7 @@ $name_error = $email_error = $password_error = "";
             $hash = sha1($Salt . $Password);     
 
             //hämta hash från databasen
-            $sql = "SELECT password FROM _Users WHERE email = '$Email'";
+            $sql = "SELECT password FROM u WHERE email = '$Email'";
             $data = $connection->query($sql);
 
             while ($row = $data-> fetch_row()){
@@ -63,7 +63,7 @@ $name_error = $email_error = $password_error = "";
             //om dem är lika
             if($hash == $Datan)
             {
-            $name = "SELECT fNamn FROM _Users WHERE email = '$Email' AND password = '$Datan'";
+            $name = "SELECT fname FROM u WHERE email = '$Email' AND password = '$Datan'";
             $Name = $connection->query($name);
 
             while ($row = $Name-> fetch_row()){

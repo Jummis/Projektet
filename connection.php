@@ -1,4 +1,5 @@
 <?php
+
 $uname = "dbtrain_763";
 $pass = "yvgjnd";
 $host = "dbtrain.im.uu.se";
