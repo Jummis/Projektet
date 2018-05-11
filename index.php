@@ -27,11 +27,13 @@ bra text som ser snygg ut<br>
 med någon bra bild bakom</p>
 
 <img id = "välIMG" src="\\filer.ekonomikum.uu.se\labbwebb\ZimmergrenJulia\Projektet\img\cirkel.png">
+
 <header>
-        <div id="Välkommen">
-<p2> VÄLKOMMEN TILL <br><p3>HÄLSOCOACHEN</p3></br>
+<div id="Välkommen">
+<p2> VÄLKOMMEN TILL <br>
+<p3>HÄLSOCOACHEN</p3></br>
 </p2>
-        </div>
+</div>
 </header>
 
 
