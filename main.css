@@ -1,5 +1,6 @@
+
 h {
-    font-family: Calibri;
+    font-family: 'Open Sans', sans-serif;
     font-size:40px;
 }
 
@@ -42,4 +43,5 @@ p{
     text-align: center;
     font-size: 50px;
     color: black; 
+    font-family: 'Open Sans', sans-serif;
 }

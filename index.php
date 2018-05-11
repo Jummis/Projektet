@@ -10,7 +10,12 @@
     </head>
         <body>
 <div id = "header">
+<<<<<<< HEAD
 <h>Hälsocoachen</h1>
+=======
+<h>HÄLSOCOACHEN</h1>
+<img id = "headerIMG" src ="https://preview.ibb.co/duvS6J/lansering_halsostrategerna_st_2e16d0ba_fill_825x380_c100.jpg">
+>>>>>>> c46ddb3d54ac21447a8a74ea2bbf47ab3cbdaf1b
 
 </div>
 
@@ -21,7 +26,7 @@
 </ul> 
 
 <div id = body>
-<img id = "frontIMG" src="../Projekt/img/headertest2.jpg">
+<img id = "frontIMG" src="../Projektet/img/header.jpg">
 
 <p> Här ska det stå något </p>
 
