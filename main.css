@@ -1,6 +1,6 @@
 
 h {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size:40px;
 }
 
@@ -20,6 +20,7 @@ ul {
     background-color:white;
     padding-right: 50px;
     border-bottom: 1px solid black;
+    font-family: 'Nunito', sans-serif;
 }
 
 li {
@@ -43,18 +44,26 @@ p{
     text-align: center;
     font-size: 50px;
     color: black; 
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 200px;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 100px;
 }
 
 #Välkommen{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 80px;
-    margin-top: 200px;
+    margin-top: 100px;
     color: white;
-    margin-left: 600px;
+    margin-left: 550px;
     padding: 50px;
 }   
+
+#välIMG{
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 100px;
+}
 
 header{
     background-color: grey;
