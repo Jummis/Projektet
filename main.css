@@ -4,14 +4,12 @@ h {
 }
 
 #header {
-    width: 1200px;
-    height: 40px;
     background-color:white;
 }
 
 headerIMG {
 float: left;
-width: 100px;
+width: 50px;
 }
 
 ul {
