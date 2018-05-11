@@ -4,7 +4,7 @@
 
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Hälsocoachen</title>
+    <title>Hälsocoachennnnnn</title>
     <link rel = "stylesheet" href = "main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">n
     </head>
