@@ -10,7 +10,7 @@ h {
 
 headerIMG {
 float: left;
-width: 50px;
+width: 50%;
 }
 
 ul {
@@ -19,7 +19,7 @@ ul {
     overflow: hidden;
     background-color:white;
     padding-right: 50px;
-    border-bottom: 1px solid black;
+    border-top: 1px solid black;
     font-family: 'Nunito', sans-serif;
 }
 

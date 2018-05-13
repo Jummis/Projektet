@@ -10,7 +10,8 @@
     </head>
         <body>
 <div id = "header">
-<h>HÄLSOCOACHEN</h1>
+
+<img id = "headerIMG" src="https://preview.ibb.co/iWZfgJ/32592218_10208599685908616_1106643184747806720_n.jpg">
 
 </div>
 
