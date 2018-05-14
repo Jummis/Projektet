@@ -9,6 +9,18 @@
     <title> Hälsocoachen - Registrering </title>
     <link rel = "stylesheet" href = "main.css">
 <body>
+
+<div id = "header">
+
+<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">
+
+ <ul>
+  <li><a href="default.asp">VAD ÄR HÄLSOCOACHING?</a></li>
+  <li><a href="news.asp">OM OSS</a></li>
+  <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
+</ul> 
+</div>
+
     <div id="wrapper">
         <h1> Registration </h1> 
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
