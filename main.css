@@ -1,3 +1,7 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 h {
     font-family: 'Open Sans', sans-serif;
     font-size:40px;
@@ -72,3 +76,11 @@ p{
     padding: 50px;
     background-color: grey;
 }   
+
+#welcome{
+    text-align: center;
+}
+
+#chattbutton{
+    color: green;
+}
