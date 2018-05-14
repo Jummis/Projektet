@@ -165,7 +165,13 @@ background-color: #4CAF50;
     border-radius: 8px;
     overflow:auto; }
 
+    #usermsg {
+    width:395px;
+    border:1px solid #ACD8F0; }
+  
+
     #sendmessage{
+    width: 60px;
     background-color: white;
     width: 25px;
     border-radius: 8px;
