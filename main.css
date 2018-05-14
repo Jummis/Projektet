@@ -1,11 +1,6 @@
-
 h {
     font-family: 'Open Sans', sans-serif;
     font-size:40px;
-}
-
-#header {
-    background-color:white;
 }
 
 #wrapper {
@@ -20,14 +15,12 @@ ul {
     overflow: hidden;
     background-color:white;
     padding-right: 50px;
-    padding-top: 15px;
     border-bottom: 1px solid black;
     font-family: 'Open Sans', sans-serif;
 }
 
 li {
     float: right;
-
 }
 
 li a {
@@ -35,11 +28,6 @@ li a {
     color: black;
     padding: 15px 0px 0px 50px;
     text-decoration: none;
-}
-
-#frontIMG{
-    width: 100%;
-    opacity: 0.5;
 }
 
 p{
@@ -59,14 +47,3 @@ p{
     padding: 50px;
     background-color: grey;
 }   
-
-#välIMG{
-    width: 20%;
-}
-
-header{
-    background-color: grey;
-    margin-top: 150px;
-    width: 100%;
-
-}
