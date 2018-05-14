@@ -1,8 +1,3 @@
-<?php   
-    include_once 'connection.php';
-    include_once 'session.php';
-?>
-
 <html>
 
     <head>
@@ -23,22 +18,19 @@
         </div>
 
         <div id= "welcome">
-            <h1> Välkommen till chatten <?php echo $_SESSION['User']; ?> </h1>
-            <p1> Här kan du skicka ett meddelande till någon av våra hälsocoacher<br>
-                 En coach kommer snart kontakta dig. </p1>
+            <h1> Vad vill du ha hjälp med idag? </h1>
+            <p1> Vänligen välj ett av nedanstående alternativ.</p1>
             <br><br>
         </div>
 
-        <div id="chatcontainer">
-        <div id="chatbox"></div>
-            <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
-
-            <input type="text" placeholder="Vänligen skriv ditt meddelande här" name="usermsg" id="usermsg"/>
-            <input type="submit" name=submitmsg value=SKICKA id=sendmessage/>
-            </form>
+        <div class="optionButtons">
+        <button class="button">KOST</button><br>
+        <button class="button">TRÄNING</button><br>
+        <button class="button">ALKOHOL/TOBAK</button><br>
+        <button class="button">STRESS</button><br>
+        <button class="button">SÖMN</button><br>
+        <button class="button">ALLMÄNT</button><br>
         </div>
-        </div>
-
-    </body>
+     </body>
 
 </html>

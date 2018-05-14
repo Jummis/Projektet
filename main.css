@@ -129,16 +129,34 @@ p{
 }
 
 #bottom{
-    color: white;
     background-color: #A7D7C5;
+    height: 40%;
 }
 
 #kontaktuppg{
-    font-size: 60px;
+    font-size: 35px;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 5%;
+}
+
+#kontaktrubrik{
+    font-size: 50px;
+    padding-top: 20px;
     color: white;
     font-weight: bold;
-    padding-top: 20px;
-    height: 50%;
+    margin-bottom: 0px;
+}
+
+#phoneimg{
+    width: 8%;
+    padding-right: 70px;
+}
+
+#emailimg{
+    width: 7%;
+    padding-left: 65px;
+    margin-bottom: 0.5%;
 }
 
 #welcome{
@@ -193,6 +211,31 @@ background-color: #4CAF50;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     }
 
+<<<<<<< HEAD
     #contact {
         margin-left: 50px;
     }
+=======
+
+   .optionButtons .button {
+    background-color: #4CAF50; /* Green */
+    border: 1px solid green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    display: block;
+}
+
+    .optionButtons .button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+    .optionButtons .button:hover {
+    background-color: #3e8e41;
+}
+>>>>>>> 1516e76e96088ebf80dd08497f8ce6a126a53af4
