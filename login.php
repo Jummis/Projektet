@@ -19,7 +19,7 @@ include_once 'validateLogin.php';
 </ul> 
 </div>
 
-<h1> PLEASE LOG IN BELOW </h1>
+<h> PLEASE LOG IN BELOW </h>
 <a href = 'register.php'><p1> Not registred? </p1> </a>
 <br>
 <br>

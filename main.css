@@ -55,11 +55,8 @@ p{
 }   
 
 #välIMG{
-    width: 380px;
-    height: 380px;
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 100px;
+    width: 20%;
+    float:left;
 }
 
 header{

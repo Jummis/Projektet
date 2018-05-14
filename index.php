@@ -12,6 +12,7 @@
 <div id = "header">
 
 <img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">
+<img id = "välIMG" src="https://image.ibb.co/gkR95d/cirkel.png">
 
  <ul>
   <li><a href="default.asp">VAD ÄR HÄLSOCOACHING?</a></li>
@@ -24,8 +25,6 @@
 <p> Här ska det stå någon<br>
 bra text som ser snygg ut<br>
 med någon bra bild bakom</p>
-
-<img id = "välIMG" src="https://image.ibb.co/gkR95d/cirkel.png">
 
 <header>
 <div id="Välkommen">
