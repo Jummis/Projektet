@@ -14,7 +14,7 @@
 <img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">
  <ul>
   <li><a href="default.asp">MINA SIDOR</a></li>
-  <li><a href="news.asp">CHATT</a></li>
+  <li><a href="chatt.php">CHATT</a></li>
   <li><a href="logout.php">LOGGA UT</a></li>
 </ul> 
 </div>
@@ -26,8 +26,7 @@
      vi kan göra för dig. </p1>
 <br><br>
 
-<input type="submit" name=chattbutton value=CHATTA onsubmit="chatt.php"></a>
-
+<input type="submit" id=chattbutton name=chattbutton value=CHATTA onsubmit="chatt.php">
 </div>
 
 </body>

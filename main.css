@@ -1,10 +1,12 @@
 body{
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 
 h {
     font-family: 'Open Sans', sans-serif;
-    font-size:40px;
+    font-size:65px;
+    margin-left: 10%;
 }
 
 p1 {
@@ -39,6 +41,10 @@ p2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#headerIMG{
+    margin-bottom: 0px;
+}
+
 ul {
     /* navigation-bar kommer fästas i toppen om man bläddrar ner */
     list-style-type: none;
@@ -47,6 +53,7 @@ ul {
     padding-right: 50px;
     border-bottom: 1px solid black;
     font-family: 'Open Sans', sans-serif;
+    margin-top: 5%;
 }
 
 #submit {
@@ -73,6 +80,7 @@ li a {
     display: block;
     color: black;
     padding: 15px 0px 0px 50px;
+    margin-top: 40px;
     text-decoration: none;
 }
 
@@ -80,12 +88,31 @@ p{
     text-align: center;
     font-size: 50px;
     color: black; 
-    font-family: 'Open Sans', sans-serif;
     margin-top: 100px;
 }
 
+.container{
+    text-align: center;
+    position: relative;
+}
+
+.textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+#frukt{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 20%;
+    opacity: 0.5;
+}
+
 #Välkommen{
-    font-family: 'Open Sans', sans-serif;
     font-size: 80px;
     margin-top: 100px;
     color: white;
@@ -99,5 +126,23 @@ p{
 }
 
 #chattbutton{
-    color: green;
+   background-color: white;
+   border-radius: 8px;
+   border: 2px solid #4CAF50;
 }
+
+#chattbutton:hover{
+background-color: #4CAF50; 
+    color: white;
+}
+
+#chatbox {
+    text-align:left;
+    margin: auto;
+    margin-bottom:25px;
+    padding:10px;
+    background:#fff;
+    height:270px;
+    width:430px;
+    border:1px solid #ACD8F0;
+    overflow:auto; }
