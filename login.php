@@ -9,6 +9,16 @@ include_once 'validateLogin.php';
     <link rel = "stylesheet" href = "main.css">
 <body>
 <div id = "header">
+
+<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">
+
+ <ul>
+  <li><a href="default.asp">VAD ÄR HÄLSOCOACHING?</a></li>
+  <li><a href="news.asp">OM OSS</a></li>
+  <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
+</ul> 
+</div>
+
 <h1> PLEASE LOG IN BELOW </h1>
 <a href = 'register.php'><p1> Not registred? </p1> </a>
 <br>

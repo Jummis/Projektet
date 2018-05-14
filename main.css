@@ -8,19 +8,15 @@ h {
     background-color:white;
 }
 
-headerIMG {
-float: left;
-width: 50%;
-}
-
 ul {
     /* navigation-bar kommer fästas i toppen om man bläddrar ner */
     list-style-type: none;
-    margin-top: 0px;
     overflow: hidden;
     background-color:white;
     padding-right: 50px;
+    padding-top: 15px;
     border-top: 1px solid black;
+    border-bottom: 1px solid black;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -67,6 +63,7 @@ p{
 }
 
 header{
+    position: fixed;
     background-color: grey;
     margin-top: 150px;
     width: 100%;

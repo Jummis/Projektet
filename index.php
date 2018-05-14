@@ -13,15 +13,13 @@
 
 <img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">
 
-</div>
-
  <ul>
   <li><a href="default.asp">VAD ÄR HÄLSOCOACHING?</a></li>
   <li><a href="news.asp">OM OSS</a></li>
   <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
 </ul> 
 
-<img id = "frontIMG" src="\\filer.ekonomikum.uu.se\labbwebb\ZimmergrenJulia\Projektet\img\header.jpg">
+</div>
 
 <p> Här ska det stå någon<br>
 bra text som ser snygg ut<br>
