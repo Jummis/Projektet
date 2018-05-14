@@ -28,11 +28,19 @@ med någon bra bild bakom</p>
 <div class="textcenter"> Lite text över bilden</div>
 </div>
 
+<div id="headergrön">
 <header id="headgrön">
-<p id="cirkel"></p>
-<p id="text">VÄLKOMMEN TILL<br>HÄLSOCOACHEN<p>
-           </header>
+<p id="texthead">VÄLKOMMEN TILL<br>HÄLSOCOACHEN<p>
+</header>
+</div>
 
+<p id="textunderhead">Här ska det också stå lite text</p>
+
+<div id="bottom">
+<p id="kontaktuppg">Kontaktuppgifter</p>
+<img id="phone" src="">
+<img id="email" src="">
+</div>
 
 
         </body>

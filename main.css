@@ -76,7 +76,7 @@ li a {
     display: block;
     color: black;
     padding: 15px 0px 0px 50px;
-    margin-top: 40px;
+    margin-top: 50px;
     text-decoration: none;
 }
 
@@ -108,26 +108,38 @@ p{
     opacity: 0.5;
 }
 
-#text{
+#headergrön{
     text-align: right;
     font-size: 70px;
     color: white;
-}   
-
-#headgrön{
+    background-color: #97CBA9;
     width: 100%;
     height: 35%;
-    background-color: #97CBA9;
-    
+    margin-top: 5%;
 }
 
-#cirkel{
-    height: 320px;
-    width: 320px;
+#texthead{
+    color: white;
+    padding-top: 25px;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#textunderhead{
+    margin-top: 10%;
+}
+
+#bottom{
+    color: white;
     background-color: #A7D7C5;
-    border-radius: 50%;
-    display: inline-block;
-    
+}
+
+#kontaktuppg{
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    padding-top: 20px;
+    height: 50%;
 }
 
 #welcome{
