@@ -8,8 +8,8 @@
     <link rel = "stylesheet" href = "main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
-        <body>
-
+    
+<body>
 <img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">
 
  <ul>
