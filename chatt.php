@@ -1,6 +1,7 @@
 <?php   
     include_once 'connection.php';
     include_once 'session.php';
+    include_once 'savechatmessage.php';
 ?>
 
 <html>
@@ -14,8 +15,8 @@
 
     <body>
         <div id = "header">
-            <img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">
             <ul>
+            <h>HÄLSOCOACHEN</h>
             <li><a href="default.asp">MINA SIDOR</a></li>
             <li><a href="news.asp">CHATT</a></li>
             <li><a href="logout.php">LOGGA UT</a></li>
@@ -38,7 +39,7 @@
             <input type="submit" name=submitmsg value=SKICKA id=sendmessage/>
             </form>
         </div>
-        </div>
+ 
 
     </body>
 
