@@ -6,13 +6,12 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Hälsocoachen</title>
     <link rel = "stylesheet" href = "main.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
         <body>
 <div id = "header">
 
 <img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">
-<img id = "välIMG" src="https://image.ibb.co/gkR95d/cirkel.png">
 
  <ul>
   <li><a href="default.asp">VAD ÄR HÄLSOCOACHING?</a></li>
