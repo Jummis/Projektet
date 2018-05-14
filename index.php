@@ -8,9 +8,21 @@
     <link rel = "stylesheet" href = "main.css">
     <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
     </head>
+<<<<<<< HEAD
     
 <body>
 <!--<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">-->
+=======
+
+        <body>
+                
+
+
+<!--<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">-->
+    
+<body>
+<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">
+>>>>>>> edc972ee978293a6131e5fec728733223e9a5972
 
  <ul>
   <h>HÄLSOCOACHEN</h>
