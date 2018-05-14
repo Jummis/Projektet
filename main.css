@@ -127,5 +127,13 @@ background-color: #4CAF50;
     background:#fff;
     height:270px;
     width:430px;
-    border:1px solid #ACD8F0;
+    border:1px solid #4CAF50;
+    border-radius: 8px;
     overflow:auto; }
+
+    #sendmessage{
+    background-color: white;
+    width: 25px;
+    border-radius: 8px;
+    border: 2px solid #4CAF50;
+    }

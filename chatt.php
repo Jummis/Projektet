@@ -30,9 +30,9 @@
         </div>
 
         <div id="chatbox"></div>
-            <form name="chatt" action="">
-            <input type="text" placeholder="Vänligen skriv ditt meddelande här" name="usermsg" id="usermsg" size="63" />
-            <input type="submit" name="submitmsg" id="submitmsg" value="SKICKA" />
+            <form name="chat" action="">
+            <input type="text" placeholder="Vänligen skriv ditt meddelande här" name="usermsg" id="usermsg"/>
+            <input type="submit" name=submitmsg value=SKICKA id=sendmessage/>
             </form>
         </div>
 
