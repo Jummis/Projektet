@@ -29,8 +29,26 @@
         <input type="submit" class="button" value="STRESS"><br>
         <input type="submit" class="button" value="SÖMN"><br>
         <input type="submit" class="button" value="ALKOHOL/TOBAK"><br>
-        <input type="submit" class="button" value="ALLMÄNT"><br> </a>
+        <input type="submit" class="button" value="ALLMÄNT"><br></a>
         </div>
+
+                <div id="bottom">
+<p id="kontaktrubrik">HÄLSOCOACHEN</p>
+<p id="kontaktuppg">Kontaktuppgifter</p>
+
+
+ <div class="row">
+  <div class="column">
+    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
+    <p2> 0703457947 </p2>
+  </div>
+  <div class="column">
+    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br>
+    <p3> halsocoachen@coach.se </p3>
+  </div>
+</div> 
+
+</div>
      </body>
 
 </html>
