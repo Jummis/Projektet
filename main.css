@@ -179,7 +179,7 @@ background-color: #4CAF50;
     text-align:left;
     margin: auto;
     margin-bottom:10px;
-    padding:10px;
+    padding: 15px;
     background:#fff;
     height:270px;
     width:430px;
@@ -194,24 +194,41 @@ background-color: #4CAF50;
 
     p4{
         font-size: 12px;
+        margin-top: 10px;
+    }
+
+    p3{
+        font-size: 12px;
+    }
+
+    #userchatt{
+    border-radius: 20px;
+    width: 5%;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
     }
 
     #usermsg {
     width: 450px;
     height:100px; 
     border:1px solid #4CAF50;
-    text-align: left; }
+    text-align: left;
+    font-family: 'News Cycle', sans-serif; }
   
     #sendmessage{
     width: 450px;
     background-color: white;
     border-radius: 8px;
     border: 2px solid #4CAF50;
+    
     }
 
     #chatcontainer{
     border-radius: 20px;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
     width: 500px;
     margin-top: 40px;
@@ -252,9 +269,4 @@ background-color: #4CAF50;
   float: right;
   width: 50%;
 }
-<<<<<<< HEAD
-=======
 
-
-
->>>>>>> 99e414b2765fcf50d1158d63d055b34d536893cc
