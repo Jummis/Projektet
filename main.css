@@ -16,6 +16,7 @@ width: 50%;
 ul {
     /* navigation-bar kommer fästas i toppen om man bläddrar ner */
     list-style-type: none;
+    margin-top: 0px;
     overflow: hidden;
     background-color:white;
     padding-right: 50px;
