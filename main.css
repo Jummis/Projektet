@@ -108,5 +108,12 @@ p{
 }
 
 #chattbutton{
-   background-color: green;
+   background-color: white;
+   border-radius: 8px;
+   border: 2px solid #4CAF50;
+}
+
+#chattbutton:hover{
+background-color: #4CAF50; 
+    color: white;
 }
