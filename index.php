@@ -37,9 +37,10 @@ med någon bra bild bakom</p>
 <p id="textunderhead">Här ska det också stå lite text</p>
 
 <div id="bottom">
+<p id="kontaktrubrik">HÄLSOCOACHEN</p>
 <p id="kontaktuppg">Kontaktuppgifter</p>
-<img id="phone" src="">
-<img id="email" src="">
+
+
 </div>
 
 
