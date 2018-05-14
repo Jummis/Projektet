@@ -72,7 +72,7 @@ $name_error = $email_error = $password_error = "";
             }
             session_start();
             $_SESSION ['User'] = $Data;
-            header ("Location: index.php"); 
+            header ("Location: userHome.php"); 
             $name = $email = $password = "";          
             }
             else 

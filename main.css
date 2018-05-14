@@ -38,10 +38,6 @@ p2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#headerIMG{
-    margin-bottom: 0px;
-}
-
 ul {
     /* navigation-bar kommer fästas i toppen om man bläddrar ner */
     list-style-type: none;
@@ -51,6 +47,11 @@ ul {
     border-bottom: 1px solid black;
 }
 
+inpyt [type = "radio"] {
+    display: inline;
+    margin-right: 5px;
+}
+
 #submit {
 width: 300px;
 height: 50px;
@@ -58,9 +59,9 @@ font-size: 15px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-input {
+input [type = "text"] {
 width: 300px;
-height: 30px;
+height: 40px;
 border-radius: 5px;
 margin: 0 auto;
 padding: 0 auto;
@@ -129,16 +130,34 @@ p{
 }
 
 #bottom{
-    color: white;
     background-color: #A7D7C5;
+    height: 40%;
 }
 
 #kontaktuppg{
-    font-size: 60px;
+    font-size: 35px;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 5%;
+}
+
+#kontaktrubrik{
+    font-size: 50px;
+    padding-top: 20px;
     color: white;
     font-weight: bold;
-    padding-top: 20px;
-    height: 50%;
+    margin-bottom: 0px;
+}
+
+#phoneimg{
+    width: 8%;
+    padding-right: 70px;
+}
+
+#emailimg{
+    width: 7%;
+    padding-left: 65px;
+    margin-bottom: 0.5%;
 }
 
 #welcome{
