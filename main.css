@@ -130,7 +130,8 @@ p{
 
 #bottom{
     background-color: #A7D7C5;
-    height: 40%;
+    height: 50%;
+    border-bottom: 1px solid black;
 }
 
 #kontaktuppg{
@@ -226,23 +227,34 @@ background-color: #4CAF50;
     }
 
    .optionButtons .button {
-    background-color: #4CAF50; /* Green */
-    border: 1px solid green;
-    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    background-color: white; 
+    border-radius: 8px;
+    border: 2px solid green;
+    color: green;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    width: 150px;
+    width: 35%;
     display: block;
-}
-
-    .optionButtons .button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
 }
 
     .optionButtons .button:hover {
     background-color: #3e8e41;
+    color: white;
 }
+
+.column {
+  float: right;
+  width: 50%;
+}
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 99e414b2765fcf50d1158d63d055b34d536893cc
