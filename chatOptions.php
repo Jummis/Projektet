@@ -25,11 +25,11 @@
 
         <div class="optionButtons">
        <a href='chatt.php'> <input type="submit" class="button" value="KOST"><br>
-        <input type="submit" class="button" value="TRÄNING"<br>
-        <input type="submit" class="button" value="STRESS" <br>
-        <input type="submit" class="button" value="SÖMN" <br>
-        <input type="submit" class="button" value="ALKOHOL/TOBAK" <br>
-        <input type="submit" class="button" value="ALLMÄNT" <br> </a>
+        <input type="submit" class="button" value="TRÄNING"><br>
+        <input type="submit" class="button" value="STRESS"><br>
+        <input type="submit" class="button" value="SÖMN"><br>
+        <input type="submit" class="button" value="ALKOHOL/TOBAK"><br>
+        <input type="submit" class="button" value="ALLMÄNT"><br> </a>
         </div>
      </body>
 
