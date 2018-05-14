@@ -236,9 +236,9 @@ background-color: #4CAF50;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     background-color: white; 
     border-radius: 8px;
-    border: 2px solid green;
-    color: green;
-    padding: 15px 32px;
+    border: 2px solid A7D7C5;
+    color: black;
+    padding: 20px 40px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -248,7 +248,7 @@ background-color: #4CAF50;
 }
 
     .optionButtons .button:hover {
-    background-color: #3e8e41;
+    background-color: #A7D7C5;
     color: white;
 }
 
@@ -256,12 +256,4 @@ background-color: #4CAF50;
   float: right;
   width: 50%;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
-
-
->>>>>>> 99e414b2765fcf50d1158d63d055b34d536893cc
->>>>>>> 79c6284b6135342aa610097ab4285e7355a1a065
