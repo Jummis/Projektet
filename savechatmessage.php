@@ -1,4 +1,6 @@
 <?php
+include_once 'connection.php';
+include_once 'session.php';
 
 $uname = "dbtrain_763";
 $pass = "yvgjnd";
@@ -11,5 +13,12 @@ if ($connection->connect_error)
     {
     die ("Connection failed : ".$connection.connect_error);
     }
+
+ if ($_SERVER["REQUEST_METHOD"] == 'POST'){
+        $message = $connect->real_escape_string($_POST['usermsg']);
+
+      $insertmessage = "INSERT INTO chatt(from_id, message) VALUES ('$_SESSION['User'] ', '$message');";
+      $connect->query($insertmessage); 
+ }
 
 ?>
