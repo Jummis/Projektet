@@ -14,11 +14,9 @@
 
 
 <!--<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">-->
-=======
     
 <body>
 <img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">
->>>>>>> bb41cf2d594403cbd7168dea8f219176dea0c816
 
  <ul>
   <h>HÄLSOCOACHEN</h>
