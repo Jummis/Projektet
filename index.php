@@ -39,13 +39,19 @@ med någon bra bild bakom</p>
 <div id="bottom">
 <p id="kontaktrubrik">HÄLSOCOACHEN</p>
 <p id="kontaktuppg">Kontaktuppgifter</p>
-<<<<<<< HEAD
-<img id="phone" src="https://image.ibb.co/nAfQiy/phone_call.png">
-<img id="email" src="https://image.ibb.co/jSQmqd/envelope.png">
-=======
 
 
->>>>>>> 1516e76e96088ebf80dd08497f8ce6a126a53af4
+ <div class="row">
+  <div class="column">
+    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
+    <p2> 0703457947 </p2>
+  </div>
+  <div class="column">
+    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br>
+    <p3> halsocoachen@coach.se </p3>
+  </div>
+</div> 
+
 </div>
 
 
