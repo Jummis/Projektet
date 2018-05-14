@@ -133,8 +133,9 @@ p{
 
 #bottom{
     background-color: #A7D7C5;
+    color: white;
     height: 50%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid;
 }
 
 #kontaktuppg{
