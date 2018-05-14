@@ -21,20 +21,20 @@ include_once 'validateLogin.php';
 
 <div id = wrapper><br>
 <h> LOGGA IN </h> <br>
-<a href = 'register.php'><p1> Inte registrerad? </p1> </a>
+<a href = 'register.php'><p2> Inte registrerad? </p2> </a>
 <br>
 <br>
 
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 
                 <div id = "form">
-                Email:<br>
-                <input type="text" name="email" id="email" value = "<?php echo $email;?>"> <br>
+                <br>
+                <input type="text" name="email" id="email" value = "Email" value = "<?php echo $email;?>"> <br>
                 <p1> <?php echo $email_error; ?> </p1><br>
 
-
-                Lösenord:<br>
-                <input type = "text" name="password" id ="password" value = "<?php echo $password;?>"><br>
+                
+                <br>
+                <input type = "text" name="password" id ="password" value = "Lösenord" value = "<?php echo $password;?>"><br>
                 <p1> <?php echo $password_error; ?> </p1><br>
 
                 <br>
@@ -43,9 +43,9 @@ include_once 'validateLogin.php';
         </form>
 
         <br><br>
-
-
 </div>
+
+
 </body>
 </head>
 </html>
