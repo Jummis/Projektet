@@ -48,7 +48,9 @@ ul {
 }
 
 .radio {
-width: 10px;
+width: 20px;
+margin: 0 auto;
+padding: 0 auto;
 }
 
 #submit {

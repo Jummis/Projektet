@@ -34,9 +34,21 @@
 
                 <input type="birth" name="birth" title="birth" style="color:#888;" 
                 placeholder="YYYY-MM-DD" onfocus="inputFocus(this)" onblur="inputBlur(this)"><br><br>
+
+
+                <div class="row">
+                <div class="column">
+                <input type="radio" name="gender" id = "gender" value="Man" class = "radio"> <br>
+                Man
+                </div>
+                <div class="column">
+                <input type="radio" name="gender" id = "gender" value="Kvinna" class = "radio"><br>
+                <p3> Female </p3>
+                </div>
+                </div> 
                 
-                <input type="radio" name="gender" id = "gender" value="Man" class = "radio"> Man<br>
-               <input type="radio" name="gender" id = "gender" value="Kvinna" class = "radio"> Kvinna<br><br>
+            
+               
 
                 <input type="text" name="email" title="email" style="color:#888;" 
                 placeholder="E-postadress" value = "<?php echo $email;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
