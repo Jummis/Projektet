@@ -1,12 +1,17 @@
 h {
     font-family: 'Open Sans', sans-serif;
-    font-size:40px;
+    font-size:65px;
+    margin-left: 10%;
 }
 
 #wrapper {
     text-align: center;
     margin-top: 50px;
     border: 1px solid black;
+}
+
+#headerIMG{
+    margin-bottom: 0px;
 }
 
 ul {
@@ -17,6 +22,7 @@ ul {
     padding-right: 50px;
     border-bottom: 1px solid black;
     font-family: 'Open Sans', sans-serif;
+    margin-top: 5%;
 }
 
 li {
@@ -27,6 +33,7 @@ li a {
     display: block;
     color: black;
     padding: 15px 0px 0px 50px;
+    margin-top: 40px;
     text-decoration: none;
 }
 
@@ -36,6 +43,28 @@ p{
     color: black; 
     font-family: 'Open Sans', sans-serif;
     margin-top: 100px;
+}
+
+.container{
+    text-align: center;
+    position: relative;
+}
+
+.textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#frukt{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 20%;
+    opacity: 0.5;
 }
 
 #Välkommen{
