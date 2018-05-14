@@ -8,21 +8,19 @@ include_once 'validateLogin.php';
     <title> Hälsocoachen </title>
     <link rel = "stylesheet" href = "main.css">
 <body>
-<div id = "header">
-
-<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">
 
  <ul>
+  <h>HÄLSOCOACHEN</h>
   <li><a href="default.asp">VAD ÄR HÄLSOCOACHING?</a></li>
   <li><a href="news.asp">OM OSS</a></li>
   <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
 </ul> 
-</div>
+
 
 <div id = wrapper><br>
 <img id = "user" src = "https://image.ibb.co/edWLgJ/default_user_image.png">
 <br><br>
-<a href = 'register.php'><p2> Till registreringen </p2> </a>
+<p2> Har du inget konto?<a href = 'register.php'><p2> Registrera dig </p2> </a>
 <br>
 <br>
 

@@ -30,23 +30,8 @@ $fname_error = $lname_error = $email_error = $password_error = "";
     $password = trim($Password);
     
 
-        if (empty($fname)) {
-        $fname_error = "Du måste fylla i ditt namn";
-        } 
-
-        if (empty($lname)) {
-        $lname_error = "Du måste fylla i ditt efternamn";
-        } 
-
-        if (empty($email)) {
-        $email_error = "Du måste fylla i din email";
-        } else if (!filter_var($email, FILTER_VALIDATE_EMAIL))
-                {
-                $email_error = "Felaktigt email-format"; 
-                } 
-
-        if (empty($password)) {
-        $password_error = "Du måste välja ett lösenord";
+        if (empty($fname) || empty($lname) || empty($email) || empty($password)) {
+        $password_error = "Du måste fylla i alla fält";
         } 
 
         else if ($fname_error == "" && $lname_error == "" && $email_error == "" && $password_error == "") 
