@@ -31,10 +31,11 @@
 
         <div id="chatbox"></div>
             <form name="chatt" action="">
-            <input name="usermsg" type="text" id="usermsg" size="63" />
-            <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+            <input type="text" placeholder="Vänligen skriv ditt meddelande här" name="usermsg" id="usermsg" size="63" />
+            <input type="submit" name="submitmsg" id="submitmsg" value="SKICKA" />
             </form>
         </div>
+
     </body>
 
 </html>
