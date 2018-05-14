@@ -21,6 +21,7 @@
     <div id="wrapper"><br>
     <img id = "user" src = "https://image.ibb.co/edWLgJ/default_user_image.png">
     <br><br>
+    <p2> Har du redan ett konto?<a href = 'login.php'><p2> Logga in </p2> </a><br><br>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 
                 <input type="text" name="firstname" title="firstname" style="color:#888;" 
@@ -31,8 +32,9 @@
                 placeholder="Efternamn" value = "<?php echo $lname;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
                 <br><p2><?php echo $lname_error; ?> </p2><br>
                 
-                <input type="radio" name="gender" id = "gender" value="Man" class = "radio"> Man<br>
-                <input type="radio" name="gender" id = "gender" value="Kvinna" class = "radio" > Kvinna
+                <div id = "button"><input type="radio" name="gender" id = "gender" value="Man"> Man<br></div>
+                <div id = "button"><input type="radio" name="gender" id = "gender" value="Kvinna" > Kvinna</div>
+
                 <br><br>
                 <input type="birth" name="lastname" title="lastname" style="color:#888;" 
                 placeholder="Födelsedatum" value = "<?php echo $lname;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
@@ -50,8 +52,6 @@
 
                 <input type="submit" name="submit" id="submit" value="REGISTRERA DIG">                
         </form>
-
-        <p2> Har du redan ett konto?<a href = 'login.php'><p2> Logga in </p2> </a>
 </div>
 
 </body>
