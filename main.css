@@ -193,7 +193,7 @@ background-color: #4CAF50;
   
 
     #sendmessage{
-    width: 60px;
+    width: 100px;
     background-color: white;
     width: 25px;
     border-radius: 8px;
@@ -212,28 +212,36 @@ background-color: #4CAF50;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     }
 
+<<<<<<< HEAD
+=======
+    #contact {
+        margin-left: 50px;
+    }
+
+>>>>>>> 1fb50a52fc85c75cfc08548170eed6051c1f79f6
    .optionButtons .button {
-    background-color: #4CAF50; /* Green */
-    border: 1px solid green;
-    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    background-color: white; 
+    border-radius: 8px;
+    border: 2px solid green;
+    color: green;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    width: 150px;
+    width: 35%;
     display: block;
-}
-
-    .optionButtons .button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
 }
 
     .optionButtons .button:hover {
     background-color: #3e8e41;
+    color: white;
 }
 
+<<<<<<< HEAD
 .column {
   float: right;
   width: 50%;
@@ -241,3 +249,5 @@ background-color: #4CAF50;
 
 
 
+=======
+>>>>>>> 1fb50a52fc85c75cfc08548170eed6051c1f79f6
