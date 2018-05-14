@@ -174,10 +174,10 @@ background-color: #4CAF50;
     color: white;
 }
 
-#chatbox {
+#chatbox{
     text-align:left;
     margin: auto;
-    margin-bottom:25px;
+    margin-bottom:10px;
     padding:10px;
     background:#fff;
     height:270px;
@@ -186,15 +186,24 @@ background-color: #4CAF50;
     border-radius: 8px;
     overflow:auto; }
 
-    #usermsg {
-    width:300px;
-    border:1px solid #4CAF50; }
-  
+    h5{
+    font-size: 16px;
+    margin-bottom: 5px;
+    }
 
+    p4{
+        font-size: 12px;
+    }
+
+    #usermsg {
+    width: 450px;
+    height:100px; 
+    border:1px solid #4CAF50;
+    text-align: left; }
+  
     #sendmessage{
-    width: 100px;
+    width: 450px;
     background-color: white;
-    width: 25px;
     border-radius: 8px;
     border: 2px solid #4CAF50;
     }
@@ -205,17 +214,16 @@ background-color: #4CAF50;
     text-align: center;
     width: 500px;
     margin-top: 40px;
+    height: 475px;
     background-color: cornflowerblue;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     }
 
-<<<<<<< HEAD
     #contact {
         margin-left: 50px;
     }
-=======
 
    .optionButtons .button {
     background-color: #4CAF50; /* Green */
@@ -238,4 +246,3 @@ background-color: #4CAF50;
     .optionButtons .button:hover {
     background-color: #3e8e41;
 }
->>>>>>> 1516e76e96088ebf80dd08497f8ce6a126a53af4
