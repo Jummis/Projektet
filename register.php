@@ -10,41 +10,43 @@
     <link rel = "stylesheet" href = "main.css">
 <body>
 
-<div id = "header">
-
-<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">
 
  <ul>
+     <h> HÄLSOCOACHEN </h>
   <li><a href="default.asp">VAD ÄR HÄLSOCOACHING?</a></li>
   <li><a href="news.asp">OM OSS</a></li>
   <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
 </ul> 
-</div>
 
     <div id="wrapper">
-        <h1> Registration </h1> 
+        <h1> Registrering </h1> 
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 
-                Förnamn:<br>
-                <input type="text" name="firstname" id="firstname" value = "<?php echo $fname;?>"> <br>
-                <p1> <?php echo $fname_error; ?> </p1><br>
+                <input type="text" name="firstname" title="firstname" style="color:#888;" 
+                placeholder="Förnamn" value = "<?php echo $fname;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+                <br><p2><?php echo $fname_error; ?> </p2><br>
 
-                Efternamn:<br>
-                <input type="text" name="lastname" id="lastname" value = "<?php echo $lname;?>"> <br>
-                <p1> <?php echo $lname_error; ?> </p1><br>
+                <input type="text" name="lastname" title="lastname" style="color:#888;" 
+                placeholder="Efternamn" value = "<?php echo $lname;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+                <br><p2><?php echo $lname_error; ?> </p2><br>
+                
+                <input type="radio" name="gender" value="Man" checked> Man<br>
+                <input type="radio" name="gender" value="Kvinna" checked> Kvinna
 
-                Email:<br>
-                <input type="text" name="email" id="email" value = "<?php echo $email;?>"> <br>
-                <p1> <?php echo $email_error; ?> </p1><br>
+                <input type="text" name="email" title="email" style="color:#888;" 
+                placeholder="E-postadress" value = "<?php echo $email;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+                <br><p2><?php echo $email_error; ?> </p2><br>
 
-                Password:<br>
-                <input type = "text" name="password" id ="password" value = "<?php echo $password;?>"><br>
-                <p1> <?php echo $password_error; ?> </p1><br>
+                <input type="password" name="password" title="password" style="color:#888;" 
+                placeholder="Välj ett lösenord" value = "<?php echo $password;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+                <br><p2><?php echo $password_error; ?> </p2><br>
 
                 <br>
 
-                <input type="submit" name="submit" id="submit" value="Registera">
+                <input type="submit" name="submit" id="submit" value="REGISTRERA DIG">                
         </form>
+
+        <p2> Har du redan ett konto?<a href = 'login.php'><p2> Logga in </p2> </a>
 
 
 </body>
