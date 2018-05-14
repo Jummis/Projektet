@@ -31,18 +31,12 @@
                 <input type="text" name="lastname" title="lastname" style="color:#888;" 
                 placeholder="Efternamn" value = "<?php echo $lname;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
                 <br><p2><?php echo $lname_error; ?> </p2><br>
+
+                <input type="birth" name="birth" title="birth" style="color:#888;" 
+                placeholder="YYYY-MM-DD" onfocus="inputFocus(this)" onblur="inputBlur(this)"><br><br>
                 
-                <div id = "button"><input type="radio" name="gender" id = "gender" value="Man"> Man<br></div>
-                <div id = "button"><input type="radio" name="gender" id = "gender" value="Kvinna" > Kvinna</div>
-
-                <input type="text" name="lastname" title="lastname" style="color:#888;" 
-                placeholder="Efternamn" value = "<?php echo $lname;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
-                <br><p2><?php echo $lname_error; ?> </p2><br>
-
-                <br><br>
-                <input type="birth" name="lastname" title="lastname" style="color:#888;" 
-                placeholder="Födelsedatum" value = "<?php echo $lname;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
-                <br><p2><?php echo $lname_error; ?> </p2><br>
+                <input type="radio" name="gender" id = "gender" value="Man" class = "radio"> Man<br>
+               <input type="radio" name="gender" id = "gender" value="Kvinna" class = "radio"> Kvinna<br><br>
 
                 <input type="text" name="email" title="email" style="color:#888;" 
                 placeholder="E-postadress" value = "<?php echo $email;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
@@ -54,7 +48,7 @@
 
                 <br>
 
-                <input type="submit" name="submit" id="submit" value="REGISTRERA DIG">                
+                <input type="submit" name="submit" id="submit" value="REGISTRERA DIG">            
         </form>
 </div>
 

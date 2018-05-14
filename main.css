@@ -47,10 +47,14 @@ ul {
     border-bottom: 1px solid black;
 }
 
+.radio {
+width: 10px;
+}
 
 #submit {
 width: 300px;
 height: 40px;
+margin-bottom: 30px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -60,7 +64,6 @@ height: 40px;
 border-radius: 5px;
 margin: 0 auto;
 padding: 0 auto;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 form {
@@ -241,13 +244,7 @@ background-color: #4CAF50;
     color: white;
 }
 
-<<<<<<< HEAD
 .column {
   float: right;
   width: 50%;
 }
-
-
-
-=======
->>>>>>> 1fb50a52fc85c75cfc08548170eed6051c1f79f6
