@@ -22,10 +22,19 @@
             </ul> 
         </div>
 
-        <h1> Välkommen till chatten <?php echo $_SESSION['User']; ?> </h1>
-        <p1> Här kan du skicka ett meddelande till någon av våra hälsocoacher<br>
-             En coach kommer snart kontakta dig. </p1>
+        <div id= "welcome">
+            <h1> Välkommen till chatten <?php echo $_SESSION['User']; ?> </h1>
+            <p1> Här kan du skicka ett meddelande till någon av våra hälsocoacher<br>
+                 En coach kommer snart kontakta dig. </p1>
             <br><br>
+        </div>
+
+        <div id="chatbox"></div>
+            <form name="chatt" action="">
+            <input name="usermsg" type="text" id="usermsg" size="63" />
+            <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+            </form>
+        </div>
     </body>
 
 </html>
