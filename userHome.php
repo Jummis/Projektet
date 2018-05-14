@@ -26,8 +26,7 @@
      vi kan göra för dig. </p1>
 <br><br>
 
-<input type="submit" name=chattbutton value=CHATTA onsubmit="chatt.php"></a>
-
+<input type="submit" id=chattbutton name=chattbutton value=CHATTA onsubmit="chatt.php">
 </div>
 
 </body>
