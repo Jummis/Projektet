@@ -38,8 +38,8 @@ med någon bra bild bakom</p>
 
 <div id="bottom">
 <p id="kontaktuppg">Kontaktuppgifter</p>
-<img id="phone" src="">
-<img id="email" src="">
+<img id="phone" src="https://image.ibb.co/nAfQiy/phone_call.png">
+<img id="email" src="https://image.ibb.co/jSQmqd/envelope.png">
 </div>
 
 
