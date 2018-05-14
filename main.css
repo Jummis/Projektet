@@ -1,6 +1,10 @@
 body{
+<<<<<<< HEAD
+    font-family: 'News Cycle', sans-serif;
+=======
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+>>>>>>> edc972ee978293a6131e5fec728733223e9a5972
 }
 
 h {
@@ -112,14 +116,27 @@ p{
     opacity: 0.5;
 }
 
-#Välkommen{
-    font-size: 80px;
-    margin-top: 100px;
+#text{
+    text-align: right;
+    font-size: 70px;
     color: white;
-    margin-left: 550px;
-    padding: 50px;
-    background-color: grey;
 }   
+
+#headgrön{
+    width: 100%;
+    height: 35%;
+    background-color: #97CBA9;
+    
+}
+
+#cirkel{
+    height: 320px;
+    width: 320px;
+    background-color: #A7D7C5;
+    border-radius: 50%;
+    display: inline-block;
+    
+}
 
 #welcome{
     text-align: center;
