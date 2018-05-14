@@ -19,11 +19,12 @@ include_once 'validateLogin.php';
 </ul> 
 </div>
 
-<h> PLEASE LOG IN BELOW </h>
-<a href = 'register.php'><p1> Not registred? </p1> </a>
+<div id = wrapper><br>
+<h> LOGGA IN </h> <br>
+<a href = 'register.php'><p1> Inte registrerad? </p1> </a>
 <br>
 <br>
-<hr>
+
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 
                 <div id = "form">
@@ -32,19 +33,19 @@ include_once 'validateLogin.php';
                 <p1> <?php echo $email_error; ?> </p1><br>
 
 
-                Password:<br>
+                Lösenord:<br>
                 <input type = "text" name="password" id ="password" value = "<?php echo $password;?>"><br>
                 <p1> <?php echo $password_error; ?> </p1><br>
 
                 <br>
 
-                <input type="submit" name="submit" id="submit" value="Log in">
+                <input type="submit" name="submit" id="submit" value="Logga in">
         </form>
 
         <br><br>
 
 
-    </div>
+</div>
 </body>
 </head>
 </html>

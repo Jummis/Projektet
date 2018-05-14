@@ -8,6 +8,12 @@ h {
     background-color:white;
 }
 
+#wrapper {
+    text-align: center;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
 ul {
     /* navigation-bar kommer fästas i toppen om man bläddrar ner */
     list-style-type: none;
