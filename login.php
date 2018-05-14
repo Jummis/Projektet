@@ -20,8 +20,9 @@ include_once 'validateLogin.php';
 </div>
 
 <div id = wrapper><br>
-<h> LOGGA IN </h> <br>
-<a href = 'register.php'><p2> Inte registrerad? </p2> </a>
+<img id = "user" src = "https://image.ibb.co/edWLgJ/default_user_image.png">
+<br><br>
+<a href = 'register.php'><p2> Till registreringen </p2> </a>
 <br>
 <br>
 
@@ -29,13 +30,13 @@ include_once 'validateLogin.php';
 
                 <div id = "form">
                 <br>
-                <input type="text" name="email" id="email" value = "Email" value = "<?php echo $email;?>"> <br>
-                <p1> <?php echo $email_error; ?> </p1><br>
-
-                
+                <input type="text" name="email" title="email" style="color:#888;" 
+                placeholder="E-postadress" value = "<?php echo $email;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+                <br><p2><?php echo $email_error; ?> </p2><br>
                 <br>
-                <input type = "text" name="password" id ="password" value = "Lösenord" value = "<?php echo $password;?>"><br>
-                <p1> <?php echo $password_error; ?> </p1><br>
+                <input type="password" name="password" title="password" style="color:#888;" 
+                placeholder="Lösenord" value = "<?php echo $password;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+                <br> <p2> <?php echo $password_error; ?> </p2><br>
 
                 <br>
 
