@@ -4,13 +4,32 @@ body{
 
 h {
     font-family: 'Open Sans', sans-serif;
-    font-size:40px;
+    font-size:65px;
+    margin-left: 10%;
+}
+
+p1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+}
+
+p2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
 }
 
 #wrapper {
+    border-radius: 20px;
     text-align: center;
-    margin-top: 50px;
-    border: 1px solid black;
+    width: 600px;
+    margin-top: 40px;
+    background-color: #CAF46A;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headerIMG{
+    margin-bottom: 0px;
 }
 
 ul {
@@ -21,6 +40,18 @@ ul {
     padding-right: 50px;
     border-bottom: 1px solid black;
     font-family: 'Open Sans', sans-serif;
+    margin-top: 5%;
+}
+
+#submit {
+width: 300px;
+height: 50px;
+}
+
+input {
+width: 300px;
+height: 30px;
+border-radius: 5px;
 }
 
 li {
@@ -31,6 +62,7 @@ li a {
     display: block;
     color: black;
     padding: 15px 0px 0px 50px;
+    margin-top: 40px;
     text-decoration: none;
 }
 
@@ -38,12 +70,31 @@ p{
     text-align: center;
     font-size: 50px;
     color: black; 
-    font-family: 'Open Sans', sans-serif;
     margin-top: 100px;
 }
 
+.container{
+    text-align: center;
+    position: relative;
+}
+
+.textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+#frukt{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 20%;
+    opacity: 0.5;
+}
+
 #Välkommen{
-    font-family: 'Open Sans', sans-serif;
     font-size: 80px;
     margin-top: 100px;
     color: white;
