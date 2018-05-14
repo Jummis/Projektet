@@ -135,8 +135,9 @@ p{
 
 #bottom{
     background-color: #A7D7C5;
+    color: white;
     height: 50%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid;
 }
 
 #kontaktuppg{
@@ -184,7 +185,7 @@ background-color: #4CAF50;
     text-align:left;
     margin: auto;
     margin-bottom:10px;
-    padding:10px;
+    padding: 15px;
     background:#fff;
     height:270px;
     width:430px;
@@ -199,24 +200,41 @@ background-color: #4CAF50;
 
     p4{
         font-size: 12px;
+        margin-top: 10px;
+    }
+
+    p3{
+        font-size: 12px;
+    }
+
+    #userchatt{
+    border-radius: 20px;
+    width: 5%;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
     }
 
     #usermsg {
     width: 450px;
     height:100px; 
     border:1px solid #4CAF50;
-    text-align: left; }
+    text-align: left;
+    font-family: 'News Cycle', sans-serif; }
   
     #sendmessage{
     width: 450px;
     background-color: white;
     border-radius: 8px;
     border: 2px solid #4CAF50;
+    
     }
 
     #chatcontainer{
     border-radius: 20px;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
     width: 500px;
     margin-top: 40px;
@@ -237,9 +255,9 @@ background-color: #4CAF50;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     background-color: white; 
     border-radius: 8px;
-    border: 2px solid green;
-    color: green;
-    padding: 15px 32px;
+    border: 2px solid A7D7C5;
+    color: black;
+    padding: 20px 40px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -249,7 +267,7 @@ background-color: #4CAF50;
 }
 
     .optionButtons .button:hover {
-    background-color: #3e8e41;
+    background-color: #A7D7C5;
     color: white;
 }
 
@@ -257,3 +275,7 @@ background-color: #4CAF50;
   float: right;
   width: 50%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> a057655182604a2722daea9b38029dba5078ed88

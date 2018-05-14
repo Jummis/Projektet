@@ -38,11 +38,12 @@
 
                 // sparar resultatet av queryn i en variabel
                 $result = $connection->query($getdata);
+                $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
 
                 while($row = mysqli_fetch_assoc($result))
                 {
-                    echo "<h5>".$row["from_id"]."</h5>";
-                    echo $row["message"] . "<br>";
+                    echo "<h5>". $userimg . $row["from_id"]."</h5>";
+                    echo "<p3>".$row["message"]."</p3>"."<br>"."<br>";
                     echo "<p4>". "Tid: ". "</p4>";
                     echo "<hr>";
                 }
