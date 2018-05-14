@@ -1,25 +1,18 @@
 body{
-<<<<<<< HEAD
     font-family: 'News Cycle', sans-serif;
-=======
-    font-family: 'Open Sans', sans-serif;
     text-align: center;
->>>>>>> edc972ee978293a6131e5fec728733223e9a5972
 }
 
-h {
-    font-family: 'Open Sans', sans-serif;
-    font-size:65px;
+h{
+    font-size: 65px;
     margin-left: 10%;
 }
 
 p1 {
-    font-family: 'Open Sans', sans-serif;
     font-size:15px;
 }
 
 p2 {
-    font-family: 'Open Sans', sans-serif;
     font-size:14px;
     color: grey;
     opacity: 0,7;
@@ -56,7 +49,6 @@ ul {
     background-color:white;
     padding-right: 50px;
     border-bottom: 1px solid black;
-    font-family: 'Open Sans', sans-serif;
     margin-top: 5%;
 }
 
