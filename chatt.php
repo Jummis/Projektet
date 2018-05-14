@@ -21,6 +21,11 @@
             <li><a href="logout.php">LOGGA UT</a></li>
             </ul> 
         </div>
+
+        <h1> Välkommen till chatten <?php echo $_SESSION['User']; ?> </h1>
+        <p1> Här kan du skicka ett meddelande till någon av våra hälsocoacher<br>
+             En coach kommer snart kontakta dig. </p1>
+            <br><br>
     </body>
 
 </html>
