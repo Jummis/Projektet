@@ -29,11 +29,15 @@
             <br><br>
         </div>
 
+        <div id="chatcontainer">
+
         <div id="chatbox"></div>
-            <form name="chat" action="">
+            <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+
             <input type="text" placeholder="Vänligen skriv ditt meddelande här" name="usermsg" id="usermsg"/>
             <input type="submit" name=submitmsg value=SKICKA id=sendmessage/>
             </form>
+        </div>
         </div>
 
     </body>
