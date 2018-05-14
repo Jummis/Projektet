@@ -16,17 +16,29 @@ p1 {
 
 p2 {
     font-family: 'Open Sans', sans-serif;
-    font-size:15px;
+    font-size:14px;
+    color: grey;
+    opacity: 0,7;
 }
 
 #wrapper {
     border-radius: 20px;
     text-align: center;
-    width: 600px;
+    width: 500px;
     margin-top: 40px;
     background-color: #CAF46A;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#user {
+    border-radius: 20px;
+    width: 20%;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #headerIMG{
@@ -47,12 +59,17 @@ ul {
 #submit {
 width: 300px;
 height: 50px;
+font-size: 15px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 input {
 width: 300px;
 height: 30px;
 border-radius: 5px;
+margin: 0 auto;
+padding: 0 auto;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 li {

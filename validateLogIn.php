@@ -7,6 +7,7 @@ $name_error = $email_error = $password_error = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") 
     {
+    
 
     $Email = mysqli_real_escape_string($connection, $_POST['email']);
     $Password = mysqli_real_escape_string($connection, $_POST['password']);
@@ -19,15 +20,15 @@ $name_error = $email_error = $password_error = "";
     $email = trim($Email);
     $password = trim($Password);
 
-        if (empty($email)) {
-        $email_error = "Email is required";
+        if (empty($email) || $email == "Email" ) {
+        $email_error = "Fyll i din e-postadress";
         } else if (!filter_var($email, FILTER_VALIDATE_EMAIL))
                 {
-                $email_error = "Invalid email format"; 
+                $email_error = "Ogiltigt e-postadress"; 
                 } 
 
         if (empty($password)) {
-        $password_error = "Password is required";
+        $password_error = "Ange ditt lösenord";
         } 
 
         if ($email_error == "" && $password_error == "") 
@@ -35,7 +36,7 @@ $name_error = $email_error = $password_error = "";
             //check if the user exists
               if ($resultCheck == 0)
             {
-                $email_error = "User doesn't existst";
+                $email_error = "Användare finns inte!";
             }
 
             else 
