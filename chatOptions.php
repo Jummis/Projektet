@@ -23,13 +23,13 @@
             <br><br>
         </div>
 
-        <div id= "optionButtons">
-        <button>KOST</button>
-        <button>TRÄNING</button>
-        <button>ALKOHOL/TOBAK</button>
-        <button>STRESS</button>
-        <button>SÖMN</button>
-        <button>ALLMÄNT</button>
+        <div class="optionButtons">
+        <button class="button">KOST</button><br>
+        <button class="button">TRÄNING</button><br>
+        <button class="button">ALKOHOL/TOBAK</button><br>
+        <button class="button">STRESS</button><br>
+        <button class="button">SÖMN</button><br>
+        <button class="button">ALLMÄNT</button><br>
         </div>
      </body>
 
