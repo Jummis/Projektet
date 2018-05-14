@@ -6,19 +6,11 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Hälsocoachen</title>
     <link rel = "stylesheet" href = "main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
     </head>
-<<<<<<< HEAD
-        <body>
-                
-
-
-<!--<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">-->
-=======
     
 <body>
-<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">
->>>>>>> bb41cf2d594403cbd7168dea8f219176dea0c816
+<!--<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">-->
 
  <ul>
   <h>HÄLSOCOACHEN</h>
@@ -35,6 +27,12 @@ med någon bra bild bakom</p>
 <img id="frukt" src="https://image.ibb.co/kRE98y/frukt.jpg">
 <div class="textcenter"> Lite text över bilden</div>
 </div>
+
+<header id="headgrön">
+<p id="cirkel"></p>
+<p id="text">VÄLKOMMEN TILL<br>HÄLSOCOACHEN<p>
+           </header>
+
 
 
         </body>
