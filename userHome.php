@@ -25,7 +25,9 @@
      Tryck på chatta och berätta för oss vad<br>
      vi kan göra för dig. </p1>
 <br><br>
-<a href = "chatt.php"><input type=submit name=chattbutton value=CHATTA></a>
+
+<input type="submit" name=chattbutton value=CHATTA onsubmit="chatt.php"></a>
+
 </div>
 
 </body>
