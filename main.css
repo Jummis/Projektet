@@ -4,7 +4,11 @@ body{
 }
 
 #rubrik{
-    margin-top: 30px;
+    width: 35%;
+    float: left;
+    margin: 0 auto;
+    padding: 0 auto;
+
 }
 
 p1 {
@@ -16,6 +20,25 @@ p2 {
     color:black;
     opacity: 0,7;
 }
+
+p3{
+        font-size: 15px;
+        color: #FFC200;
+    }
+
+p4{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+    p5{
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+    
+
 
 #wrapper {
     border-radius: 20px;
@@ -41,11 +64,26 @@ ul {
     /* navigation-bar kommer fästas i toppen om man bläddrar ner */
     list-style-type: none;
     background-color:white;
-    padding-right: 50px;
+    padding-right: 5%;
     border-bottom: 1px solid black;
     height: 15%;
     font-size: 15px;
 }
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+
 
 .radio {
 width: 20px;
@@ -72,17 +110,6 @@ form {
     margin-bottom: 100px;
 }
 
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: black;
-    padding: 15px 0px 0px 50px;
-    margin-top: 80px;
-    text-decoration: none;
-}
 
 p{
     text-align: center;
@@ -198,16 +225,7 @@ background-color: #4CAF50;
     margin-bottom: 15px;
     }
 
-    p4{
-        font-size: 12px;
-        margin-top: 10px;
-    }
-
-    p3{
-        font-size: 15px;
-        color: #FFC200;
-    }
-
+   
     #userchatt{
     border-radius: 20px;
     width: 5%;
