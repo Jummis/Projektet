@@ -17,8 +17,8 @@
         <div id = "header">
             <ul>
             <h>HÄLSOCOACHEN</h>
-            <li><a href="default.asp">MINA SIDOR</a></li>
-            <li><a href="news.asp">CHATT</a></li>
+            <li><a href="myPage.php">MINA SIDOR</a></li>
+            <li><a href="chatt.php">CHATT</a></li>
             <li><a href="logout.php">LOGGA UT</a></li>
             </ul> 
         </div>

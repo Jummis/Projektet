@@ -11,8 +11,8 @@
         <div id = "header">
             <img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">
             <ul>
-            <li><a href="default.asp">MINA SIDOR</a></li>
-            <li><a href="news.asp">CHATT</a></li>
+            <li><a href="myPage.php">MINA SIDOR</a></li>
+            <li><a href="chatOptions.php">CHATT</a></li>
             <li><a href="logout.php">LOGGA UT</a></li>
             </ul> 
         </div>
