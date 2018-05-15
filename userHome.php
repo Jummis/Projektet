@@ -11,12 +11,13 @@
 
 <body>
 <div id = "header">
-<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">
  <ul>
-  <li><a href="myPage.php">MINA SIDOR</a></li>
-  <li><a href="chatOptions.php">CHATT</a></li>
-  <li><a href="logout.php">LOGGA UT</a></li>
-</ul> 
+  <a href="index.php"><img id="rubrik" src="https://preview.ibb.co/hAiy5d/logo.jpg"></a>
+  <li><a href="default.asp">VAD ÄR HÄLSOCOACHING?</a></li>
+  <li><a href="news.asp">OM OSS</a></li>
+  <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
+  
+</ul>
 </div>
 
 <div id= "welcome">

@@ -12,11 +12,12 @@
 
 
  <ul>
-     <h> HÄLSOCOACHEN </h>
+  <a href="index.php"><img id="rubrik" src="https://preview.ibb.co/hAiy5d/logo.jpg"></a>
   <li><a href="default.asp">VAD ÄR HÄLSOCOACHING?</a></li>
   <li><a href="news.asp">OM OSS</a></li>
   <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
-</ul> 
+  
+</ul>
 
     <div id="wrapper"><br>
     <img id = "user" src = "https://image.ibb.co/edWLgJ/default_user_image.png">
