@@ -2,6 +2,9 @@
     include_once 'connection.php';
     include_once 'session.php';
     include_once 'savechatmessage.php';
+    date_default_timezone_set('Europe/Stockholm');
+    
+    
 ?>
 
 <html>
@@ -11,6 +14,8 @@
         <title>Hälsocoachen Chatt</title>
         <link rel = "stylesheet" href = "main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <script src="main.js"></script>
+
     </head>
 
     <body>
@@ -34,16 +39,6 @@
 
         <div id="chatbox">
 
-        <script>
-            var message = document.getElementById("chatbox");
-
-            function scrollToBottom(message)
-            {
-            message.scrollTop = message.scrollHeight
-            }
-
-        </script>
-
             <?php
                 // hämtar namn och kommentar från databasen
                 $getdata = "SELECT from_id, message FROM Chatt";
@@ -57,17 +52,18 @@
                 {  
                     echo "<h5>". $userimg . " " . $row["from_id"]."</h5>";
                     echo "<p3>".$row["message"]."</p3>"."<br>"."<br>";
-                    echo "<p4>". "Tid: ". "</p4>";
+                    echo "<p4>" .date("Y/m/d"). "</p4> <br>";
+                    echo "<p4>" .date("h:i"). "</p4>";
                     echo "<hr>";
                 }
         
             ?>
 
         </div>
-            <form name="chat" method="POST" onsubmit="return scrollToBottom()" action="<?php echo $_SERVER['PHP_SELF'];?>">
+            <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
 
             <textarea placeholder="Vänligen skriv ditt meddelande här" name="usermsg" id="usermsg"></textarea><br>
-            <input type="submit" name="submitmsg" value="SKICKA" id="sendmessage"/>
+            <input type="submit" name="submitmsg" value="SKICKA" id="sendmessage">
 
             </form>
 
@@ -80,11 +76,11 @@
 
  <div class="row">
   <div class="column">
-    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
-    <p2> 0703457947 </p2>
+    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br><br>
+    <p3> 0703457947 </p3>
   </div>
   <div class="column">
-    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br>
+    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br><br>
     <p3> halsocoachen@coach.se </p3>
   </div>
 </div> 
@@ -95,3 +91,4 @@
     </body>
 
 </html>
+
