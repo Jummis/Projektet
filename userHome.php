@@ -13,8 +13,8 @@
 <div id = "header">
 <img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">
  <ul>
-  <li><a href="default.asp">MINA SIDOR</a></li>
-  <li><a href="chatt.php">CHATT</a></li>
+  <li><a href="myPage.php">MINA SIDOR</a></li>
+  <li><a href="chatOptions.php">CHATT</a></li>
   <li><a href="logout.php">LOGGA UT</a></li>
 </ul> 
 </div>
@@ -25,7 +25,7 @@
      Tryck på chatta och berätta för oss vad<br>
      vi kan göra för dig. </p1>
 <br><br>
-<input type="submit" id=chattbutton name=chattbutton value=CHATTA onsubmit="chatt.php">
+<a href='chatOptions.php'><input type="submit" id=chattbutton name=chattbutton value=CHATTA></a>
 </div>
 
 <div id="bottom">

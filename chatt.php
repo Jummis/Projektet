@@ -17,8 +17,8 @@
         <div id = "header">
             <ul>
             <h>HÄLSOCOACHEN</h>
-            <li><a href="default.asp">MINA SIDOR</a></li>
-            <li><a href="news.asp">CHATT</a></li>
+            <li><a href="myPage.php">MINA SIDOR</a></li>
+            <li><a href="chatt.php">CHATT</a></li>
             <li><a href="logout.php">LOGGA UT</a></li>
             </ul> 
         </div>
@@ -60,6 +60,25 @@
             </form>
 
         </div>
+
+        <div id="bottom">
+<p id="kontaktrubrik">HÄLSOCOACHEN</p>
+<p id="kontaktuppg">Kontaktuppgifter</p>
+
+
+ <div class="row">
+  <div class="column">
+    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
+    <p2> 0703457947 </p2>
+  </div>
+  <div class="column">
+    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br>
+    <p3> halsocoachen@coach.se </p3>
+  </div>
+</div> 
+
+</div>
+
 
     </body>
 
