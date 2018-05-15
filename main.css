@@ -277,3 +277,28 @@ background-color: #4CAF50;
   width: 50%;
 }
 
+.leftmenu {
+    width: 200px;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 1%;
+    }
+
+.leftmenu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.leftmenu a:hover {
+    background-color: #ccc;
+}
+
+.leftmenu a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+

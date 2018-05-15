@@ -26,11 +26,17 @@
      fylla i din privata loggbok. </p1>
 <br><br>
 
+
+<div class="leftmenu">
+  <a href="myPage.php" class="active">MINA SIDOR</a>
+  <a href="#">FILER</a>
+  <a href="#">MIN PROFIL</a>
+  <a href="#">LOGGBOK</a>
+</div>
+
 <div id="bottom">
 <p id="kontaktrubrik">HÄLSOCOACHEN</p>
 <p id="kontaktuppg">Kontaktuppgifter</p>
-
-
  <div class="row">
   <div class="column">
     <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
