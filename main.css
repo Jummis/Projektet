@@ -4,9 +4,7 @@ body{
 }
 
 #rubrik{
-    font-size: 55px;
-    margin-right: 340px;
-    margin-top: 32px;
+    margin-top: 30px;
 }
 
 p1 {
@@ -42,11 +40,11 @@ p2 {
 ul {
     /* navigation-bar kommer fästas i toppen om man bläddrar ner */
     list-style-type: none;
-    overflow: hidden;
     background-color:white;
     padding-right: 50px;
     border-bottom: 1px solid black;
     height: 15%;
+    font-size: 15px;
 }
 
 .radio {

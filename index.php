@@ -12,14 +12,12 @@
 <body>
 <!--<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">-->
 
-
  <ul>
-   
+  <a href="index.php"><img id="rubrik" src="https://preview.ibb.co/hAiy5d/logo.jpg"></a>
   <li><a href="default.asp">VAD ÄR HÄLSOCOACHING?</a></li>
   <li><a href="news.asp">OM OSS</a></li>
   <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
-  <li><a id="rubrik" href="index.php">HÄLSOCOACHEN</a></li>
-  <img id="logo" src="https://image.ibb.co/jR8jdy/logohands.jpg">
+  
 </ul>
 
 

@@ -7,14 +7,16 @@ include_once 'validateLogin.php';
 <head>
     <title> Hälsocoachen </title>
     <link rel = "stylesheet" href = "main.css">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
 <body>
 
  <ul>
-  <h>HÄLSOCOACHEN</h>
+  <a href="index.php"><img id="rubrik" src="https://preview.ibb.co/hAiy5d/logo.jpg"></a>
   <li><a href="default.asp">VAD ÄR HÄLSOCOACHING?</a></li>
   <li><a href="news.asp">OM OSS</a></li>
   <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
-</ul> 
+  
+</ul>
 
 
 <div id = wrapper><br>

@@ -3,8 +3,6 @@
     include_once 'session.php';
     include_once 'savechatmessage.php';
     date_default_timezone_set('Europe/Stockholm');
-    
-    
 ?>
 
 <html>
@@ -20,12 +18,13 @@
 
     <body>
         <div id = "header">
-            <ul>
-            <h>HÄLSOCOACHEN</h>
-            <li><a href="myPage.php">MINA SIDOR</a></li>
-            <li><a href="chatt.php">CHATT</a></li>
-            <li><a href="logout.php">LOGGA UT</a></li>
-            </ul> 
+             <ul>
+  <a href="index.php"><img id="rubrik" src="https://preview.ibb.co/hAiy5d/logo.jpg"></a>
+  <li><a href="default.asp">VAD ÄR HÄLSOCOACHING?</a></li>
+  <li><a href="news.asp">OM OSS</a></li>
+  <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
+  
+</ul>
         </div>
 
         <div id= "welcome">
