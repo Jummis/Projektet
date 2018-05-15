@@ -1,5 +1,5 @@
 body{
-    font-family: 'News Cycle', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
 
@@ -168,6 +168,7 @@ p{
 
 #welcome{
     text-align: center;
+    margin-top: 5%;
 }
 
 #chattbutton{
@@ -230,7 +231,11 @@ background-color: #4CAF50;
     background-color: white;
     border-radius: 8px;
     border: 2px solid #FFC200;
-    
+    margin-top: 5px;
+    }
+
+    #sendmessage:hover {
+    background-color: #FFC200;
     }
 
     #chatcontainer{
@@ -256,19 +261,19 @@ background-color: #4CAF50;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     background-color: white; 
     border-radius: 8px;
-    border: 2px solid A7D7C5;
+    border: 2px solid #FFC200;
     color: black;
-    padding: 20px 40px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
     width: 35%;
     display: block;
+    font-family: 'Open Sans', sans-serif; 
 }
 
     .optionButtons .button:hover {
-    background-color: #A7D7C5;
+    background-color: #FFC200;
     color: white;
 }
 
