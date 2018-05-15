@@ -49,9 +49,9 @@
 
                 while($row = mysqli_fetch_assoc($result))
                 {  
+                    echo "<p5>" .date("Y/m/d"). "</p5>";
                     echo "<h5>". $userimg . " " . $row["from_id"]."</h5>";
                     echo "<p3>".$row["message"]."</p3>"."<br>"."<br>";
-                    echo "<p4>" .date("Y/m/d"). "</p4> <br>";
                     echo "<p4>" .date("h:i"). "</p4>";
                     echo "<hr>";
                 }
