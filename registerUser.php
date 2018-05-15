@@ -7,7 +7,7 @@ function unique_salt() {
     return substr(sha1(mt_rand()),0,22);
 }
 
-$fname = $lname = $email = $password = "";
+$fname = $lname = $email = $password = $birthnumber = "";
 $fname_error = $lname_error = $email_error = $password_error = "";
 
 //if the register button is clicked
@@ -16,6 +16,8 @@ $fname_error = $lname_error = $email_error = $password_error = "";
 
     $FirstName = mysqli_real_escape_string($connection, $_POST['firstname']);
     $LastName = mysqli_real_escape_string($connection, $_POST['lastname']);
+    $Birthnumber = mysqli_real_escape_string($connection, $_POST['birth']);
+    $Gender = mysqli_real_escape_string($connection, $_POST['gender']);
     $Email = mysqli_real_escape_string($connection, $_POST['email']);
     $Password = mysqli_real_escape_string($connection, $_POST['password']);
 
@@ -28,13 +30,14 @@ $fname_error = $lname_error = $email_error = $password_error = "";
     $lname = trim($LastName);
     $email = trim($Email);
     $password = trim($Password);
+    $birthnumber = trim($Birthnumber);
     
 
-        if (empty($fname) || empty($lname) || empty($email) || empty($password)) {
-        $password_error = "Du måste fylla i alla fält";
+        if (empty($fname) || empty($lname) || empty($email) || empty($password) || empty($birthnumber) || empty($Gender)) {
+        $password_error = "Du måste fylla i alla fält!";
         } 
 
-        else if ($fname_error == "" && $lname_error == "" && $email_error == "" && $password_error == "") 
+        else
         {
             //check if there is already an existing user
             if ($resultCheck > 0)
@@ -45,14 +48,12 @@ $fname_error = $lname_error = $email_error = $password_error = "";
             $unique_salt = unique_salt();
             $hash = sha1($unique_salt . $password);
 
-            $insert = "INSERT INTO u (fname, lname, email, password, salt) VALUES ('".$FirstName."', '".$LastName."', '".$Email."', '".$hash."','".$unique_salt."');";
+            $insert = "INSERT INTO u (fname, lname, email, password, salt, pNr, gender) VALUES ('".$FirstName."', '".$LastName."', '".$Email."', '".$hash."','".$unique_salt."', '".$birthnumber."', '".$Gender."');";
             $resultat = $connection->query($insert);
-
-            echo $resultat;
 
             $fname = $lname = $email = $password = "";
 
-            //header ("Location: index.php");
+            header ("Location: login.php");
 
             }
             

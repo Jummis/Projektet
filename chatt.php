@@ -33,16 +33,29 @@
         <div id="chatcontainer">
 
         <div id="chatbox">
+
+        <script>
+            var message = document.getElementById("chatbox");
+
+            function scrollToBottom(message)
+            {
+            message.scrollTop = message.scrollHeight
+            }
+
+        </script>
+
             <?php
+                // hämtar namn och kommentar från databasen
                 $getdata = "SELECT from_id, message FROM Chatt";
 
                 // sparar resultatet av queryn i en variabel
                 $result = $connection->query($getdata);
                 $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
+                
 
                 while($row = mysqli_fetch_assoc($result))
-                {
-                    echo "<h5>". $userimg . $row["from_id"]."</h5>";
+                {  
+                    echo "<h5>". $userimg . " " . $row["from_id"]."</h5>";
                     echo "<p3>".$row["message"]."</p3>"."<br>"."<br>";
                     echo "<p4>". "Tid: ". "</p4>";
                     echo "<hr>";
@@ -51,8 +64,7 @@
             ?>
 
         </div>
-            <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
-            <!-- hämtar namn och kommentar från databasen -->
+            <form name="chat" method="POST" onsubmit="return scrollToBottom()" action="<?php echo $_SERVER['PHP_SELF'];?>">
 
             <textarea placeholder="Vänligen skriv ditt meddelande här" name="usermsg" id="usermsg"></textarea><br>
             <input type="submit" name="submitmsg" value="SKICKA" id="sendmessage"/>
