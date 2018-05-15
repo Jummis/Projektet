@@ -276,12 +276,13 @@ background-color: #4CAF50;
   float: right;
   width: 30%;
 }
-<<<<<<< HEAD
 
 .leftmenu {
     width: 200px;
     text-align: left;
-}
+    padding-left: 20px;
+    margin-top: 1%;
+    }
 
 .leftmenu a {
     background-color: #eee;
@@ -299,6 +300,5 @@ background-color: #4CAF50;
     background-color: #4CAF50;
     color: white;
 }
-=======
->>>>>>> 611a6fd8570a118d739d180270443c604c1a4c63
+
 
