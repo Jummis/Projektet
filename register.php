@@ -33,7 +33,7 @@
                 <br><p2><?php echo $lname_error; ?> </p2><br>
 
                 <input type="birth" name="birth" title="birth" style="color:#888;" 
-                placeholder="YYYY-MM-DD" onfocus="inputFocus(this)" onblur="inputBlur(this)"><br><br>
+                placeholder="YYYY-MM-DD" value = "<?php echo $birthnumber;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)"><br><br>
 
 
                 <div class="row">
