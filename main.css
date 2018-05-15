@@ -273,6 +273,11 @@ background-color: #4CAF50;
 
 .column {
   float: right;
+<<<<<<< HEAD
+  width: 30%;
+}
+=======
   width: 50%;
 }
 
+>>>>>>> 815c8f1068c5b06d95c03d3ddc6c505805b39842

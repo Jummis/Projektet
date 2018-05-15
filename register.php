@@ -43,7 +43,7 @@
                 </div>
                 <div class="column">
                 <input type="radio" name="gender" id = "gender" value="Kvinna" class = "radio"><br>
-                <p3> Female </p3>
+                 Kvinna
                 </div>
                 </div> 
                 
