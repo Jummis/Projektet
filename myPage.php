@@ -14,7 +14,7 @@
  <ul>
   <img id="rubrik" src="https://preview.ibb.co/hAiy5d/logo.jpg">
   <li><a href="myPage.php" class="active">MINA SIDOR</a></li>
-            <li><a href="chatOptions.php">CHATT</a></li>
+            <li><a href="chatOptions.php">LIVEFORUM</a></li>
             <li><a href="logout.php">LOGGA UT</a></li>
   
 </ul>
