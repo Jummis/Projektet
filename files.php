@@ -10,6 +10,7 @@
     </head>
 
     <body>
+        <header>
         <div id = "header">
         <ul>
         <a href="index.php"><img id="rubrik" src="https://preview.ibb.co/hAiy5d/logo.jpg"></a>
@@ -18,6 +19,7 @@
         <li><a href="logout.php">LOGGA UT</a></li>
         </ul>
     </div>
+    </header>
 
         <div id= "welcome">
         <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
@@ -26,15 +28,17 @@
 
         <div id=fileContainer>
         <a href="http://gfit.se/downloads/12-veckors-traningsprogram.pdf"><img id=pdfIcon src="https://www.bitcodesoft.com/wp-content/uploads/2018/03/8-pdf.png"<br></a>
+        <a href="http://gfit.se/downloads/12-veckors-traningsprogram.pdf"><img id=pdfIcon src="https://www.bitcodesoft.com/wp-content/uploads/2018/03/8-pdf.png"<br></a>
         </div>
 
-        <div class="leftmenu">
+
+        <nav class="leftmenu">
         <a href="myPage.php">MINA SIDOR</a>
         <a href="files.php" class="active">FILER</a>
         <a href="myProfile.php" >MIN PROFIL</a>
         <a href="#">LOGGBOK</a>
         <a href="#">HISTORIK</a>
-        </div>
+        </nav>
 
         <div id="bottom">
             <p id="kontaktrubrik">HÄLSOCOACHEN</p>
