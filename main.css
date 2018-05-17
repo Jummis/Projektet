@@ -288,6 +288,12 @@ margin-top: 2%;
 #Tillbaka{
     float: left;
     margin-left: 3%;
+    color: #393E46;
+}
+
+#Tillbaka:hover{
+    color: #FFC200;
+    text-decoration: underline;
 }
 
 #wrapper2{
@@ -401,7 +407,7 @@ background-color: #FFC200;
     }
 
     #closeForumKnapp:hover {
-    background-color: white;
+    font-weight: bold;
     }
 
     #contact {
