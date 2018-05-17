@@ -109,6 +109,7 @@ a{
 header{
     background-color:white;
     padding-right: 5%;
+    padding-bottom: 0.5%;
     border-bottom: 1px solid white;
     font-size: 15px;
     position: fixed;
