@@ -96,6 +96,11 @@ li a:hover{
     color: #FFC200;
 }
 
+li a.active{
+    color: #FFC200;
+    font-weight:bold;
+}
+
 .radio {
 width: 20px;
 }
