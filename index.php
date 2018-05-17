@@ -32,10 +32,6 @@
 </div>
 
 
-<div id="headergrön">
-<p id="texthead">VÄLKOMMEN TILL<br>HÄLSOCOACHEN<p>
-</div>
-
 <div id="box">
 <p id="textunderhead">Skapa ett konto hos oss idag och bli kontaktad av en coach.<br> Smidigt, enkelt och kostnadsfritt</p>
 </div>
