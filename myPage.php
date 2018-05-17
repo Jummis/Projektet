@@ -31,8 +31,9 @@
 <div class="leftmenu">
   <a href="myPage.php" class="active">MINA SIDOR</a>
   <a href="#">FILER</a>
-  <a href="#">MIN PROFIL</a>
+  <a href="myProfile.php">MIN PROFIL</a>
   <a href="#">LOGGBOK</a>
+  <a href="#">HISTORIK</a>
 </div>
 
 <div id="bottom">
