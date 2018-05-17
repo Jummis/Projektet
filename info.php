@@ -15,17 +15,14 @@
 
  <ul>
   <a href="index.php"><img id="rubrik" src="https://preview.ibb.co/kO1J5d/hand.jpg"></a>
-  <li><a href="info.php">VAD ÄR HÄLSOCOACHING?</a></li>
+  <li><a href="info.php" class = "active">VAD ÄR HÄLSOCOACHING?</a></li>
   <li><a href="omoss.php">OM OSS</a></li>
   <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
   
 </ul>
 
+<img id = "infoIMG" src="https://preview.ibb.co/iavkoy/32595094_10208616287963657_2149428636824895488_n.png">
 
-
-<p> Här ska det stå någon<br>
-bra text som ser snygg ut<br>
-med någon bra bild bakom</p>
 
 <div id="headergrön">
 <header id="headgrön">
