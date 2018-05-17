@@ -71,9 +71,9 @@
             </form>
 
         </div>
-
-            <input type="submit" name="closeForumKnapp" value="LÄMNA FORUM" id="closeForumKnapp">
-
+            <a href='userHome.php'>
+            <input type="submit" name="closeForumKnapp" value="LÄMNA FORUM" id="closeForumKnapp" onsubmit="userHome.php">
+            </a>
     </body>
     <footer>
 <p id="kontaktrubrik">HÄLSOCOACHEN</p>

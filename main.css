@@ -384,6 +384,7 @@ background-color: #FFC200;
 
     #sendmessage:hover {
     background-color: #FFC200;
+    font-weight: bold;
     }
 
     #chatcontainer{
