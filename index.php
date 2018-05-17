@@ -27,11 +27,6 @@
 bra text som ser snygg ut<br>
 med någon bra bild bakom</p>
 
-<div class="container">
-<img id="frukt" src="https://image.ibb.co/kRE98y/frukt.jpg">
-<div class="textcenter"> Lite text över bilden</div>
-</div>
-
 <div id="headergrön">
 <header id="headgrön">
 <p id="texthead">VÄLKOMMEN TILL<br>HÄLSOCOACHEN<p>
