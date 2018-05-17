@@ -24,7 +24,7 @@
 </ul>
 </header>
 
-<p> Vad är hälsocoaching? </p1>
+<p> Vad är hälsocoaching? </p>
 
 <div class="row">
   <div class="column">
@@ -40,6 +40,9 @@
   <img id = "sleepIMG" src="img/sleep (1).jpg"><br>
   </div>
 </div>
+
+<p1> Hej </p1>
+
 
 
 
