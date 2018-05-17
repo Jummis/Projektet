@@ -7,10 +7,11 @@
     <title>Hälsocoachen</title>
     <link rel = "stylesheet" href = "main.css">
     <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
     </head>
     
 <body>
-<!--<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">-->
 
 <header>
  <ul>
@@ -23,10 +24,23 @@
 </ul>
 </header>
 
-<img id = "infoIMG" src="https://preview.ibb.co/iavkoy/32595094_10208616287963657_2149428636824895488_n.png">
+<p> Vad är hälsocoaching? </p1>
 
+<div class="row">
+  <div class="column">
+    <img id = "trainingIMG" src="img/training (1).jpg"><br>
+  </div>
+  <div class="column">
+    <img id = "infoIMG" src="img/kost.jpg"><br><br>
+  </div>
+  <div class = "column">
+  <img id = "infoIMG" src="img/stress.jpg"><br>
+  </div>
+    <div class = "column">
+  <img id = "sleepIMG" src="img/sleep (1).jpg"><br>
+  </div>
+</div>
 
-<p id="textunderhead">Här ska det också stå lite text</p>
 
 
 </body>

@@ -430,5 +430,15 @@ background-color: #FFC200;
 }
 
 #infoIMG {
-width: 10%;
+width:80%;
+}
+
+#trainingIMG {
+width:80%;
+margin-top: 5px;
+}
+
+#sleepIMG {
+width:80%;
+margin-top: 8px;
 }
