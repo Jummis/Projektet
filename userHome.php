@@ -36,7 +36,7 @@
 
  <div class="row">
   <div class="column">
-    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
+    <img id = "phoneIMG" src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
     <p2> 0703457947 </p2>
   </div>
   <div class="column">
