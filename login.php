@@ -10,14 +10,16 @@ include_once 'validateLogin.php';
     <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
 </head>
 <body>
-
+<header>
  <ul>
-  <a href="index.php"><img id="rubrik" src="https://preview.ibb.co/hAiy5d/logo.jpg"></a>
-  <li><a href="default.asp">VAD ÄR HÄLSOCOACHING?</a></li>
+
+  <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
+  <li><a href="info.php">VAD ÄR HÄLSOCOACHING?</a></li>
   <li><a href="omoss.php">OM OSS</a></li>
-  <li><a href="login.php" class = "active">LOGGA IN/REGISTRERA</a></li>
+  <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
   
 </ul>
+</header>
 
 
 <div id = wrapper><br>
