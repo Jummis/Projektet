@@ -25,17 +25,18 @@
 <p1> Här kan du se alla dina skapade forumtrådar med hälsocoacher. </p1>
 <br><br>
 
+
  <?php
-                // hämtar namn och kommentar från databasen
+                /*hämtar namn och kommentar från databasen
                 $getdata = "SELECT * FROM Chatt WHERE from_id = 'Julia'";
 
-                // sparar resultatet av queryn i en variabel
+                sparar resultatet av queryn i en variabel
                 $result = $connection->query($getdata);               
 
-                 while ($row = $result->fetch_assoc()) {
+                while ($row = $result->fetch_assoc()) {
                         echo "<p2>".$row ['from_id']. "</p2><br>";
                         echo "<p2>" .$row ['message']. "</p2><br><br>";
-                    }     
+                    }*/     
             ?>
 
 </div>
