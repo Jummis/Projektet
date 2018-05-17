@@ -8,6 +8,7 @@
     <link rel = "stylesheet" href = "main.css">
     <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     </head>
     
@@ -25,13 +26,11 @@
 </ul>
 </header>
 
-<div id="box">
-<p>OPTIMERA DIN LIVSSTIL MED HJÄLP AV<br> EN PROFFESIONELL HÄLSOCOACH</p><br>
+<div class="box">
+<img id="splash" src="https://preview.ibb.co/kn6ZgJ/aa98c1180c514c4d94e23326888a25cc_2.png">
+<div class="PicText"> OPTIMERA DIN LIVSSTIL MED HJÄLP AV EN PROFFESIONELL HÄLSOCOACH</div>
 </div>
 
-<div id="headergrön">
-<p id="texthead">VÄLKOMMEN TILL<br>HÄLSOCOACHEN<p>
-</div>
 
 <div id="box">
 <p id="textunderhead">Skapa ett konto hos oss idag och bli kontaktad av en coach.<br> Smidigt, enkelt och kostnadsfritt</p>

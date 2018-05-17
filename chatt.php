@@ -21,17 +21,20 @@
  <ul>
 
   <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
-  <li><a href="info.php">VAD ÄR HÄLSOCOACHING?</a></li>
-  <li><a href="omoss.php">OM OSS</a></li>
-  <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
+    <li><a href="myPage.php">MINA SIDOR</a></li>
+  <li><a href="chatOptions.php" class="active">LIVEFORUM</a></li>
+  <li><a href="logout.php">LOGGA UT</a></li>
+  
   
 </ul>
 </header>
 
-        <div id= "welcome">
+<a id = "Tillbaka" href="chatOptions.php">Tillbaka till alternativen</a>
+<div id= "welcome">
+           
             <h1> Välkommen till ditt liveforum <?php echo $_SESSION['User']; ?>!</h1>
-            <p1> Här kan du skicka ett meddelande till någon av våra hälsocoacher<br>
-                 En coach kommer snart kontakta dig. </p1>
+            <p1> Skicka ett meddelande så kommer någon av<br>
+                  våra hälsocoacher snart att svara dig. </p1>
             <br>
         </div>
 
@@ -68,6 +71,9 @@
             </form>
 
         </div>
+            <a href='userHome.php'>
+            <input type="submit" name="closeForumKnapp" value="LÄMNA FORUM" id="closeForumKnapp" onsubmit="userHome.php">
+            </a>
     </body>
     <footer>
 <p id="kontaktrubrik">HÄLSOCOACHEN</p>

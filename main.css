@@ -7,9 +7,11 @@ body{
 
 #Logga{
     font-size: 70px;
+    color: #393E46;
+    margin-top: 80px;
 }
 
-#box{
+.box{
     text-align: center;
     width: 100%;
     margin-top: 10px;
@@ -17,7 +19,21 @@ body{
     border-bottom: 2px solid #FFC200;
     margin-left: auto;
     margin-right: auto;
-    padding: 1px;
+    padding: 15px;
+}
+
+#splash{
+    width:340px;
+    height:300px;
+}
+
+.PicText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p1 {
@@ -44,7 +60,7 @@ p4{
     }
 
 p6{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .row{
@@ -87,6 +103,7 @@ a{
     width: 12%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -114,9 +131,8 @@ li {
 li a {
     display: block;
     text-align: center;
-    padding: 20px;
-    padding-right: 50px;
-    margin-top: 40px;
+    padding-right: 60px;
+    margin-top: 80px;
     text-decoration: none;
     color: #393E46;
 }
@@ -145,8 +161,8 @@ width: 20px;
 }
 
 #submit {
-width: 300px;
-height: 40px;
+width: 350px;
+height: 50px;
 margin-bottom: 40px;
 margin-left: auto;
 margin-right: auto;
@@ -154,12 +170,11 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 background-color: white; 
 border-radius: 8px;
 border: 2px solid #FFC200;
-color: black;
+color:#393E46;
 text-align: center;
 text-decoration: none;
 font-size: 16px;
 cursor: pointer;
-width: 35%;
 display: block;
 font-family: 'Open Sans', sans-serif; 
 }
@@ -169,11 +184,18 @@ font-family: 'Open Sans', sans-serif;
     color:white;
 }
 
-input {
-width: 300px;
+#emailBox {
+width: 350px;
 height: 40px;
 border-radius: 5px;
+margin-bottom: 5px;
+}
 
+#passBox{
+width: 350px;
+height: 40px;
+border-radius: 5px;
+margin-bottom: 10px;
 }
 
 form {
@@ -187,6 +209,9 @@ p{
     text-align: center;
     font-size: 50px;
     margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    
 }
 
 .container{
@@ -261,8 +286,18 @@ footer{
 
 #welcome {
 text-align: center;
-margin-top: 5%;
+margin-top: 2%;
+}
 
+#Tillbaka{
+    float: left;
+    margin-left: 3%;
+    color: #393E46;
+}
+
+#Tillbaka:hover{
+    color: #FFC200;
+    text-decoration: underline;
 }
 
 #wrapper2{
@@ -285,6 +320,10 @@ h1{
    border: 2px solid #FFC200;
    color: #393E46;
    font-weight: bold;
+   width: 300px;
+   height: 50px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 15px;
 }
 
 #chattbutton:hover{
@@ -323,11 +362,12 @@ background-color: #FFC200;
 
     #usermsg {
     width: 630px;
-    height:150px; 
-    border:1px solid #FFC200;
+    height: 150px; 
+    border: 1px solid #FFC200;
     text-align: left;
     font-family: 'Open Sans', sans-serif;
-    padding: 10px; }
+    padding: 10px;
+    font-size: 14px; }
   
     #sendmessage{
     width: 630px;
@@ -344,6 +384,7 @@ background-color: #FFC200;
 
     #sendmessage:hover {
     background-color: #FFC200;
+    font-weight: bold;
     }
 
     #chatcontainer{
@@ -359,6 +400,21 @@ background-color: #FFC200;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     }
 
+    #closeForumKnapp{
+    width: 630px;
+    height: 60px;
+    background-color: #FFC200;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #393E46;
+    font-size: 15px;
+    }
+
+    #closeForumKnapp:hover {
+    font-weight: bold;
+    }
+
     #contact {
         margin-left: 50px;
     }
@@ -370,12 +426,13 @@ background-color: #FFC200;
     background-color: white; 
     border-radius: 8px;
     border: 2px solid #FFC200;
-    color: black;
+    color: #393E46;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    width: 35%;
+    width: 450px;
+    height: 50px;
     display: block;
     font-family: 'Open Sans', sans-serif; 
 }

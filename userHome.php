@@ -14,9 +14,10 @@
  <ul>
 
   <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
-  <li><a href="info.php">VAD ÄR HÄLSOCOACHING?</a></li>
-  <li><a href="omoss.php">OM OSS</a></li>
-  <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
+  <li><a href="myPage.php">MINA SIDOR</a></li>
+  <li><a href="chatOptions.php">LIVEFORUM</a></li>
+  <li><a href="logout.php">LOGGA UT</a></li>
+  
   
 </ul>
 </header>
@@ -28,7 +29,7 @@
      Gå vidare till liveforumet och berätta<br>
      vad vi kan göra för dig.</p1>
 <br><br><br>
-<a href='chatOptions.php'><input type="submit" id=chattbutton name=chattbutton value="TILL LIVEFORUM"></a>
+<a href='chatOptions.php'><input type="submit" id="chattbutton" name=chattbutton value="TILL LIVEFORUM"></a>
 </div>
 
 </body>
