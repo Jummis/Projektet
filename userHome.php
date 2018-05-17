@@ -12,7 +12,7 @@
 <body>
 <div id = "header">
  <ul>
-  <a href="index.php"><img id="rubrik" src="https://preview.ibb.co/hAiy5d/logo.jpg"></a>
+  <img id="rubrik" src="https://preview.ibb.co/hAiy5d/logo.jpg">
     <li><a href="myPage.php">MINA SIDOR</a></li>
             <li><a href="chatOptions.php">LIVEFORUM</a></li>
             <li><a href="logout.php">LOGGA UT</a></li>
