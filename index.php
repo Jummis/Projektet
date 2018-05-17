@@ -15,15 +15,13 @@
 
 <div id = "header">
  <ul>
-<<<<<<< HEAD
   <a href="index.php"><img id="rubrik" src="https://preview.ibb.co/kO1J5d/hand.jpg"></a>
   <li><a href="info.php">VAD ÄR HÄLSOCOACHING?</a></li>
   <li><a href="omoss.php">OM OSS</a></li>
-=======
+
   <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
   <li><a href="default.asp">VAD ÄR HÄLSOCOACHING?</a></li>
   <li><a href="news.asp">OM OSS</a></li>
->>>>>>> 453b6a173384a41d03938c95d6fc59bacf0ab828
   <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
   
 </ul>
