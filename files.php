@@ -20,14 +20,15 @@
         </div>
      
 
-        <div id= "welcome">
+        <div id= "wrapper2">
         <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
         <p1> Detta är dina filer. Här kan du se de filer som din coach lagt upp för dig. </p1>
         <br><br>
 
-        <div id=fileContainer>
+        <div id = "fileContainer">
         <a href="http://gfit.se/downloads/12-veckors-traningsprogram.pdf"><img id=pdfIcon src="https://www.bitcodesoft.com/wp-content/uploads/2018/03/8-pdf.png"<br></a>
         <a href="http://gfit.se/downloads/12-veckors-traningsprogram.pdf"><img id=pdfIcon src="https://www.bitcodesoft.com/wp-content/uploads/2018/03/8-pdf.png"<br></a>
+        </div>
         </div>
 
         

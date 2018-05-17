@@ -20,12 +20,13 @@
 </ul>
 </div>
 
-<div id= "welcome">
+<div id= "wrapper2">
 <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
 <p1> Välkommen till dina sidor. Här kan du se 
      dina filer, följa din utveckling<br> och 
      fylla i din privata loggbok. </p1>
 <br><br>
+</div>
 
 
 <div class="leftmenu">
