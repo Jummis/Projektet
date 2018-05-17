@@ -27,26 +27,25 @@ p3{
 
 p4{
     font-size: 12px;
-    margin-top: 10px;
+    float: right;
 }
 
     p5{
         font-size: 12px;
-        text-align: center;
+        float: right;
     }
 
-<<<<<<< HEAD
 p6{
     font-size: 12px;
 }
 
 .row{
    padding-bottom: 40px;
-=======
+}
+
 a {
     color: #FFC200;
     text-decoration: none;
->>>>>>> f35248aeaaec4586f0212c6d7c66ca213ae7331e
 }
 
 #wrapper {
@@ -260,9 +259,10 @@ background-color: #FFC200;
     margin: auto;
     margin-bottom:10px;
     padding: 15px;
+    padding-top: 20px;
     background:#fff;
-    height:270px;
-    width:430px;
+    height:300px;
+    width:600px;
     border:1px solid #4CAF50;
     border-radius: 8px;
     overflow:auto; }
@@ -284,14 +284,16 @@ background-color: #FFC200;
     }
 
     #usermsg {
-    width: 450px;
-    height:100px; 
+    width: 630px;
+    height:150px; 
     border:1px solid #FFC200;
     text-align: left;
-    font-family: 'Open Sans', sans-serif; }
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px; }
   
     #sendmessage{
-    width: 450px;
+    width: 630px;
+    height: 60px;
     background-color: white;
     border-radius: 8px;
     border: 2px solid #FFC200;
@@ -310,9 +312,9 @@ background-color: #FFC200;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
-    width: 500px;
-    margin-top: 40px;
-    height: 475px;
+    width: 700px;
+    margin-top: 30px;
+    height: 580px;
     background-color: #375162;
     margin-left: auto;
     margin-right: auto;
