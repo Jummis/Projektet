@@ -26,12 +26,6 @@
 <img id = "infoIMG" src="https://preview.ibb.co/iavkoy/32595094_10208616287963657_2149428636824895488_n.png">
 
 
-<div id="headergrön">
-<header id="headgrön">
-<p id="texthead">VÄLKOMMEN TILL<br>HÄLSOCOACHEN<p>
-</header>
-</div>
-
 <p id="textunderhead">Här ska det också stå lite text</p>
 
 
