@@ -35,29 +35,35 @@ p4{
         text-align: center;
     }
 
+<<<<<<< HEAD
 p6{
     font-size: 12px;
 }
 
 .row{
    padding-bottom: 40px;
+=======
+a {
+    color: #FFC200;
+    text-decoration: none;
+>>>>>>> f35248aeaaec4586f0212c6d7c66ca213ae7331e
 }
 
 #wrapper {
     border-radius: 20px;
     text-align: center;
-    width: 500px;
+    width: 1000px;
     margin-top: 40px;
-    background-color: #FED57B;
+    background-color: #375162;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: #FFC200;
 }
 
 #user {
-    border-radius: 20px;
-    width: 20%;
-    border-radius: 50px;
+    border-radius: 55px;
+    width: 12%;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -93,27 +99,54 @@ li a:hover{
 
 .radio {
 width: 20px;
-margin: 0 auto;
-padding: 0 auto;
+}
+
+.rowRadio {
+    float:center;
+}
+
+.columnRadio {
+    float:left;
+    width: 75%;
+    margin-right: 40%;
 }
 
 #submit {
 width: 300px;
 height: 40px;
-margin-bottom: 30px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin-bottom: 40px;
+margin-left: auto;
+margin-right: auto;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+background-color: white; 
+border-radius: 8px;
+border: 2px solid #FFC200;
+color: black;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+cursor: pointer;
+width: 35%;
+display: block;
+font-family: 'Open Sans', sans-serif; 
+}
+
+#submit:hover {
+    background-color:#FFC200;
+    color:white;
 }
 
 input {
 width: 300px;
 height: 40px;
 border-radius: 5px;
-margin: 0 auto;
-padding: 0 auto;
+
 }
 
 form {
     margin-bottom: 100px;
+    color: #FFC200;
+    font-size: 14px;
 }
 
 
@@ -321,7 +354,8 @@ background-color: #FFC200;
     width: 200px;
     text-align: left;
     padding-left: 20px;
-    margin-top: 1%;
+    padding: 0;
+    width: 25%;
     }
 
 .leftmenu a {
@@ -341,4 +375,19 @@ background-color: #FFC200;
     color: white;
 }
 
+#pdfIcon{
+    height:50px;
+    width:50px;
+}
 
+#fileContainer{
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 33%;
+    border: 2px solid #FFC200;
+    float: right;
+}

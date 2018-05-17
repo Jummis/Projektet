@@ -17,13 +17,20 @@
         <li><a href="chatOptions.php">CHATT</a></li>
         <li><a href="logout.php">LOGGA UT</a></li>
         </ul>
-    </div>
+        </div>
+     
 
         <div id= "welcome">
         <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
-        <p1> Detta är dinna filer. Här kan du ladda ner filer som din coach lagt upp för dig. </p1>
+        <p1> Detta är dina filer. Här kan du se de filer som din coach lagt upp för dig. </p1>
         <br><br>
 
+        <div id=fileContainer>
+        <a href="http://gfit.se/downloads/12-veckors-traningsprogram.pdf"><img id=pdfIcon src="https://www.bitcodesoft.com/wp-content/uploads/2018/03/8-pdf.png"<br></a>
+        <a href="http://gfit.se/downloads/12-veckors-traningsprogram.pdf"><img id=pdfIcon src="https://www.bitcodesoft.com/wp-content/uploads/2018/03/8-pdf.png"<br></a>
+        </div>
+
+        
         <div class="leftmenu">
         <a href="myPage.php">MINA SIDOR</a>
         <a href="files.php" class="active">FILER</a>
