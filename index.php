@@ -25,9 +25,9 @@
 </ul>
 </header>
 
-<div id="box">
-<img src="http://www.clker.com/cliparts/2/x/n/F/9/P/paint-md.png">
-<p>OPTIMERA DIN LIVSSTIL MED HJÄLP AV<br> EN PROFFESIONELL HÄLSOCOACH</p><br>
+<div class="box">
+<img id="splash" src="http://nanoilconf.com/wp-content/uploads/2017/10/yellow.png">
+<div class="PicText"> OPTIMERA DIN LIVSSTIL MED HJÄLP AV EN PROFFESIONELL HÄLSOCOACH</div>
 </div>
 
 <div id="headergrön">
