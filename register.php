@@ -20,7 +20,7 @@
   
 </ul>
 
-    <div id="wrapper"><br>
+    <div id="wrapper1"><br>
     <img id = "user" src = "https://image.ibb.co/edWLgJ/default_user_image.png"><br><br>
     <p3>Har du redan ett konto?</p3><p3><a href = 'login.php'> Logga in </p3> </a> <br><br>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">

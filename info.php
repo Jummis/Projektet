@@ -7,35 +7,22 @@
     <title>Hälsocoachen</title>
     <link rel = "stylesheet" href = "main.css">
     <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
     
 <body>
 <!--<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">-->
 
-<div id = "header">
+
  <ul>
   <a href="index.php"><img id="rubrik" src="https://preview.ibb.co/kO1J5d/hand.jpg"></a>
-  <li><a href="info.php">VAD ÄR HÄLSOCOACHING?</a></li>
+  <li><a href="info.php" class = "active">VAD ÄR HÄLSOCOACHING?</a></li>
   <li><a href="omoss.php">OM OSS</a></li>
-
-  <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
-  <li><a href="default.asp">VAD ÄR HÄLSOCOACHING?</a></li>
-  <li><a href="news.asp">OM OSS</a></li>
   <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
   
 </ul>
-</div>
 
-<<<<<<< HEAD
-<p> Här ska det stå någon<br>
-bra text som ser snygg ut<br>
-med någon bra bild bakom</p>
-=======
-<div id="box">
-<p>Optimera din livsstil med hjälp av en professionell hälsocoach</p><br>
-</div>
->>>>>>> a29a4130f50d27903699e875614952cfe9061ac1
+<img id = "infoIMG" src="https://preview.ibb.co/iavkoy/32595094_10208616287963657_2149428636824895488_n.png">
+
 
 <div id="headergrön">
 <header id="headgrön">

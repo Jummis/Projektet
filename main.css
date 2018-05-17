@@ -8,6 +8,18 @@ body{
     font-size: 70px;
 }
 
+#box{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    border-top: 3px solid #FFC200; 
+    border-bottom: 3px solid #FFC200;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1px;
+}
+
 p1 {
     font-size:15px;
 }
@@ -46,6 +58,19 @@ a{
 
 
 #wrapper {
+    border-radius: 20px;
+    text-align: center;
+    width: 1000px;
+    height: 500px;
+    margin-top: 40px;
+    background-color: #375162;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: #FFC200;
+}
+
+#wrapper1 {
     border-radius: 20px;
     text-align: center;
     width: 1000px;
@@ -157,7 +182,6 @@ form {
 p{
     text-align: center;
     font-size: 50px;
-    color: black; 
     margin-top: 100px;
 }
 
@@ -399,4 +423,8 @@ background-color: #FFC200;
     width: 90%;
     border: 2px solid #FFC200;
     float: center;
+}
+
+#infoIMG {
+width: 10%;
 }
