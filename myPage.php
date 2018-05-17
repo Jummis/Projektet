@@ -13,9 +13,9 @@
 <div id = "header">
  <ul>
   <a href="index.php"><img id="rubrik" src="https://preview.ibb.co/hAiy5d/logo.jpg"></a>
-  <li><a href="default.asp">VAD ÄR HÄLSOCOACHING?</a></li>
-  <li><a href="news.asp">OM OSS</a></li>
-  <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
+  <li><a href="myPage.php">MINA SIDOR</a></li>
+            <li><a href="chatOptions.php">CHATT</a></li>
+            <li><a href="logout.php">LOGGA UT</a></li>
   
 </ul>
 </div>
@@ -30,9 +30,10 @@
 
 <div class="leftmenu">
   <a href="myPage.php" class="active">MINA SIDOR</a>
-  <a href="#">FILER</a>
-  <a href="#">MIN PROFIL</a>
+  <a href="files.php">FILER</a>
+  <a href="myProfile.php">MIN PROFIL</a>
   <a href="#">LOGGBOK</a>
+  <a href="#">HISTORIK</a>
 </div>
 
 <div id="bottom">
@@ -48,7 +49,6 @@
     <p3> halsocoachen@coach.se </p3>
   </div>
 </div> 
-
 </div>
 
 </body>
