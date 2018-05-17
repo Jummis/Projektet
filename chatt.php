@@ -21,14 +21,14 @@
              <ul>
     <img id="rubrik" src="https://preview.ibb.co/hAiy5d/logo.jpg">
     <li><a href="myPage.php">MINA SIDOR</a></li>
-            <li><a href="chatOptions.php">CHATT</a></li>
+            <li><a href="chatOptions.php" class="active">LIVEFORUM</a></li>
             <li><a href="logout.php">LOGGA UT</a></li>
   
 </ul>
         </div>
 
         <div id= "welcome">
-            <h1> Välkommen till chatten <?php echo $_SESSION['User']; ?>!</h1>
+            <h1> Välkommen till ditt liveforum <?php echo $_SESSION['User']; ?>!</h1>
             <p1> Här kan du skicka ett meddelande till någon av våra hälsocoacher<br>
                  En coach kommer snart kontakta dig. </p1>
             <br>
@@ -40,19 +40,19 @@
 
             <?php
                 // hämtar namn och kommentar från databasen
-                $getdata = "SELECT from_id, message FROM Chatt";
+                $getdata = "SELECT from_id, message, submitted, datum FROM Chatt";
 
                 // sparar resultatet av queryn i en variabel
                 $result = $connection->query($getdata);
+
                 $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
-                
 
                 while($row = mysqli_fetch_assoc($result))
                 {  
-                    echo "<p5>" . date("Y/m/d") . "</p5>";
+                    echo "<p5>" . $row["datum"] ."</p5>";
                     echo "<h5>" . $userimg . " " . $row["from_id"]."</h5>";
                     echo "<p6>" . $row["message"] ."</p6>"."<br>"."<br>";
-                    echo "<p4>" . date("h:i") . "</p4>";
+                    echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
                     echo "<hr>";
                 }
         
