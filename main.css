@@ -35,18 +35,17 @@ p4{
         text-align: center;
     }
 
-<<<<<<< HEAD
 p6{
     font-size: 12px;
 }
 
 .row{
    padding-bottom: 40px;
-=======
-a {
+}
+
+a{
     color: #FFC200;
     text-decoration: none;
->>>>>>> f35248aeaaec4586f0212c6d7c66ca213ae7331e
 }
 
 #wrapper {
@@ -263,7 +262,7 @@ background-color: #FFC200;
     background:#fff;
     height:270px;
     width:430px;
-    border:1px solid #4CAF50;
+    border:1px solid #FFC200;
     border-radius: 8px;
     overflow:auto; }
 
