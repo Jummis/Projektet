@@ -22,10 +22,9 @@
 </ul>
 
 
-
-<p> Här ska det stå någon<br>
-bra text som ser snygg ut<br>
-med någon bra bild bakom</p>
+<div id="box">
+<p>Optimera din livsstil med hjälp av en professionell hälsocoach</p><br>
+</div>
 
 <div id="headergrön">
 <header id="headgrön">

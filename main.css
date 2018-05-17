@@ -12,6 +12,18 @@ body{
 
 }
 
+#box{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    border-top: 3px solid #FFC200; 
+    border-bottom: 3px solid #FFC200;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1px;
+}
+
 p1 {
     font-size:15px;
 }
@@ -157,7 +169,6 @@ form {
 p{
     text-align: center;
     font-size: 50px;
-    color: black; 
     margin-top: 100px;
 }
 
