@@ -29,7 +29,7 @@
      Gå vidare till liveforumet och berätta<br>
      vad vi kan göra för dig.</p1>
 <br><br><br>
-<a href='chatOptions.php'><input type="submit" id=chattbutton name=chattbutton value="TILL LIVEFORUM"></a>
+<a href='chatOptions.php'><input type="submit" id="chattbutton" name=chattbutton value="TILL LIVEFORUM"></a>
 </div>
 
 </body>
