@@ -67,8 +67,8 @@
             </form>
 
         </div>
-
-<div id="bottom">
+    </body>
+    <footer>
 <p id="kontaktrubrik">HÄLSOCOACHEN</p>
 <p id="kontaktuppg">Kontaktuppgifter</p>
 
@@ -84,10 +84,6 @@
   </div>
 </div> 
 
-</div>
-
-
-    </body>
-
+</footer>
 </html>
 

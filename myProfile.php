@@ -42,11 +42,11 @@
 
  <div class="row">
   <div class="column">
-    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
+    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br><br>
     <p3> 0703457947 </p3>
   </div>
   <div class="column">
-    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br>
+    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br><br>
     <p3> halsocoachen@coach.se </p3>
   </div>
 </div> 
