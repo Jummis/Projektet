@@ -31,7 +31,7 @@
             <h1> Välkommen till chatten <?php echo $_SESSION['User']; ?>!</h1>
             <p1> Här kan du skicka ett meddelande till någon av våra hälsocoacher<br>
                  En coach kommer snart kontakta dig. </p1>
-            <br><br>
+            <br>
         </div>
 
         <div id="chatcontainer">
@@ -49,10 +49,10 @@
 
                 while($row = mysqli_fetch_assoc($result))
                 {  
-                    echo "<p5>" .date("Y/m/d"). "</p5>";
-                    echo "<h5>". $userimg . " " . $row["from_id"]."</h5>";
-                    echo "<p3>".$row["message"]."</p3>"."<br>"."<br>";
-                    echo "<p4>" .date("h:i"). "</p4>";
+                    echo "<p5>" . date("Y/m/d") . "</p5>";
+                    echo "<h5>" . $userimg . " " . $row["from_id"]."</h5>";
+                    echo "<p6>" . $row["message"] ."</p6>"."<br>"."<br>";
+                    echo "<p4>" . date("h:i") . "</p4>";
                     echo "<hr>";
                 }
         
@@ -68,7 +68,7 @@
 
         </div>
 
-        <div id="bottom">
+<div id="bottom">
 <p id="kontaktrubrik">HÄLSOCOACHEN</p>
 <p id="kontaktuppg">Kontaktuppgifter</p>
 

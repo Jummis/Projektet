@@ -1,6 +1,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+    color: #393E46;
 }
 
 #rubrik{
@@ -34,6 +35,14 @@ p4{
         text-align: center;
     }
 
+p6{
+    font-size: 12px;
+}
+
+.row{
+   padding-bottom: 40px;
+}
+
 #wrapper {
     border-radius: 20px;
     text-align: center;
@@ -59,7 +68,7 @@ ul {
     list-style-type: none;
     background-color:white;
     padding-right: 5%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #393E46;
     height: 15%;
     font-size: 15px;
 }
@@ -75,6 +84,7 @@ li a {
     padding: 20px;
     margin-top: 40px;
     text-decoration: none;
+    color: #393E46;
 }
 
 li a:hover{
@@ -159,12 +169,12 @@ p{
 #bottom{
     background-color: #375162;
     color: white;
-    height: 39%;
+    height: 45%;
     border-bottom: 1px solid;
 }
 
 #kontaktuppg{
-    font-size: 35px;
+    font-size: 30px;
     color: white;
     margin-top: 0px;
     margin-bottom: 5%;
@@ -183,6 +193,7 @@ p{
     padding-right: 70px;
 }
 
+
 #emailimg{
     width: 7%;
     padding-left: 65px;
@@ -194,10 +205,16 @@ p{
     margin-top: 5%;
 }
 
+h1{
+    font-size: 40px;
+}
+
 #chattbutton{
    background-color: white;
    border-radius: 8px;
    border: 2px solid #FFC200;
+   color: #393E46;
+   font-weight: bold;
 }
 
 #chattbutton:hover{
@@ -228,7 +245,7 @@ background-color: #FFC200;
     width: 5%;
     border-radius: 50px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         
     }
@@ -238,7 +255,7 @@ background-color: #FFC200;
     height:100px; 
     border:1px solid #FFC200;
     text-align: left;
-    font-family: 'News Cycle', sans-serif; }
+    font-family: 'Open Sans', sans-serif; }
   
     #sendmessage{
     width: 450px;
@@ -246,6 +263,10 @@ background-color: #FFC200;
     border-radius: 8px;
     border: 2px solid #FFC200;
     margin-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: #393E46;
+    font-size: 15px;
+
     }
 
     #sendmessage:hover {

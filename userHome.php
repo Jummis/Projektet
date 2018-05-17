@@ -23,10 +23,11 @@
 <div id= "welcome">
 <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
 <p1> Hur kan vi hjälpa dig idag?<br>
-     Tryck på chatta och berätta för oss vad<br>
-     vi kan göra för dig. </p1>
-<br><br>
-<a href='chatOptions.php'><input type="submit" id=chattbutton name=chattbutton value=CHATTA></a>
+<br>
+     Gå vidare till liveforumet och berätta<br>
+     vad vi kan göra för dig.</p1>
+<br><br><br>
+<a href='chatOptions.php'><input type="submit" id=chattbutton name=chattbutton value="TILL LIVEFORUM"></a>
 </div>
 
 <div id="bottom">
