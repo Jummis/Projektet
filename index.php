@@ -24,7 +24,7 @@
 </div>
 
 <div id="box">
-<p>Optimera din livsstil med hjälp av en professionell hälsocoach</p><br>
+<p>OPTIMERA DIN LIVSSTIL MED HJÄLP AV<br> EN PROFFESIONELL HÄLSOCOACH</p><br>
 </div>
 
 <div id="headergrön">
@@ -33,8 +33,9 @@
 </header>
 </div>
 
-<p id="textunderhead">Här ska det också stå lite text</p>
-
+<div id="box">
+<p id="textunderhead">Skapa ett konto hos oss idag och bli kontaktad av en coach.<br> Smidigt, enkelt och kostnadsfritt</p>
+</div>
 
 </body>
 
