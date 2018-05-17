@@ -101,6 +101,7 @@ a{
     width: 12%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -159,8 +160,8 @@ width: 20px;
 }
 
 #submit {
-width: 300px;
-height: 40px;
+width: 350px;
+height: 50px;
 margin-bottom: 40px;
 margin-left: auto;
 margin-right: auto;
@@ -168,12 +169,11 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 background-color: white; 
 border-radius: 8px;
 border: 2px solid #FFC200;
-color: black;
+color:#393E46;
 text-align: center;
 text-decoration: none;
 font-size: 16px;
 cursor: pointer;
-width: 35%;
 display: block;
 font-family: 'Open Sans', sans-serif; 
 }
@@ -183,11 +183,18 @@ font-family: 'Open Sans', sans-serif;
     color:white;
 }
 
-input {
-width: 300px;
+#emailBox {
+width: 350px;
 height: 40px;
 border-radius: 5px;
+margin-bottom: 5px;
+}
 
+#passBox{
+width: 350px;
+height: 40px;
+border-radius: 5px;
+margin-bottom: 10px;
 }
 
 form {
@@ -299,6 +306,10 @@ h1{
    border: 2px solid #FFC200;
    color: #393E46;
    font-weight: bold;
+   width: 300px;
+   height: 50px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 15px;
 }
 
 #chattbutton:hover{
