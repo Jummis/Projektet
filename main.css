@@ -43,11 +43,7 @@ p6{
    padding-bottom: 40px;
 }
 
-<<<<<<< HEAD
-a {
-=======
 a{
->>>>>>> a7e681b6a164ba2b52cf8882abe6d3ceadac6fe6
     color: #FFC200;
     text-decoration: none;
 }
@@ -265,15 +261,12 @@ background-color: #FFC200;
     padding: 15px;
     padding-top: 20px;
     background:#fff;
-<<<<<<< HEAD
     height:300px;
     width:600px;
     border:1px solid #4CAF50;
-=======
     height:270px;
     width:430px;
     border:1px solid #FFC200;
->>>>>>> a7e681b6a164ba2b52cf8882abe6d3ceadac6fe6
     border-radius: 8px;
     overflow:auto; }
 
