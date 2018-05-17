@@ -8,15 +8,16 @@
     </head>
 
     <body>
-        <div id = "header">
+<header>
  <ul>
-  <img id="rubrik" src="https://preview.ibb.co/hAiy5d/logo.jpg">
-            <li><a href="myPage.php">MINA SIDOR</a></li>
-            <li><a href="chatOptions.php" class="active">LIVEFORUM</a></li>
-            <li><a href="logout.php">LOGGA UT</a></li>
+
+  <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
+  <li><a href="info.php">VAD ÄR HÄLSOCOACHING?</a></li>
+  <li><a href="omoss.php">OM OSS</a></li>
+  <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
   
 </ul>
-        </div>
+</header>
 
         <div id= "welcome">
             <h1> Vad vill du ha hjälp med idag? </h1>
