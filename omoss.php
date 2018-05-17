@@ -7,6 +7,8 @@
     <title>Hälsocoachen</title>
     <link rel = "stylesheet" href = "main.css">
     <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
     </head>
     
 <body>
@@ -23,17 +25,17 @@
 </ul>
 </header>
 
-
-<br><h1> Om oss </h1>
-
-<div id="headergrön">
-<header id="headgrön">
-<p id="texthead">VÄLKOMMEN TILL<br>HÄLSOCOACHEN<p>
-</header>
+<div id="box">
+<p>OPTIMERA DIN LIVSSTIL MED HJÄLP AV<br> EN PROFFESIONELL HÄLSOCOACH</p><br>
 </div>
 
-<p id="textunderhead">Här ska det också stå lite text</p>
+<div id="headergrön">
+<p id="texthead">VÄLKOMMEN TILL<br>HÄLSOCOACHEN<p>
+</div>
 
+<div id="box">
+<p id="textunderhead">Skapa ett konto hos oss idag och bli kontaktad av en coach.<br> Smidigt, enkelt och kostnadsfritt</p>
+</div>
 
 </body>
 
