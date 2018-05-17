@@ -349,6 +349,7 @@ background-color: #FFC200;
     width: 400px;
     margin-top: 10px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 33%;
     border: 2px solid #FFC200;
+    float: right;
 }
