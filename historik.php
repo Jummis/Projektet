@@ -14,13 +14,13 @@
 <div id = "header">
  <ul>
   <a href="index.php"><img id="rubrik" src="https://preview.ibb.co/hAiy5d/logo.jpg"></a>
-    <li><a href="myPage.php">MINA SIDOR</a></li>
-    <li><a href="chatOptions.php">CHATT</a></li>
+    <li><a href="myPage.php" class = "active">MINA SIDOR</a></li>
+    <li><a href="chatOptions.php">LIVEFORUM</a></li>
     <li><a href="logout.php">LOGGA UT</a></li>
 </ul>
 </div>
 
-<div id= "historik">
+<div id= "wrapper2">
 <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
 <p1> Här kan du se alla dina skapade forumtrådar med hälsocoacher. </p1>
 <br><br>
@@ -55,11 +55,11 @@
 <p id="kontaktuppg">Kontaktuppgifter</p>
  <div class="row">
   <div class="column">
-    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
-    <p2> 0703457947 </p2>
+    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br><br>
+    <p3> 0703457947 </p3>
   </div>
   <div class="column">
-    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br>
+    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br><br>
     <p3> halsocoachen@coach.se </p3>
   </div>
 </footer>

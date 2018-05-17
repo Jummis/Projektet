@@ -19,10 +19,11 @@
 </ul>
 </div>
 
-<div id= "welcome">
+<div id= "wrapper2">
 <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
 <p1> Detta är din profil. Här kan du fylla i och uppdatera dina värden. </p1>
 <br><br>
+</div>
 
 <div class="leftmenu">
   <a href="myPage.php">MINA SIDOR</a>

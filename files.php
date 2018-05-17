@@ -20,7 +20,7 @@
         </div>
      
 
-        <div id= "historik">
+        <div id= "wrapper2">
         <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
         <p1> Detta är dina filer. Här kan du se de filer som din coach lagt upp för dig. </p1>
         <br><br>
