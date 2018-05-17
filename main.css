@@ -201,11 +201,11 @@ p{
 #chattbutton{
    background-color: white;
    border-radius: 8px;
-   border: 2px solid #4CAF50;
+   border: 2px solid #FFC200;
 }
 
 #chattbutton:hover{
-background-color: #4CAF50; 
+background-color: #FFC200; 
     color: white;
 }
 
