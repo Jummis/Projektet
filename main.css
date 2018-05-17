@@ -239,7 +239,13 @@ footer{
     margin-bottom: 0.5%;
 }
 
-#welcome{
+#welcome {
+text-align: center;
+margin-top: 5%;
+
+}
+
+#historik{
     text-align: center;
     margin-top: 5%;
     border-radius: 20px;

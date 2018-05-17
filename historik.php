@@ -20,7 +20,7 @@
 </ul>
 </div>
 
-<div id= "welcome">
+<div id= "historik">
 <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
 <p1> Här kan du se alla dina skapade forumtrådar med hälsocoacher. </p1>
 <br><br>
