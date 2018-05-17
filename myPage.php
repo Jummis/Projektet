@@ -30,7 +30,7 @@
 
 <div class="leftmenu">
   <a href="myPage.php" class="active">MINA SIDOR</a>
-  <a href="#">FILER</a>
+  <a href="files.php">FILER</a>
   <a href="myProfile.php">MIN PROFIL</a>
   <a href="#">LOGGBOK</a>
   <a href="#">HISTORIK</a>
@@ -49,7 +49,6 @@
     <p3> halsocoachen@coach.se </p3>
   </div>
 </div> 
-
 </div>
 
 </body>
