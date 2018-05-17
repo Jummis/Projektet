@@ -103,12 +103,26 @@ width: 20px;
 #submit {
 width: 300px;
 height: 40px;
-margin-bottom: 30px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin-bottom: 40px;
+margin-left: auto;
+margin-right: auto;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+background-color: white; 
+border-radius: 8px;
+border: 2px solid #FFC200;
+color: black;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+cursor: pointer;
+width: 35%;
+display: block;
+font-family: 'Open Sans', sans-serif; 
 }
 
 #submit:hover {
     background-color:#FFC200;
+    color:white;
 }
 
 input {
@@ -120,6 +134,8 @@ border-radius: 5px;
 
 form {
     margin-bottom: 100px;
+    color: #FFC200;
+    font-size: 14px;
 }
 
 
