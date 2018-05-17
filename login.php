@@ -8,6 +8,7 @@ include_once 'validateLogin.php';
     <title> Hälsocoachen </title>
     <link rel = "stylesheet" href = "main.css">
     <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+</head>
 <body>
 
  <ul>
@@ -27,7 +28,6 @@ include_once 'validateLogin.php';
 
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 
-                <div id = "form">
                 <br>
                 <input type="text" name="email" title="email" style="color:#888;" 
                 placeholder="E-postadress" value = "<?php echo $email;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
@@ -47,5 +47,22 @@ include_once 'validateLogin.php';
 
 
 </body>
-</head>
+
+<footer>
+<p id="kontaktrubrik">HÄLSOCOACHEN</p>
+<p id="kontaktuppg">Kontaktuppgifter</p>
+
+
+ <div class="row">
+  <div class="column">
+    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
+    <p3> 0703457947 </p3>
+  </div>
+  <div class="column">
+    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br>
+    <p3> halsocoachen@coach.se </p3>
+  </div>
+</div> 
+
+</footer>
 </html>

@@ -19,10 +19,11 @@
 </ul>
 </div>
 
-<div id= "welcome">
+<div id= "wrapper2">
 <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
 <p1> Detta är din profil. Här kan du fylla i och uppdatera dina värden. </p1>
 <br><br>
+</div>
 
 <div class="leftmenu">
   <a href="myPage.php">MINA SIDOR</a>
@@ -32,19 +33,23 @@
   <a href="historik.php">HISTORIK</a>
 </div>
 
-<div id="bottom">
+</body>
+
+<footer>
 <p id="kontaktrubrik">HÄLSOCOACHEN</p>
 <p id="kontaktuppg">Kontaktuppgifter</p>
+
+
  <div class="row">
   <div class="column">
-    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
-    <p2> 0703457947 </p2>
+    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br><br>
+    <p3> 0703457947 </p3>
   </div>
   <div class="column">
-    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br>
+    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br><br>
     <p3> halsocoachen@coach.se </p3>
   </div>
 </div> 
 
-</body>
+</footer>
 </html>

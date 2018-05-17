@@ -20,12 +20,13 @@
 </ul>
 </div>
 
-<div id= "welcome">
+<div id= "wrapper2">
 <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
 <p1> Välkommen till dina sidor. Här kan du se 
      dina filer, följa din utveckling<br> och 
      fylla i din privata loggbok. </p1>
 <br><br>
+</div>
 
 
 <div class="leftmenu">
@@ -33,23 +34,25 @@
   <a href="files.php">FILER</a>
   <a href="myProfile.php">MIN PROFIL</a>
   <a href="#">LOGGBOK</a>
-  <a href="#">HISTORIK</a>
-</div>
-
-<div id="bottom">
-<p id="kontaktrubrik">HÄLSOCOACHEN</p>
-<p id="kontaktuppg">Kontaktuppgifter</p>
- <div class="row">
-  <div class="column">
-    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
-    <p2> 0703457947 </p2>
-  </div>
-  <div class="column">
-    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br>
-    <p3> halsocoachen@coach.se </p3>
-  </div>
-</div> 
+  <a href="historik.php">HISTORIK</a>
 </div>
 
 </body>
+<footer>
+<p id="kontaktrubrik">HÄLSOCOACHEN</p>
+<p id="kontaktuppg">Kontaktuppgifter</p>
+
+
+ <div class="row">
+  <div class="column">
+    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br><br>
+    <p3> 0703457947 </p3>
+  </div>
+  <div class="column">
+    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br><br>
+    <p3> halsocoachen@coach.se </p3>
+  </div>
+</div> 
+
+</footer>
 </html>

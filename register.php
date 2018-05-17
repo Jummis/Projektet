@@ -8,6 +8,7 @@
 <head>
     <title> Hälsocoachen - Registrering </title>
     <link rel = "stylesheet" href = "main.css">
+</head>
 <body>
 
 
@@ -56,5 +57,21 @@
 </div>
 
 </body>
-</head>
+<footer>
+<p id="kontaktrubrik">HÄLSOCOACHEN</p>
+<p id="kontaktuppg">Kontaktuppgifter</p>
+
+
+ <div class="row">
+  <div class="column">
+    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
+    <p3> 0703457947 </p3>
+  </div>
+  <div class="column">
+    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br>
+    <p3> halsocoachen@coach.se </p3>
+  </div>
+</div> 
+
+</footer>
 </html>
