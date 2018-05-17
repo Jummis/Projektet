@@ -59,7 +59,7 @@ p4{
     }
 
 p6{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .row{
@@ -286,8 +286,12 @@ footer{
 
 #welcome {
 text-align: center;
-margin-top: 5%;
+margin-top: 2%;
+}
 
+#Tillbaka{
+    float: left;
+    margin-left: 3%;
 }
 
 #wrapper2{
@@ -352,11 +356,12 @@ background-color: #FFC200;
 
     #usermsg {
     width: 630px;
-    height:150px; 
-    border:1px solid #FFC200;
+    height: 150px; 
+    border: 1px solid #FFC200;
     text-align: left;
     font-family: 'Open Sans', sans-serif;
-    padding: 10px; }
+    padding: 10px;
+    font-size: 14px; }
   
     #sendmessage{
     width: 630px;
@@ -388,6 +393,21 @@ background-color: #FFC200;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     }
 
+    #closeForumKnapp{
+    width: 630px;
+    height: 60px;
+    background-color: #FFC200;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #393E46;
+    font-size: 15px;
+    }
+
+    #closeForumKnapp:hover {
+    background-color: white;
+    }
+
     #contact {
         margin-left: 50px;
     }
@@ -399,12 +419,13 @@ background-color: #FFC200;
     background-color: white; 
     border-radius: 8px;
     border: 2px solid #FFC200;
-    color: black;
+    color: #393E46;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    width: 35%;
+    width: 450px;
+    height: 50px;
     display: block;
     font-family: 'Open Sans', sans-serif; 
 }
