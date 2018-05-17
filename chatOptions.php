@@ -21,7 +21,7 @@
         <div id= "welcome">
             <h1> Vad vill du ha hjälp med idag? </h1>
             <p1> Vänligen välj ett av nedanstående alternativ.</p1>
-            <br><br>
+            <br><br><br>
         </div>
 
         <div class="optionButtons">

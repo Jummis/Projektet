@@ -17,8 +17,10 @@ if ($connection->connect_error)
 if ($_SERVER["REQUEST_METHOD"] == 'POST')
 {
     $message = $connection->real_escape_string($_POST['usermsg']);
+    $date = $connection->real_escape_string($_POST[date("Y/m/d")]);
+    $time = $connection->real_escape_string($_POST[date("h:i")]);
 
-      $insertmessage = "INSERT INTO Chatt(from_id, message) VALUES ('".$_SESSION['User']."', '".$message."');";
+      $insertmessage = "INSERT INTO Chatt(from_id, message, submitted, datum) VALUES ('".$_SESSION['User']."', '".$message."');";
       $connection->query($insertmessage);
  }
 
