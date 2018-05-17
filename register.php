@@ -20,9 +20,8 @@
 </ul>
 
     <div id="wrapper"><br>
-    <img id = "user" src = "https://image.ibb.co/edWLgJ/default_user_image.png">
-    <br><br>
-    <p3> Har du redan ett konto?<a href = 'login.php'><p3> Logga in </p3> </a><br><br>
+    <img id = "user" src = "https://image.ibb.co/edWLgJ/default_user_image.png"><br><br>
+    <p3>Har du redan ett konto?</p3><p3><a href = 'login.php'> Logga in </p3> </a> <br><br>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 
                 <input type="text" name="firstname" title="firstname" style="color:#888;" 
@@ -50,11 +49,9 @@
 
                 <input type="password" name="password" title="password" style="color:#888;" 
                 placeholder="Välj ett lösenord" value = "<?php echo $password;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)"/><br>
-                <br><br><p3><?php echo $field_error; ?> </p3><br>
+                <br><br><p3><?php echo $field_error; ?> </p3>
 
-                <br>
-
-                <input type="submit" name="submit" id="submit" value="REGISTRERA DIG">            
+                <input type="submit" name="submit" id="submit" value="REGISTRERA DIG">  <br>          
         </form>
 </div>
 
