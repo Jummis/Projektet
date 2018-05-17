@@ -8,7 +8,7 @@ function unique_salt() {
 }
 
 $fname = $lname = $email = $password = $birthnumber = "";
-$fname_error = $lname_error = $email_error = $password_error = "";
+$field_error = "";
 
 //if the register button is clicked
     if ($_SERVER["REQUEST_METHOD"] == "POST") 
@@ -34,7 +34,7 @@ $fname_error = $lname_error = $email_error = $password_error = "";
     
 
         if (empty($fname) || empty($lname) || empty($email) || empty($password) || empty($birthnumber) || empty($Gender)) {
-        $password_error = "Du måste fylla i alla fält!";
+        $field_error = "Du måste fylla i alla fält!";
         } 
 
         else
