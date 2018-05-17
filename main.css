@@ -203,7 +203,11 @@ p{
 }
 
 #chattbutton:hover{
+<<<<<<< HEAD
 background-color: #FFC200;
+=======
+background-color: #FFC200; 
+>>>>>>> 8d0fb2392d91beb735205f3f1dabcd1ef281773e
     color: white;
 }
 
@@ -318,7 +322,7 @@ background-color: #FFC200;
 }
 
 .leftmenu a.active {
-    background-color: #4CAF50;
+    background-color: #FFC200;
     color: white;
 }
 
