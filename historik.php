@@ -1,6 +1,7 @@
 <?php   
     include_once 'connection.php';
     include_once 'session.php';
+
 ?>
 
 <html>
@@ -26,18 +27,18 @@
 
  <?php
                 // hämtar namn och kommentar från databasen
-                $getdata = "SELECT * FROM Chatt WHERE from_id = 'Elin'";
+                $getdata = "SELECT * FROM Chatt WHERE from_id = 'Julia'";
 
                 // sparar resultatet av queryn i en variabel
                 $result = $connection->query($getdata);               
 
                  while ($row = $result->fetch_assoc()) {
-                        echo "<p>".$row ['from_id']. "</p>";
-                        echo "<p>" .$row ['message']. "</p>";
+                        echo "<p2>".$row ['from_id']. "</p2><br>";
+                        echo "<p2>" .$row ['message']. "</p2><br><br>";
                     }     
             ?>
 
-
+</div>
 
 <div class="leftmenu">
   <a href="myPage.php">MINA SIDOR</a>
@@ -47,7 +48,8 @@
   <a href="historik.php" class="active">HISTORIK</a>
 </div>
 
-<div id="bottom">
+</body>
+<footer>
 <p id="kontaktrubrik">HÄLSOCOACHEN</p>
 <p id="kontaktuppg">Kontaktuppgifter</p>
  <div class="row">
@@ -59,7 +61,6 @@
     <img src="https://image.ibb.co/jSQmqd/envelope.png"><br>
     <p3> halsocoachen@coach.se </p3>
   </div>
-</div> 
+</footer>
 
-</body>
 </html>
