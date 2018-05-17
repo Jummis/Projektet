@@ -23,7 +23,6 @@
 </ul>
 </div>
 
-
 <p> Här ska det stå någon<br>
 bra text som ser snygg ut<br>
 med någon bra bild bakom</p>
