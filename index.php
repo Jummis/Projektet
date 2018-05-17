@@ -8,6 +8,7 @@
     <link rel = "stylesheet" href = "main.css">
     <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     </head>
     
@@ -26,9 +27,10 @@
 </header>
 
 <div class="box">
-<img id="splash" src="http://nanoilconf.com/wp-content/uploads/2017/10/yellow.png">
+<img id="splash" src="https://preview.ibb.co/kn6ZgJ/aa98c1180c514c4d94e23326888a25cc_2.png">
 <div class="PicText"> OPTIMERA DIN LIVSSTIL MED HJÄLP AV EN PROFFESIONELL HÄLSOCOACH</div>
 </div>
+
 
 <div id="headergrön">
 <p id="texthead">VÄLKOMMEN TILL<br>HÄLSOCOACHEN<p>
