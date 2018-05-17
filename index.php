@@ -26,8 +26,8 @@
 </header>
 
 <div class="box">
-<img id="splash" src="https://preview.ibb.co/iQVzyy/gulring.jpg" alt="gulring">
-<div class="PicText"> OPTIMERA DIN LIVSSTIL MED HJÄLP AV<br>EN PROFFESIONELL HÄLSOCOACH</div>
+<img id="splash" src="http://nanoilconf.com/wp-content/uploads/2017/10/yellow.png">
+<div class="PicText"> OPTIMERA DIN LIVSSTIL MED HJÄLP AV EN PROFFESIONELL HÄLSOCOACH</div>
 </div>
 
 <div id="headergrön">
