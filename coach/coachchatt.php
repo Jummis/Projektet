@@ -1,7 +1,7 @@
 <?php   
     include_once '../connection.php';
     include_once '../session.php';
-    include_once '../savechatmessage.php';
+    include_once 'saveCoachMessage.php';
     date_default_timezone_set('Europe/Stockholm');
 ?>
 
@@ -48,12 +48,12 @@
                 // sparar resultatet av queryn i en variabel
                 $result = $connection->query($getdata);
 
-                $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
+                $coachimg = '<img id ="userchatt" src="../assets/img/u_img_yellow.png">';
 
                 while($row = mysqli_fetch_assoc($result))
                 {  
                     echo "<p5>" . $row["datum"] ."</p5>";
-                    echo "<h5>" . $userimg . " " . $row["from_coach"]."</h5>";
+                    echo "<h5>" . $coachimg . " " . $row["from_coach"]." "."(coach)"."</h5>";
                     echo "<p6>" . $row["coach_message"] ."</p6>"."<br>"."<br>";
                     echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
                     echo "<hr>";
