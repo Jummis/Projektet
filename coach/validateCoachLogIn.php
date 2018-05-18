@@ -19,7 +19,7 @@ $name_error = $email_error = $password_error = "";
     $email = trim($Email);
     $password = trim($Password);
 
-        if (empty($email) || $email == "Email" ) {
+        if (empty($email)) {
         $email_error = "Fyll i din e-postadress";
         } else if (!filter_var($email, FILTER_VALIDATE_EMAIL))
                 {

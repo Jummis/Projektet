@@ -1,7 +1,7 @@
 <?php   
-    include_once 'connection.php';
-    include_once 'session.php';
-    include_once 'savechatmessage.php';
+    include_once '../connection.php';
+    include_once '../session.php';
+    include_once 'saveCoachMessage.php';
     date_default_timezone_set('Europe/Stockholm');
 ?>
 
@@ -10,9 +10,9 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <title>Chatt</title>
-        <link rel = "stylesheet" href = "assets/main.css">
+        <link rel = "stylesheet" href = "assets/maincoach.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <script src="main.js"></script>
+        <script src="assets/main.js"></script>
 
     </head>
 
@@ -33,7 +33,7 @@
 <a id = "Tillbaka" href="">Tillbaka</a>
 <div id= "welcome">
            
-            <h1><?php echo $_SESSION['User']; ?>!</h1>
+            <h1>Hej Coach <?php echo $_SESSION['User']; ?>!</h1>
             <br>
         </div>
 
@@ -43,18 +43,18 @@
 
             <?php
                 // hämtar namn och kommentar från databasen
-                $getdata = "SELECT from_id, message, submitted, datum FROM Chatt";
+                $getdata = "SELECT from_coach, coach_message, submitted, datum FROM Chatt";
 
                 // sparar resultatet av queryn i en variabel
                 $result = $connection->query($getdata);
 
-                $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
+                $coachimg = '<img id ="userchatt" src="../assets/img/u_img_yellow.png">';
 
                 while($row = mysqli_fetch_assoc($result))
                 {  
                     echo "<p5>" . $row["datum"] ."</p5>";
-                    echo "<h5>" . $userimg . " " . $row["from_id"]."</h5>";
-                    echo "<p6>" . $row["message"] ."</p6>"."<br>"."<br>";
+                    echo "<h5>" . $coachimg . " " . $row["from_coach"]." "."(coach)"."</h5>";
+                    echo "<p6>" . $row["coach_message"] ."</p6>"."<br>"."<br>";
                     echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
                     echo "<hr>";
                 }
@@ -70,8 +70,8 @@
             </form>
 
         </div>
-            <a href=''>
-            <input type="submit" name="closeForumKnapp" value="LÄMNA FORUM" id="closeForumKnapp" onsubmit="">
+            <a href='coachMypage.php'>
+            <input type="submit" name="closeForumKnapp" value="LÄMNA FORUM" id="closeForumKnapp" onsubmit="coachMypage.php">
             </a>
     </body>
 
