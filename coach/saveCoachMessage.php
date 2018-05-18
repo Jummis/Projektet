@@ -1,6 +1,6 @@
 <?php
-include_once "connection.php";
-include_once "session.php";
+include_once "../connection.php";
+include_once "../session.php";
 date_default_timezone_set('Europe/Stockholm');
 
 $uname = "dbtrain_763";
@@ -17,11 +17,11 @@ if ($connection->connect_error)
 
 if ($_SERVER["REQUEST_METHOD"] == 'POST')
 {
-    $message = $connection->real_escape_string($_POST['usermsg']);
+    $coachmessage = $connection->real_escape_string($_POST['coachmsg']);
     $date = date("Y/m/d");
     $time = date("h:i");
 
-      $insertmessage = "INSERT INTO Chatt(from_id, message, submitted, datum) VALUES ('".$_SESSION['User']."', '".$message."', '".$time."', '".$date."');";
+      $insertmessage = "INSERT INTO Chatt(from_coach, coach_message, submitted, datum) VALUES ('".$_SESSION['User']."', '".$coachmessage."', '".$time."', '".$date."');";
       $connection->query($insertmessage);
  }
 
