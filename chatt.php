@@ -12,7 +12,7 @@
         <title>Hälsocoachen Chatt</title>
         <link rel = "stylesheet" href = "assets/main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <script src="main.js"></script>
+        <script src="assets/js/main.js"></script>
 
     </head>
 
