@@ -7,7 +7,7 @@
 <html>
 <head>
     <title> Hälsocoachen - Registrering </title>
-    <link rel = "stylesheet" href = "assets/css/main.css">
+    <link rel = "stylesheet" href = "assets/main.css">
 </head>
 <body>
 
