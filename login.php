@@ -31,7 +31,7 @@ include_once 'validateLogin.php';
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 
                 <br>
-                <input type="text" id = "emailBox" name="email" title="email" style="color:#888;" 
+                <input type="text" id = "inputBox" name="email" title="email" style="color:#888;" 
                 placeholder="E-postadress" value = "<?php echo $email;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
                 <br><p3><?php echo $email_error; ?> </p3>
 
