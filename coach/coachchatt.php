@@ -1,7 +1,7 @@
 <?php   
-    include_once 'connection.php';
-    include_once 'session.php';
-    include_once 'savechatmessage.php';
+    include_once '../connection.php';
+    include_once '../session.php';
+    include_once '../savechatmessage.php';
     date_default_timezone_set('Europe/Stockholm');
 ?>
 
@@ -10,9 +10,9 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <title>Chatt</title>
-        <link rel = "stylesheet" href = "assets/main.css">
+        <link rel = "stylesheet" href = "assets/maincoach.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <script src="main.js"></script>
+        <script src="assets/main.js"></script>
 
     </head>
 
@@ -33,7 +33,7 @@
 <a id = "Tillbaka" href="">Tillbaka</a>
 <div id= "welcome">
            
-            <h1><?php echo $_SESSION['User']; ?>!</h1>
+            <h1>Hej Coach <?php echo $_SESSION['User']; ?>!</h1>
             <br>
         </div>
 
