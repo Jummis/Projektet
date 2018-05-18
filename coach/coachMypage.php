@@ -12,7 +12,7 @@
 
     </head>
     
-<body>
+<body id = "wrapper3">
 <!--<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">-->
 
 <header>
@@ -24,11 +24,19 @@
 </ul>
 </header>
 
-<div class="box">
-<img id="splash" src="https://preview.ibb.co/kn6ZgJ/aa98c1180c514c4d94e23326888a25cc_2.png">
-<div class="PicText"> OPTIMERA DIN LIVSSTIL MED HJÄLP AV EN PROFFESIONELL HÄLSOCOACH</div>
+<div class="row">
+  <div class="column">
+    <img id = "infoIMG" src="assets/forum.png"><br>
+  </div>
+  <div class="column">
+    <img id = "infoIMG" src="assets/settings.png"><br><br>
+  </div>
+  <div class = "column">
+  <img id = "infoIMG" src="assets/user.png"><br>
 </div>
-
+  <div class = "column">
+  <img id = "infoIMG" src="assets/exit.png"><br>
+</div>
 
 </body>
 </html>
