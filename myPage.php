@@ -6,7 +6,7 @@
 <html>
 <head>
     <title> Hälsocoachen - homepage </title>
-    <link rel = "stylesheet" href = "main.css">
+    <link rel = "stylesheet" href = "assets/css/main.css">
 </head>
 
 <body>

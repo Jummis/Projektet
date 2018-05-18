@@ -6,7 +6,7 @@ include_once 'validateLogin.php';
 <html>
 <head>
     <title> Hälsocoachen </title>
-    <link rel = "stylesheet" href = "main.css">
+    <link rel = "stylesheet" href = "assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
 </head>
 <body>

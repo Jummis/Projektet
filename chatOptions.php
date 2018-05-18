@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <title>Hälsocoachen Chatt</title>
-        <link rel = "stylesheet" href = "main.css">
+        <link rel = "stylesheet" href = "assets/css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
 
