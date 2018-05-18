@@ -13,5 +13,7 @@
     </head>
 
     <body>
+    <a href="#">Liveforum</a></li>
+    <a href="#">Profil</a></li>
     </body>   
 </html>
