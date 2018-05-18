@@ -1,11 +1,14 @@
-<!DOCTYPE>
+<?php
+include_once '../connection.php';
+include_once 'validateCoachLogIn.php';
+?>
 
 <html>
 
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Hälsocoachen</title>
-    <link rel = "stylesheet" href = "assets/main.css">
+    <link rel = "stylesheet" href = "assets/maincoach.css">
     <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -18,42 +21,32 @@
 <header>
  <ul>
 
-  <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
-  <li><a href="info.php">VAD ÄR HÄLSOCOACHING?</a></li>
-  <li><a href="omoss.php">OM OSS</a></li>
-  <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
+  <a id = "Logga">VÄLKOMMEN HÄLSOCOACH</a>
   
 </ul>
 </header>
 
-<div class="box">
-<img id="splash" src="https://preview.ibb.co/kn6ZgJ/aa98c1180c514c4d94e23326888a25cc_2.png">
-<div class="PicText"> OPTIMERA DIN LIVSSTIL MED HJÄLP AV EN PROFFESIONELL HÄLSOCOACH</div>
+<div id = wrapper><br>
+<img id = "user" src = "https://image.ibb.co/edWLgJ/default_user_image.png">
+<br><br>
+
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+
+                <br>
+                <input type="text" id = "emailBox" name="email" title="email" style="color:#888;" 
+                placeholder="E-postadress" value = "<?php echo $email;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+                <br><p3><?php echo $email_error; ?> </p3>
+
+                <input type="password" id="passBox" name="password" title="password" style="color:#888;" 
+                placeholder="Lösenord" value = "<?php echo $password;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+                <br> <p3> <?php echo $password_error; ?> </p3>
+
+                <input type="submit" name="submit" id="submit" value="Logga in">
+        </form>
+
 </div>
 
-
-<div id="box">
-<p id="textunderhead">Skapa ett konto hos oss idag och bli kontaktad av en coach.<br> Smidigt, enkelt och kostnadsfritt</p>
-</div>
 
 </body>
-
-<footer>
-<p id="kontaktrubrik">HÄLSOCOACHEN</p>
-<p id="kontaktuppg">Kontaktuppgifter</p>
-
-
- <div class="row">
-  <div class="column">
-    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
-    <p3> 0703457947 </p3>
-  </div>
-  <div class="column">
-    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br>
-    <p3> halsocoachen@coach.se </p3>
-  </div>
-</div> 
-
-</footer>
 
 </html>
