@@ -1,6 +1,6 @@
 <?php
-include_once 'connection.php';
-include_once 'validateLogin.php';
+include_once '../connection.php';
+include_once 'validateCoachLogIn.php';
 ?>
 
 <html>
@@ -8,7 +8,7 @@ include_once 'validateLogin.php';
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Hälsocoachen</title>
-    <link rel = "stylesheet" href = "assets/main.css">
+    <link rel = "stylesheet" href = "assets/maincoach.css">
     <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -26,7 +26,6 @@ include_once 'validateLogin.php';
 </ul>
 </header>
 
-<div id = "box">
 <div id = wrapper><br>
 <img id = "user" src = "https://image.ibb.co/edWLgJ/default_user_image.png">
 <br><br>
@@ -45,7 +44,6 @@ include_once 'validateLogin.php';
                 <input type="submit" name="submit" id="submit" value="Logga in">
         </form>
 
-</div>
 </div>
 
 
