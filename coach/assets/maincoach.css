@@ -89,7 +89,6 @@ a{
     border-radius: 20px;
     text-align: center;
     width: 1000px;
-    margin-top: 40px;
     background-color: #375162;
     margin-left: auto;
     margin-right: auto;
@@ -184,7 +183,7 @@ font-family: 'Open Sans', sans-serif;
     color:white;
 }
 
-#emailBox {
+#inputBox {
 width: 350px;
 height: 40px;
 border-radius: 5px;
