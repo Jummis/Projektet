@@ -18,11 +18,14 @@ if ($connection->connect_error)
 if ($_SERVER["REQUEST_METHOD"] == 'POST')
 {
     $coachmessage = $connection->real_escape_string($_POST['coachmsg']);
+    $number = $connection->real_escape_string($_POST['number']);
     $date = date("Y/m/d");
     $time = date("h:i");
-
-      $insertmessage = "INSERT INTO Chatt(from_coach, coach_message, submitted, datum) VALUES ('".$_SESSION['User']."', '".$coachmessage."', '".$time."', '".$date."');";
-      $connection->query($insertmessage);
+    
+    $user = $_SESSION['User'];
+    $insertmessage = "UPDATE Chatt SET coach_message = '$coachmessage', from_coach = '$user' WHERE chattID = '$number'";     
+    $connection->query($insertmessage);
+    header ("Location: coachchatt.php");
  }
 
 ?>

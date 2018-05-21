@@ -1,6 +1,6 @@
 <?php   
     include_once 'connection.php';
-    include_once 'session.php';
+    include 'session.php';
     include_once 'savechatmessage.php';
     date_default_timezone_set('Europe/Stockholm');
 ?>
@@ -39,20 +39,25 @@
         </div>
 
         <div id="chatcontainer">
+        <p3> Dina obersvarade meddelanden</p3> <br>     <p3>Besvarade meddelanden </p3>
+        
 
         <div id="chatbox">
 
             <?php
-                // hämtar namn och kommentar från databasen
-                $getClientData = "SELECT from_id, message, submitted, datum FROM Chatt";
-                $getCoachData = "SELECT coach_id, coach_message, submitted, datum FROM Chatt";
+
+                $name = $_SESSION['User'];
+                // hämtar allt från databasen på både svarade och osvarade meddelanden        
+                $notanswered = "SELECT * FROM Chatt WHERE from_id = '$name'";
+                $answered = "SELECT * FROM Chatt WHERE from_id = '$name' AND from_coach IS NOT NULL";
 
                 // sparar resultatet av queryn i en variabel
-                $resultClient = $connection->query($getClientData);
-                $resultCoach = $connection->query($getCoachData);
+                $a = $connection->query($answered);
+                $na = $connection->query($notanswered);
+                
 
                 $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
-                $coachimg = '<img id ="userchatt" src="../assets/img/u_img_yellow.png">';
+                $coachimg = '<img id ="userchatt" src="assets/img/u_img_yellow.png">';
 
                 /*if ('from_id' == NULL)
                 {
@@ -67,16 +72,25 @@
                 }
                 else
                 {*/
-                    while($row = mysqli_fetch_assoc($resultClient))
+                    while($row = mysqli_fetch_assoc($a))
                     {  
-                        echo "<p5>" . $row["datum"] ."</p5>";
-                        echo "<h5>" . $userimg . " " . $row["from_id"]."</h5>";
-                        echo "<p6>" . $row["message"] ."</p6>"."<br>"."<br>";
-                        echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
-                        echo "<hr>";
+                            echo "<p5>" . $row["datum"] ."</p5>";
+                            echo "<h5>" . $userimg . " " . $row["from_id"]."</h5>";  
+                             echo "<p6>" . $row["message"] ."</p6>"."<br>"."<br><hr>"; 
+                            echo "<h5>" . $coachimg . " " . $row["from_coach"]." (Coach)</h5>";
+                            echo "<p6>" . $row["coach_message"] ."</p6>"."<br>"."<br>";
+                            echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
+                            echo "<hr>";                  
                     }
-                
-        
+
+                    while($row = mysqli_fetch_assoc($na))
+                    {  
+                            echo "<p5>" . $row["datum"] ."</p5>";
+                            echo "<h5>" . $userimg . " " . $row["from_id"]."</h5>";  
+                             echo "<p6>" . $row["message"] ."</p6>"."<br>"."<br>"; 
+                            echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
+                            echo "<hr>";                  
+                    }    
             ?>
 
         </div>

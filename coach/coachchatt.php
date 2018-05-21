@@ -12,7 +12,6 @@
         <title>Chatt</title>
         <link rel = "stylesheet" href = "assets/maincoach.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <script src="assets/main.js"></script>
 
     </head>
 
@@ -42,18 +41,16 @@
         <div id="chatbox">
 
             <?php
-                // hämtar namn och kommentar från databasen
-                $getClientData = "SELECT from_id, message, submitted, datum FROM Chatt";
-                $getCoachData = "SELECT coach_id, coach_message, submitted, datum FROM Chatt";
+                // hämtar meddelanden från databasen som inte besvarats
+                $getClientData = "SELECT from_id, datum, chattID, message, submitted FROM Chatt WHERE from_coach IS NULL";
 
                 // sparar resultatet av queryn i en variabel
                 $resultClient = $connection->query($getClientData);
-                $resultCoach = $connection->query($getCoachData);
 
                 $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
                 $coachimg = '<img id ="userchatt" src="../assets/img/u_img_yellow.png">';
 
-                if ('from_coach' == NULL)
+                /*if ('from_coach' == NULL)
                 {
                     while($row = mysqli_fetch_assoc($resultClient))
                     {
@@ -65,16 +62,18 @@
                     }
                 }
                 else
-                {
-                    while($row = mysqli_fetch_assoc($resultCoach))
+                {*/
+                    while($row = mysqli_fetch_assoc($resultClient))
                     {  
-                        echo "<p5>" . $row["datum"] ."</p5>";
-                        echo "<h5>" . $coachimg . " " . $row["coach_id"]."</h5>";
-                        echo "<p6>" . $row["coach_message"] ."</p6>"."<br>"."<br>";
-                        echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
-                        echo "<hr>";
+                            echo "<p5>" . $row["datum"] ."</p5>";
+                            echo "<h5>" . $userimg . " " . $row["from_id"]."</h5>";                     
+                            echo "<p6>" . $row["message"] ."</p6>"."<br>"."<br>";
+                            echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
+                            echo "<a href = svara.php> Svara meddelande " . $row["chattID"] . "</a><hr>";
+                        
+                        
                     }
-                }
+               // }
         
             ?>
 
