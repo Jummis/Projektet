@@ -43,20 +43,37 @@
 
             <?php
                 // hämtar namn och kommentar från databasen
-                $getdata = "SELECT from_coach, coach_message, submitted, datum FROM Chatt";
+                $getClientData = "SELECT from_id, message, submitted, datum FROM Chatt";
+                $getCoachData = "SELECT coach_id, coach_message, submitted, datum FROM Chatt";
 
                 // sparar resultatet av queryn i en variabel
-                $result = $connection->query($getdata);
+                $resultClient = $connection->query($getClientData);
+                $resultCoach = $connection->query($getCoachData);
 
+                $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
                 $coachimg = '<img id ="userchatt" src="../assets/img/u_img_yellow.png">';
 
-                while($row = mysqli_fetch_assoc($result))
-                {  
-                    echo "<p5>" . $row["datum"] ."</p5>";
-                    echo "<h5>" . $coachimg . " " . $row["from_coach"]." "."(coach)"."</h5>";
-                    echo "<p6>" . $row["coach_message"] ."</p6>"."<br>"."<br>";
-                    echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
-                    echo "<hr>";
+                if ('from_coach' == NULL)
+                {
+                    while($row = mysqli_fetch_assoc($resultClient))
+                    {
+                        echo "<p5>" . $row["datum"] ."</p5>";
+                        echo "<h5>" . $userimg . " " . $row["from_id"]."</h5>";
+                        echo "<p6>" . $row["message"] ."</p6>"."<br>"."<br>";
+                        echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
+                        echo "<hr>";
+                    }
+                }
+                else
+                {
+                    while($row = mysqli_fetch_assoc($resultCoach))
+                    {  
+                        echo "<p5>" . $row["datum"] ."</p5>";
+                        echo "<h5>" . $coachimg . " " . $row["coach_id"]."</h5>";
+                        echo "<p6>" . $row["coach_message"] ."</p6>"."<br>"."<br>";
+                        echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
+                        echo "<hr>";
+                    }
                 }
         
             ?>
