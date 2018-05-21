@@ -30,7 +30,7 @@
 </ul>
 </header>
 
-<a id = "Tillbaka" href="">Tillbaka</a>
+<a id = "Tillbaka" href="coachMyPage.php">Tillbaka</a>
 <div id= "welcome">
            
             <h1>Hej Coach <?php echo $_SESSION['User']; ?>!</h1>

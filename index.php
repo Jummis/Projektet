@@ -27,14 +27,19 @@
 </header>
 
 <div class="box">
-<img id="splash" src="https://preview.ibb.co/kn6ZgJ/aa98c1180c514c4d94e23326888a25cc_2.png">
 <div class="PicText"> OPTIMERA DIN LIVSSTIL MED HJÄLP AV EN PROFFESIONELL HÄLSOCOACH</div>
+<img id="splash" src="https://preview.ibb.co/kn6ZgJ/aa98c1180c514c4d94e23326888a25cc_2.png">
 </div>
 
 
 <div id="box">
 <p id="textunderhead">Skapa ett konto hos oss idag och bli kontaktad av en coach.<br> Smidigt, enkelt och kostnadsfritt</p>
-</div>
+</div><br><br>
+
+<h1> Så här funkar det </h1>
+<h3> 1. </h3> <p2> Börja med att skapa ett konto. Det är gratis! </p2>
+<h3> 2. </h3> <p2> Välj ett ämne som passar.<br> Du kan välja mellan träning, kost, sömn, stress, alkohol eller allmänt. </p2>
+<h3> 3. </h3> <p2> Få svar på din fråga eller bli coachad för att nå dit du vill. </p2>
 
 </body>
 

@@ -23,25 +23,26 @@
   
 </ul>
 </header>
-
-<p> Vad är hälsocoaching? </p>
-
+<h1> Vad är hälsocoaching? </h1>
+<p2> Att vända sig till en hälsocoach innebär att bli vägledd till en mer hälsosam livsstil. Det innebär att optimera träning, kost, sömn, stress och alla andra
+  faktorer som är viktiga för att bibehålla en god hälsa. Nedan kan du läsa om hur viktiga dessa faktorer är och hur det påverkar hälsan. </p2>
+<br><hr>
 <div class="row">
   <div class="column">
-    <img id = "trainingIMG" src="img/training (1).jpg"><br>
+    <img id = "trainingIMG" src="assets/img/training (1).jpg"><br>
   </div>
   <div class="column">
-    <img id = "infoIMG" src="img/kost.jpg"><br><br>
+    <img id = "infoIMG" src="assets/img/kost.jpg"><br><br>
   </div>
   <div class = "column">
-  <img id = "infoIMG" src="img/stress.jpg"><br>
+  <img id = "stressIMG" src="assets/img/stress.jpg"><br>
   </div>
     <div class = "column">
-  <img id = "sleepIMG" src="img/sleep (1).jpg"><br>
+  <img id = "sleepIMG" src="assets/img/sleep (1).jpg"><br>
   </div>
 </div>
 
-<p1> Hej </p1>
+<a href = "register.php"><h1> Bli medlem nu och ta kontakt med din hälsocoach! </h1></a>
 
 
 

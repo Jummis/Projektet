@@ -29,7 +29,7 @@
 </div>
 
 <div class="leftmenu">
-  <a href="myPage.php">MINA SIDOR</a>
+  <a class = "veryactive">MINA SIDOR</a>
   <a href="files.php">FILER</a>
   <a href="myProfile.php" class="active">MIN PROFIL</a>
   <a href="#">LOGGBOK</a>
