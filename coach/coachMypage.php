@@ -1,4 +1,8 @@
-<!DOCTYPE>
+<?php
+include 'sessioncoach.php';
+
+
+?>
 
 <html>
 

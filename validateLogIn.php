@@ -67,11 +67,21 @@ $name_error = $email_error = $password_error = "";
             $name = "SELECT fname FROM u WHERE email = '$Email' AND password = '$Datan'";
             $Name = $connection->query($name);
 
+            $userID = "SELECT userID FROM u WHERE email = '$Email' AND password = '$Datan'";
+            $UID = $connection->query($userID);
+
             while ($row = $Name-> fetch_row()){
-                $Data = $row[0];
+                $NAME = $row[0];
             }
+
+            while ($row = $UID-> fetch_row()){
+                $USERID = $row[0];
+            }
+
+
             session_start();
-            $_SESSION ['User'] = $Data;
+            $_SESSION ['User'] = $NAME;
+            $_SESSION ['ID'] = $USERID;
             header ("Location: userHome.php"); 
             $name = $email = $password = "";          
             }
