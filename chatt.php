@@ -47,9 +47,11 @@
             <?php
 
                 $name = $_SESSION['User'];
+                $userID= $_SESSION['ID'];
                 // hämtar allt från databasen på både svarade och osvarade meddelanden        
-                $notanswered = "SELECT * FROM Chatt WHERE from_id = '$name'";
-                $answered = "SELECT * FROM Chatt WHERE from_id = '$name' AND from_coach IS NOT NULL";
+                $answered = "SELECT * FROM Chatt WHERE from_id = '$userID' OR from_coach IS NOT NULL";
+                $notanswered = "SELECT * FROM Chatt WHERE from_id = '$userID' OR from_coach IS NULL";
+                
 
                 // sparar resultatet av queryn i en variabel
                 $a = $connection->query($answered);
@@ -59,38 +61,21 @@
                 $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
                 $coachimg = '<img id ="userchatt" src="assets/img/u_img_yellow.png">';
 
-                /*if ('from_id' == NULL)
-                {
-                    while($row = mysqli_fetch_assoc($resultCoach))
-                    {
-                        echo "<p5>" . $row["datum"] ."</p5>";
-                        echo "<h5>" . $coachimg . " " . $row["coach_id"]."</h5>";
-                        echo "<p6>" . $row["coach_message"] ."</p6>"."<br>"."<br>";
-                        echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
-                        echo "<hr>";
-                    }
-                }
-                else
-                {*/
+                
                     while($row = mysqli_fetch_assoc($a))
                     {  
                             echo "<p5>" . $row["datum"] ."</p5>";
-                            echo "<h5>" . $userimg . " " . $row["from_id"]."</h5>";  
-                             echo "<p6>" . $row["message"] ."</p6>"."<br>"."<br><hr>"; 
-                            echo "<h5>" . $coachimg . " " . $row["from_coach"]." (Coach)</h5>";
-                            echo "<p6>" . $row["coach_message"] ."</p6>"."<br>"."<br>";
-                            echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
-                            echo "<hr>";                  
+                            echo "<h5>" . $userimg . " " . $row["name"]."</h5>";  
+                            echo "<p6>" . $row["message"] ."</p6>"."<br>"."<br><hr>"; 
+                            if ($row["from_coach"] != NULL) {
+                                echo "<h5>" . $coachimg . " " . $row["from_coach"]." (Coach)</h5>";
+                                echo "<p6>" . $row["coach_message"] ."</p6>"."<br>"."<br>";
+                                echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
+                                echo "<hr>";    
+                            }                                          
                     }
 
-                    while($row = mysqli_fetch_assoc($na))
-                    {  
-                            echo "<p5>" . $row["datum"] ."</p5>";
-                            echo "<h5>" . $userimg . " " . $row["from_id"]."</h5>";  
-                             echo "<p6>" . $row["message"] ."</p6>"."<br>"."<br>"; 
-                            echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
-                            echo "<hr>";                  
-                    }    
+                     
             ?>
 
         </div>

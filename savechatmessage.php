@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST')
     $date = date("Y/m/d");
     $time = date("h:i");
 
-      $insertmessage = "INSERT INTO Chatt(from_id, message, submitted, datum) VALUES ('".$_SESSION['User']."', '".$message."', '".$time."', '".$date."');";
+      $insertmessage = "INSERT INTO Chatt(from_id, name, message, submitted, datum) VALUES ('".$_SESSION['ID']."', '".$_SESSION['User']."', '".$message."', '".$time."', '".$date."');";
       $connection->query($insertmessage);
  }
 
