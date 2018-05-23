@@ -33,13 +33,13 @@
 
 
 <div id="box">
-<p id="textunderhead">Skapa ett konto hos oss idag och bli kontaktad av en coach.<br> Smidigt, enkelt och kostnadsfritt</p>
+<p id="textunderhead">Skapa ett konto hos oss idag och bli kontaktad av en coach.<br> Smidigt, enkelt och kostnadsfritt.</p>
 </div><br><br>
 
 <h1> Så här funkar det </h1>
 <h3> 1. </h3> <p2> Börja med att skapa ett konto. Det är gratis! </p2>
-<h3> 2. </h3> <p2> Välj ett ämne som passar.<br> Du kan välja mellan träning, kost, sömn, stress, alkohol eller allmänt. </p2>
-<h3> 3. </h3> <p2> Få svar på din fråga eller bli coachad för att nå dit du vill. </p2>
+<h3> 2. </h3> <p2> Logga in för att komma till ditt liveforum.<br>Välj ett ämnesområde som passar dina funderingar, och ställ din fråga.</p2>
+<h3> 3. </h3> <p2> En coach kommer snart att ge dig ett svar på din fråga, <br>eller hjälpa dig att bli coachad för att nå dit du vill! </p2>
 
 </body>
 
