@@ -50,6 +50,26 @@
         <div id="chatbox">
 
             <?php
+<<<<<<< HEAD
+                // hämtar namn och kommentar från databasen
+                $getdata = "SELECT from_id, message, submitted, datum FROM Chatt";
+
+                // sparar resultatet av queryn i en variabel
+                $result = $connection->query($getdata);
+
+                $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
+
+                while($row = mysqli_fetch_assoc($result))
+                {  
+                    echo "<p5>" . $row["datum"] ."</p5>";
+                    echo "<h5>" . $userimg . " " . $row["from_id"]."</h5>";
+                    echo "<p6>" . $row["message"] ."</p6>"."<br>"."<br>";
+                    echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
+                    echo "<hr>";
+                }
+        
+            ?>
+=======
 
                 $name = $_SESSION['User'];
                 $userID= $_SESSION['ID'];
@@ -83,6 +103,7 @@
                     }          
                 ?>
             </div>
+>>>>>>> f20527f8550e88814f4c00d19ef1dd8ceb30752f
 
             <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
                 <textarea placeholder="Vänligen skriv ditt meddelande här" name="usermsg" id="usermsg"></textarea><br>

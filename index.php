@@ -7,8 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
-    
-<<<<<<< HEAD
+
     <body>
         <!--<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">-->
 
@@ -51,7 +50,6 @@
             </div>
         </div> 
     </footer>
-=======
 <body>
 <!--<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">-->
 
@@ -100,6 +98,4 @@
 </div> 
 
 </footer>
-
->>>>>>> 70bf3e199c41c4399f8778ab705edb256e02ec37
 </html>
