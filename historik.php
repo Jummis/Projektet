@@ -21,7 +21,18 @@
 
         <div id= "wrapper2">
             <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
-            <p1> Här kan du se alla dina skapade forumtrådar med hälsocoacher. </p1><br><br>
+            <p1> Här kan du se alla dina skapade forumtrådar med hälsocoacher.<br> Välj vilken tråd du vill läsa: </p1><br><br>
+            
+        <form name="history" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
+            <div class="historyButtons">
+                <input type="submit" class="button" name = "food" value="KOST">
+                <input type="submit" class="button" name = "training" value="TRÄNING">
+                <input type="submit" class="button" name = "stress" value="STRESS">
+                <input type="submit" class="button" name = "sleep" value="SÖMN">
+                <input type="submit" class="button" name = "alcohol" value="ALKOHOL/TOBAK">
+                <input type="submit" class="button" name = "general" value="ALLMÄNT">
+           </div>
+        </form>
 
             <?php
                 /*hämtar namn och kommentar från databasen
