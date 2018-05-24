@@ -65,7 +65,6 @@ include_once "saveLoggMess.php";
   <a href="historik.php">HISTORIK</a>
 </div>
 
- </body>
 
  <footer>
 <p id="kontaktrubrik">HÄLSOCOACHEN</p>
@@ -84,5 +83,7 @@ include_once "saveLoggMess.php";
 </div> 
 
 </footer>
+ </body>
+
 
 </html>
