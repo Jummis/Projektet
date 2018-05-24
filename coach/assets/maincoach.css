@@ -1,8 +1,9 @@
 body{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    color: #393E46;
+    background-color: white;
     padding-top: 150px;
+    color: #393E46;
 }
 
 #Logga{
@@ -45,9 +46,10 @@ p1 {
 }
 
 p3{
-    font-size: 15px;
+    font-size: 20px;
     color: white;
     }
+
 
 p4{
     font-size: 12px;
@@ -94,6 +96,16 @@ a{
     margin-right: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: #FFC200;
+}
+
+#wrapper3{
+    background-color: #375162;
+    height: 40%;
+    padding: 150px;
+    border-radius: 5px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #user {
@@ -466,7 +478,12 @@ background-color: #FFC200;
 
 .column {
   float: right;
-  width: 50%;
+  width: 20%;
+  margin-right: 3.5%;
+}
+
+ infoIMG:hover + p.bildText {
+  color:#FFC200;
 }
 
 .leftmenu {

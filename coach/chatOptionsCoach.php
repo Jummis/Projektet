@@ -22,8 +22,7 @@
     </header>
 
         <div id= "welcome">
-            <h1> Vad vill du ha hjälp med idag? </h1>
-            <p1> Vänligen välj ett av nedanstående alternativ.</p1><br><br><br>
+            <h1> Välj forumtråd att svara på frågor i</h1><br><br>
         </div>
 
         <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
