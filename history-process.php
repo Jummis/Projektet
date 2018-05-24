@@ -3,7 +3,8 @@ include 'connection.php';
 
             $_SESSION['ID']=$userID
             
-            if ($_SERVER["REQUEST_METHOD"] == 'POST'){
+            if ($_SERVER["REQUEST_METHOD"] == 'POST') {
+                
                 if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['training'])){
                     $getclientdata = "SELECT submitted, datum, message_client FROM Client_Message WHERE forum_type=training AND $userID=clientID";
                 }
@@ -22,7 +23,7 @@ include 'connection.php';
                    if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['general'])){
                     $getclientdata = "SELECT submitted, datum, message_client FROM Client_Message WHERE forum_type=general AND $userID=clientID";
                 }
-                
+
                 $_SESSION['User']=$user
                 $result = $connection->query($getclientdata);
                 while($row = mysqli_fetch_assoc($result))
