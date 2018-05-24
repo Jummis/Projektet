@@ -1,13 +1,13 @@
 <?php
-    include 'session.php';
-    include_once 'forumtype-process.php';
+    include 'sessioncoach.php';
+    include_once 'forum-type-process-coach.php';
 ?>
 
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <title>Hälsocoachen Chatt</title>
-        <link rel = "stylesheet" href = "assets/main.css">
+        <link rel = "stylesheet" href = "assets/maincoach.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
 
@@ -30,10 +30,10 @@
             <div class="optionButtons">
                 <input type="submit" class="button" name = "food" value="KOST"><br>
                 <input type="submit" class="button" name = "training" value="TRÄNING"><br>
-                <input type="submit" class="button" name = "stress" value="STRESS"><br>
-                <input type="submit" class="button" name = "sleep" value="SÖMN"><br>
-                <input type="submit" class="button" name = "alcohol" value="ALKOHOL/TOBAK"><br>
-                <input type="submit" class="button" name = "general" value="ALLMÄNT"><br>
+                <input type="submit" class="button" id = "stress" value="STRESS"><br>
+                <input type="submit" class="button" id = "sleep" value="SÖMN"><br>
+                <input type="submit" class="button" id = "alcohol" value="ALKOHOL/TOBAK"><br>
+                <input type="submit" class="button" id = "general" value="ALLMÄNT"><br>
            </div>
         </form>
     </body>

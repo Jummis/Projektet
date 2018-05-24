@@ -64,8 +64,7 @@ p6{
 }
 
 .row{
-float: center;
-margin-top: 5%;
+   padding-bottom: 40px;
 }
 
 a{
@@ -96,10 +95,6 @@ a{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: #FFC200;
 }
-
-#wrapper3 {
-   background-color: #375162;
- }
 
 #user {
     border-radius: 55px;
@@ -156,7 +151,6 @@ width: 20px;
 
 .rowRadio {
     float:center;
-    width: 50%;
 }
 
 .columnRadio {
@@ -472,8 +466,7 @@ background-color: #FFC200;
 
 .column {
   float: right;
-  width: 20%;
-  padding: 25px;
+  width: 50%;
 }
 
 .leftmenu {

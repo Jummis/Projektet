@@ -66,11 +66,20 @@ $name_error = $email_error = $password_error = "";
             $name = "SELECT fname FROM Coach WHERE email = '$Email' AND password = '$Datan'";
             $Name = $connection->query($name);
 
+            $ID = "SELECT coachID FROM Coach WHERE email = '$Email' AND password = '$Datan'";
+            $CoachID = $connection->query($ID);
+
             while ($row = $Name-> fetch_row()){
                 $Data = $row[0];
             }
+
+            while ($row1 = $CoachID-> fetch_row()){
+                $DataID = $row1[0];
+            }
+
             session_start();
             $_SESSION ['User'] = $Data;
+            $_SESSION ['CoachID'] = $DataID;
             header ("Location: coachMypage.php"); 
             $name = $email = $password = "";          
             }

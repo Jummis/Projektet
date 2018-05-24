@@ -440,7 +440,7 @@ background-color: #FFC200;
         margin-left: 50px;
     }
 
-   .optionButtons .button {
+   .optionButtons .button{
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
@@ -456,6 +456,29 @@ background-color: #FFC200;
     height: 50px;
     display: block;
     font-family: 'Open Sans', sans-serif; 
+}
+
+.historyButtons .button{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    background-color: white; 
+    border-radius: 8px;
+    border: 2px solid #FFC200;
+    color: #393E46;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    height: 50px;
+    width: 100px;
+    display: block;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.historyButtons .button:hover{
+    background-color: #FFC200;
+    color: white;
 }
 
     .optionButtons .button:hover {
