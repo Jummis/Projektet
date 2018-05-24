@@ -37,73 +37,51 @@
                 <?php
                     $name = $_SESSION['User'];
                     $userID = $_SESSION['ID'];
-                    // hämtar allt från databasen på både svarade och osvarade meddelanden        
-                    $answered = "SELECT * FROM Client_Message WHERE clientID = '$userID' OR coachMsgID IS NOT NULL";
-                    $notanswered = "SELECT * FROM Client_Message WHERE clientID = '$userID' OR coachMsgID IS NULL";
 
-                    // sparar resultatet av queryn i en variabel
+                    // besvarade meddelanden 
+                    $answered = "SELECT * FROM Client_Message WHERE clientID = '$userID' AND coachMsgID IS NOT NULL";
                     $a = $connection->query($answered);
+
+                    //obesvarade meddelanden
+                    $notanswered = "SELECT * FROM Client_Message WHERE clientID = '$userID' AND coachMsgID IS NULL";
                     $na = $connection->query($notanswered);
-        <p3> Dina obersvarade meddelanden</p3> <br><p3>Besvarade meddelanden </p3>
+
+                    $messageID = "SELECT clientMsgID FROM Client_Message WHERE clientID = '$userID' AND coachMsgID IS NOT NULL";
+                    $messageIDresult = $connection->query($messageID);
+
+                    while ($row = $messageIDresult-> fetch_row()){
+                        $resultID = $row[0];
+                    }
         
+                    $coachanswer = "SELECT * FROM Coach_Message WHERE clientMsgID = '$resultID'";
+                    $messageIDresult = $connection->query($coachanswer);
 
-        <div id="chatbox">
-
-            <?php
-<<<<<<< HEAD
-                // hämtar namn och kommentar från databasen
-                $getdata = "SELECT from_id, message, submitted, datum FROM Chatt";
-
-                // sparar resultatet av queryn i en variabel
-                $result = $connection->query($getdata);
-
-                $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
-
-                while($row = mysqli_fetch_assoc($result))
-                {  
-                    echo "<p5>" . $row["datum"] ."</p5>";
-                    echo "<h5>" . $userimg . " " . $row["from_id"]."</h5>";
-                    echo "<p6>" . $row["message"] ."</p6>"."<br>"."<br>";
-                    echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
-                    echo "<hr>";
-                }
-        
-            ?>
-=======
-
-                $name = $_SESSION['User'];
-                $userID= $_SESSION['ID'];
-                // hämtar allt från databasen på både svarade och osvarade meddelanden        
-                $answered = "SELECT * FROM Chatt WHERE from_id = '$userID' OR from_coach IS NOT NULL";
-                $notanswered = "SELECT * FROM Chatt WHERE from_id = '$userID' OR from_coach IS NULL";
-                
-
-                // sparar resultatet av queryn i en variabel
-                $a = $connection->query($answered);
-                $na = $connection->query($notanswered);
-                
-
-                $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
-                $coachimg = '<img id ="userchatt" src="assets/img/u_img_yellow.png">';
-
-                
                     $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
                     $coachimg = '<img id ="userchatt" src="assets/img/u_img_yellow.png">';
- 
+
+
                     while($row = mysqli_fetch_assoc($a)){  
                         echo "<p5>" . $row["datum"] ."</p5>";
                         echo "<h5>" . $userimg . " " . $name."</h5>";  
                         echo "<p6>" . $row["message_client"] ."</p6>"."<br>"."<br><hr>"; 
-                        if ($row["coachMsgID"] != NULL) {
-                            echo "<h5>" . $coachimg . " " . $row["coachMsgID"]." (Coach)</h5>";
-                            echo "<p6>" . $row["message_coach"] ."</p6>"."<br>"."<br>";
-                            echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
-                            echo "<hr>";    
-                        }                                          
-                    }          
-                ?>
+                            while ($row2 = mysqli_fetch_assoc($messageIDresult)) {
+                                echo "<h5>" . $coachimg . " " . $row2["coachID"]." (Coach)</h5>";
+                                echo "<p6>" . $row2["message_coach"] ."</p6>"."<br>"."<br>";
+                                echo "<p4>" . $row2["submitted"] . "</p4>"."<br>";
+                                echo "<hr>";   
+                            }                                                 
+                    }    
+
+                     while($row = mysqli_fetch_assoc($na)){  
+                        echo "<p5>" . $row["datum"] ."</p5>";
+                        echo "<h5>" . $userimg . " " . $name."</h5>";  
+                        echo "<p6>" . $row["message_client"] ."</p6>"."<br>"."<br><hr>";                                        
+                    }    
+
+    
+        
+            ?>
             </div>
->>>>>>> f20527f8550e88814f4c00d19ef1dd8ceb30752f
 
             <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
                 <textarea placeholder="Vänligen skriv ditt meddelande här" name="usermsg" id="usermsg"></textarea><br>
