@@ -10,7 +10,17 @@ date_default_timezone_set('Europe/Stockholm');
 
         $ID = $_SESSION['ID'];
 
-        $insertmessage = "UPDATE Client_Message SET submitted = '$time', datum = '$date', message_client = '$message' WHERE clientID = '$ID' AND message_client IS NULL";
-        $connection->query($insertmessage);
-    }
+        $sql = "SELECT clientMsgID FROM Client_Message WHERE clientID = '$ID' AND message_client IS NULL";
+        $sqlresult = $connection->query($sql);
+
+            if(empty(!$sqlresult))
+            { 
+                $insert = "INSERT INTO Client_Message (clientID, submitted, datum, message_client) VALUES ('".$ID."', '".$time."', '".$date."', '".$message."')";
+                $resultat = $connection->query($insert);
+            } 
+            else {
+                $insertmessage = "UPDATE Client_Message SET submitted = '$time', datum = '$date', message_client = '$message' WHERE clientID = '$ID' AND message_client IS NULL";
+                $connection->query($insertmessage);
+            }
+       } 
 ?>
