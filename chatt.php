@@ -72,14 +72,14 @@
                             }                                                 
                     }    
 
-                     while($row = mysqli_fetch_assoc($na)){  
-                        echo "<p5>" . $row["datum"] ."</p5>";
-                        echo "<h5>" . $userimg . " " . $name."</h5>";  
-                        echo "<p6>" . $row["message_client"] ."</p6>"."<br>"."<br><hr>";                                        
-                    }    
 
-    
-        
+                     while($row = mysqli_fetch_assoc($na)){  
+                         if ($row["message_client"] != NULL) {
+                            echo "<p5>" . $row["datum"] ."</p5>";
+                            echo "<h5>" . $userimg . " " . $name."</h5>";  
+                            echo "<p6>" . $row["message_client"] ."</p6>"."<br>"."<br><hr>"; 
+                         }                                               
+                    }        
             ?>
             </div>
 
