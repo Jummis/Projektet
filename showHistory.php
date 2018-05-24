@@ -9,6 +9,7 @@
         <title> Hälsocoachen - homepage </title>
         <link rel = "stylesheet" href = "assets/main.css">
     </head>
+
     <body>
         <header>
             <ul>
@@ -26,8 +27,10 @@
     
         <div id="chatcontainer">
             <div id="chatbox">
+                <?php
+                ?>
             </div>
-            </div>
+        </div>
 
             <div class="leftmenu">
             <a class = "veryactive">MINA SIDOR</a>
