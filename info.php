@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
     
+<<<<<<< HEAD
     <body>
         <header>
             <ul>
@@ -54,4 +55,62 @@
         </div> 
 
     </footer>
+=======
+<body>
+
+<header>
+ <ul>
+
+  <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
+  <li><a href="info.php">VAD ÄR HÄLSOCOACHING?</a></li>
+  <li><a href="omoss.php">OM OSS</a></li>
+  <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
+  
+</ul>
+</header>
+<h1> Vad är hälsocoaching? </h1>
+<p2> Att vända sig till en hälsocoach innebär att bli vägledd till en mer hälsosam livsstil. <br>Det innebär att optimera träning, kost, sömn, stress och alla andra
+  faktorer som är viktiga<br> för att bibehålla en god hälsa. Nedan kan du läsa om hur viktiga dessa<br>faktorer är och hur det påverkar hälsan. </p2>
+<br><br><hr>
+<div class="row">
+  <div class="column">
+    <img id = "trainingIMG" src="assets/img/training (1).jpg"><br>
+  </div>
+  <div class="column">
+    <img id = "infoIMG" src="assets/img/kost.jpg"><br><br>
+  </div>
+  <div class = "column">
+  <img id = "stressIMG" src="assets/img/stress.jpg"><br>
+  </div>
+    <div class = "column">
+  <img id = "sleepIMG" src="assets/img/sleep (1).jpg"><br>
+  </div>
+</div>
+
+<a href = "register.php"><h1> Bli medlem nu och ta kontakt med din hälsocoach! </h1></a>
+
+
+
+
+</body>
+
+<footer>
+<p id="kontaktrubrik">HÄLSOCOACHEN</p>
+<p id="kontaktuppg">Kontaktuppgifter</p>
+
+
+ <div class="row">
+  <div class="column">
+    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
+    <p3> 0703457947 </p3>
+  </div>
+  <div class="column">
+    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br>
+    <p3> halsocoachen@coach.se </p3>
+  </div>
+</div> 
+
+</footer>
+
+>>>>>>> 70bf3e199c41c4399f8778ab705edb256e02ec37
 </html>

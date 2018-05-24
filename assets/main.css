@@ -29,11 +29,10 @@ body{
 
 .PicText{
     position: absolute;
-    top: 50%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 p1 {
@@ -72,6 +71,11 @@ a{
     text-decoration: none;
 }
 
+#länkOvanForum{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 30px;
+}
 
 #wrapper {
     border-radius: 20px;
@@ -245,7 +249,7 @@ p{
 }
 
 #textunderhead{
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 footer{
@@ -334,6 +338,7 @@ background-color: #FFC200;
 #chatbox{
     text-align:left;
     margin: auto;
+    margin-top: 10px;
     margin-bottom:10px;
     padding: 15px;
     padding-top: 20px;
@@ -408,6 +413,7 @@ background-color: #FFC200;
     text-align: center;
     width: 700px;
     margin-top: 30px;
+    height: 620px;
     height: 1000px;
     background-color: #375162;
     margin-left: auto;
