@@ -29,11 +29,10 @@ body{
 
 .PicText{
     position: absolute;
-    top: 50%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 p1 {
@@ -72,13 +71,17 @@ a{
     text-decoration: none;
 }
 
+#länkOvanForum{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 30px;
+}
 
 #wrapper {
     border-radius: 20px;
     text-align: center;
     width: 1000px;
-    height: 500px;
-    margin-top: 40px;
+    height: 450px;
     background-color: #375162;
     margin-left: auto;
     margin-right: auto;
@@ -246,7 +249,7 @@ p{
 }
 
 #textunderhead{
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 footer{
@@ -259,13 +262,13 @@ footer{
 }
 
 #kontaktuppg{
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     margin-top: 0px;
 }
 
 #kontaktrubrik{
-    font-size: 50px;
+    font-size: 40px;
     padding-top: 20px;
     color: white;
     font-weight: bold;
@@ -335,6 +338,7 @@ background-color: #FFC200;
 #chatbox{
     text-align:left;
     margin: auto;
+    margin-top: 10px;
     margin-bottom:10px;
     padding: 15px;
     padding-top: 20px;
@@ -343,7 +347,23 @@ background-color: #FFC200;
     width:600px;
     border:1px solid #FFC200;
     border-radius: 8px;
-    overflow:auto; }
+    overflow:auto; 
+    }
+
+
+    #sendbox{
+    text-align:left;
+    margin: auto;
+    margin-bottom:10px;
+    padding: 15px;
+    padding-top: 20px;
+    background:#fff;
+    height:300px;
+    width:600px;
+    border:1px solid #FFC200;
+    border-radius: 8px;
+    overflow:auto; 
+    }
 
     h5{
     font-size: 16px;
@@ -380,7 +400,6 @@ background-color: #FFC200;
     font-family: 'Open Sans', sans-serif;
     color: #393E46;
     font-size: 15px;
-
     }
 
     #sendmessage:hover {
@@ -394,7 +413,8 @@ background-color: #FFC200;
     text-align: center;
     width: 700px;
     margin-top: 30px;
-    height: 580px;
+    height: 620px;
+    height: 1000px;
     background-color: #375162;
     margin-left: auto;
     margin-right: auto;
@@ -474,6 +494,11 @@ background-color: #FFC200;
     color: white;
 }
 
+.leftmenu a.veryactive {
+    background-color: #ccc;
+    color: white;
+}
+
 #pdfIcon{
     height:50px;
     width:50px;
@@ -499,4 +524,54 @@ margin-top: 5px;
 #sleepIMG {
 width:80%;
 margin-top: 8px;
+margin-bottom: 10%;
 }
+
+#stressIMG {
+width:80%;
+margin-bottom: 10%;
+}
+
+#coaches {
+    background: #375162;
+    float: left;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+#backgroundIMG{
+    background-color: #375162;
+    width: 100%;
+    height: 85%;
+    border-top: 20px solid #375162;
+}
+
+
+h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.pictxt{
+    position: absolute;
+    left: 61%;
+    margin-top: -10%;
+    transform: translate(-100%, -100%);
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#såfunkardet {
+    width: 40%;
+    float: left;
+}
+
+h3 {
+    color:#FFC200;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+

@@ -190,6 +190,15 @@ border-radius: 5px;
 margin-bottom: 5px;
 }
 
+#inputBox2 {
+float:left;
+width: 250px;
+height: 40px;
+border-radius: 5px;
+margin-bottom: 5px;
+margin-left: 5%;
+}
+
 #passBox{
 width: 350px;
 height: 40px;
@@ -400,6 +409,19 @@ background-color: #FFC200;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     }
 
+#chatcontainer2{
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 700px;
+    margin-top: 30px;
+    height: 650px;
+    background-color: #375162;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    }
+
     #closeForumKnapp{
     width: 630px;
     height: 60px;
@@ -499,3 +521,16 @@ margin-top: 5px;
 width:80%;
 margin-top: 8px;
 }
+
+#sendbox{
+    text-align:left;
+    margin: auto;
+    margin-bottom:10px;
+    padding: 15px;
+    padding-top: 20px;
+    background:#fff;
+    height:300px;
+    width:600px;
+    border:1px solid #FFC200;
+    border-radius: 8px;
+    overflow:auto; }
