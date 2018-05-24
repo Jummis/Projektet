@@ -35,6 +35,33 @@
         </form>
 
             <?php
+            if ($_SERVER["REQUEST_METHOD"] == 'POST') {
+                if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['training'])){
+                    $getdata = "SELECT submitted, datum, message_client FROM Client_Message WHERE forum_type=training AND $_SESSION['ID']=clientID"
+                }
+                   if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['food'])){
+                    $getdata = "SELECT submitted, datum, message_client FROM Client_Message WHERE forum_type=food AND $_SESSION['ID']=clientID"
+                }
+                   if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['stress'])){
+                    $getdata = "SELECT submitted, datum, message_client FROM Client_Message WHERE forum_type=stress AND $_SESSION['ID']=clientID"
+                }
+                   if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['sleep'])){
+                    $getdata = "SELECT submitted, datum, message_client FROM Client_Message WHERE forum_type=sleep AND $_SESSION['ID']=clientID"
+                }
+                   if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['alcohol'])){
+                    $getdata = "SELECT submitted, datum, message_client FROM Client_Message WHERE forum_type=alcohol AND $_SESSION['ID']=clientID"
+                }
+                   if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['general'])){
+                    $getdata = "SELECT submitted, datum, message_client FROM Client_Message WHERE forum_type=general AND $_SESSION['ID']=clientID"
+                }
+                
+                
+                
+                
+                
+                
+                
+                
                 /*hämtar namn och kommentar från databasen
                 $getdata = "SELECT * FROM Chatt WHERE from_id = 'Julia'";
 

@@ -476,6 +476,11 @@ background-color: #FFC200;
     font-family: 'Open Sans', sans-serif; 
 }
 
+.historyButtons .button:hover{
+    background-color: #FFC200;
+    color: white;
+}
+
     .optionButtons .button:hover {
     background-color: #FFC200;
     color: white;
