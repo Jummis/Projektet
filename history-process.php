@@ -19,6 +19,7 @@ include 'connection.php';
                 }
                    if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['sleep'])){
                     $getclientdata = "SELECT submitted, datum, message_client FROM Client_Message WHERE forum_type=sleep AND $userID=clientID";
+                    $getcoachdata= "SELECT submitted, datum, message_coach FROM Coach_Message WHERE clientMsgID= AND forum_type=sleep"
                 }
                    if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['alcohol'])){
                     $getclientdata = "SELECT submitted, datum, message_client FROM Client_Message WHERE forum_type=alcohol AND $userID=clientID";
