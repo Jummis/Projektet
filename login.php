@@ -4,33 +4,26 @@ include_once 'validateLogin.php';
 ?>
 
 <html>
-<head>
-    <title> Hälsocoachen </title>
-    <link rel = "stylesheet" href = "assets/main.css">
-    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
-</head>
-<body>
-<header>
- <ul>
+    <head>
+        <title> Hälsocoachen </title>
+        <link rel = "stylesheet" href = "assets/main.css">
+          <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
+                <li><a href="info.php">VAD ÄR HÄLSOCOACHING?</a></li>
+                <li><a href="omoss.php">OM OSS</a></li>
+                <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
+            </ul>
+        </header>
 
-  <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
-  <li><a href="info.php">VAD ÄR HÄLSOCOACHING?</a></li>
-  <li><a href="omoss.php">OM OSS</a></li>
-  <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
-  
-</ul>
-</header>
+        <div id = wrapper><br>
+            <img id = "user" src = "https://image.ibb.co/edWLgJ/default_user_image.png"><br><br>
+            <p3>Har du inget konto?</p3><p3><a href = 'register.php'> Registrera dig </p3> </a><br>
 
-
-<div id = wrapper><br>
-<img id = "user" src = "https://image.ibb.co/edWLgJ/default_user_image.png">
-<br><br>
-<p3>Har du inget konto?</p3><p3><a href = 'register.php'> Registrera dig </p3> </a>
-<br>
-
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
-
-                <br>
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST"><br>
                 <input type="text" id = "inputBox" name="email" title="email" style="color:#888;" 
                 placeholder="E-postadress" value = "<?php echo $email;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
                 <br><p3><?php echo $email_error; ?> </p3>
@@ -40,29 +33,23 @@ include_once 'validateLogin.php';
                 <br> <p3> <?php echo $password_error; ?> </p3>
 
                 <input type="submit" name="submit" id="submit" value="Logga in">
-        </form>
+            </form>  <br><br>
+        </div>
+    </body>
 
-        <br><br>
-</div>
+    <footer>
+        <p id="kontaktrubrik">HÄLSOCOACHEN</p>
+        <p id="kontaktuppg">Kontaktuppgifter</p>
 
-
-</body>
-
-<footer>
-<p id="kontaktrubrik">HÄLSOCOACHEN</p>
-<p id="kontaktuppg">Kontaktuppgifter</p>
-
-
- <div class="row">
-  <div class="column">
-    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
-    <p3> 0703457947 </p3>
-  </div>
-  <div class="column">
-    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br>
-    <p3> halsocoachen@coach.se </p3>
-  </div>
-</div> 
-
-</footer>
+        <div class="row">
+            <div class="column">
+                <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br>
+                <p3> 0703457947 </p3>
+            </div>
+            <div class="column">
+                <img src="https://image.ibb.co/jSQmqd/envelope.png"><br>
+                  <p3> halsocoachen@coach.se </p3>
+            </div>
+        </div> 
+    </footer>
 </html>

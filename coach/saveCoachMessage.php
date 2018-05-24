@@ -1,31 +1,27 @@
 <?php
 include_once "../connection.php";
-include_once "../session.php";
+include_once "sessioncoach.php";
 date_default_timezone_set('Europe/Stockholm');
 
-$uname = "dbtrain_763";
-$pass = "yvgjnd";
-$host = "dbtrain.im.uu.se";
-$dbname = "dbtrain_763";
-
-$connection=new mysqli($host,$uname,$pass,$dbname);
-
-if ($connection->connect_error)
-    {
-    die ("Connection failed : ".$connection.connect_error);
-    }
-
-if ($_SERVER["REQUEST_METHOD"] == 'POST')
-{
-    $coachmessage = $connection->real_escape_string($_POST['coachmsg']);
-    $number = $connection->real_escape_string($_POST['number']);
-    $date = date("Y/m/d");
-    $time = date("h:i");
+    if ($_SERVER["REQUEST_METHOD"] == 'POST') {
+        $coachmessage = $connection->real_escape_string($_POST['coachmsg']);
+        $number = $connection->real_escape_string($_POST['number']);
+        $date = date("Y/m/d");
+        $time = date("h:i");
     
-    $user = $_SESSION['User'];
-    $insertmessage = "UPDATE Chatt SET coach_message = '$coachmessage', from_coach = '$user' WHERE chattID = '$number'";     
-    $connection->query($insertmessage);
-    header ("Location: coachchatt.php");
- }
+        $ID = $_SESSION['CoachID'];
+        $insertCoachMessage = "INSERT INTO Coach_Message (coachID, submitted, datum, message_coach, clientMsgID) VALUES ('".$ID."', '".$time."', '".$date."', '".$coachmessage."', '".$number."')";
+        $connection->query($insertCoachMessage);
 
+        $selectID = "SELECT coachMsgID FROM Coach_Message WHERE clientMsgID = '$number'";
+        $coachMsgID = $connection->query($selectID);
+
+        while ($row = $coachMsgID-> fetch_row()){
+            $ID = $row[0];
+        }
+
+        $update = "UPDATE Client_Message SET coachMsgID = '$ID' WHERE clientMsgID = '$number'";    
+        $connection->query($update);
+        header ("Location: coachchatt.php");
+    }
 ?>

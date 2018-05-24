@@ -1,5 +1,9 @@
-<html>
+<?php
+    include 'session.php';
+    include_once 'forumtype-process.php';
+?>
 
+<html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <title>Hälsocoachen Chatt</title>
@@ -8,51 +12,45 @@
     </head>
 
     <body>
-<header>
- <ul>
-
-  <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
-  <li><a href="myPage.php">MINA SIDOR</a></li>
-  <li><a href="chatOptions.php" class="active">LIVEFORUM</a></li>
-  <li><a href="logout.php">LOGGA UT</a></li>
-  
-</ul>
-</header>
+    <header>
+        <ul>
+            <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
+            <li><a href="myPage.php">MINA SIDOR</a></li>
+            <li><a href="chatOptions.php" class="active">LIVEFORUM</a></li>
+            <li><a href="logout.php">LOGGA UT</a></li>
+        </ul>
+    </header>
 
         <div id= "welcome">
             <h1> Vad vill du ha hjälp med idag? </h1>
-            <p1> Vänligen välj ett av nedanstående alternativ.</p1>
-            <br><br><br>
+            <p1> Vänligen välj ett av nedanstående alternativ.</p1><br><br><br>
         </div>
 
-        <div class="optionButtons">
-       <a href='chatt.php'> <input type="submit" class="button" value="KOST"><br>
-        <input type="submit" class="button" value="TRÄNING"><br>
-        <input type="submit" class="button" value="STRESS"><br>
-        <input type="submit" class="button" value="SÖMN"><br>
-        <input type="submit" class="button" value="ALKOHOL/TOBAK"><br>
-        <input type="submit" class="button" value="ALLMÄNT"><br></a>
-        </div>
+        <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
+            <div class="optionButtons">
+                <input type="submit" class="button" name = "food" value="KOST"><br>
+                <input type="submit" class="button" name = "training" value="TRÄNING"><br>
+                <input type="submit" class="button" id = "stress" value="STRESS"><br>
+                <input type="submit" class="button" id = "sleep" value="SÖMN"><br>
+                <input type="submit" class="button" id = "alcohol" value="ALKOHOL/TOBAK"><br>
+                <input type="submit" class="button" id = "general" value="ALLMÄNT"><br>
+           </div>
+        </form>
+    </body>
 
-</div>
- </body>
+    <footer>
+        <p id="kontaktrubrik">HÄLSOCOACHEN</p>
+        <p id="kontaktuppg">Kontaktuppgifter</p>
 
-<footer>
-<p id="kontaktrubrik">HÄLSOCOACHEN</p>
-<p id="kontaktuppg">Kontaktuppgifter</p>
-
-
- <div class="row">
-  <div class="column">
-    <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br><br>
-    <p3> 0703457947 </p3>
-  </div>
-  <div class="column">
-    <img src="https://image.ibb.co/jSQmqd/envelope.png"><br><br>
-    <p3> halsocoachen@coach.se </p3>
-  </div>
-</div> 
-
-</footer>
-
+        <div class="row">
+          <div class="column">
+              <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br><br>
+              <p3> 0703457947 </p3>
+          </div>
+          <div class="column">
+              <img src="https://image.ibb.co/jSQmqd/envelope.png"><br><br>
+              <p3> halsocoachen@coach.se </p3>
+          </div>
+        </div> 
+    </footer>
 </html>
