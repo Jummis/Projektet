@@ -30,8 +30,9 @@ include_once "saveLoggMess.php";
 <div id = "loggMessBox">
 
 <?php
+        $clientID=$_SESSION['ID'];
 
-        $getData = "SELECT datum, logg_mess FROM Loggbok";
+        $getData = "SELECT datum, logg_mess FROM Loggbok WHERE clientID = '$clientID' ";
 
         $resultData = $connection->query($getData);
 

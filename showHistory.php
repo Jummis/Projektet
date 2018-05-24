@@ -27,7 +27,7 @@
     
         <div id="chatcontainer">
             <div id="chatbox">
-                <?php
+            <?php
             $userID= $_SESSION['ID'];
             
             if ($_SERVER["REQUEST_METHOD"] == 'POST') {
