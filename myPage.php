@@ -34,7 +34,7 @@
   <a class = "veryactive">MINA SIDOR</a>
   <a href="files.php">FILER</a>
   <a href="myProfile.php">MIN PROFIL</a>
-  <a href="#">LOGGBOK</a>
+  <a href="loggbok.php">LOGGBOK</a>
   <a href="historik.php">HISTORIK</a>
 </div>
 

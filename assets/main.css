@@ -469,12 +469,11 @@ background-color: #FFC200;
 }
 
 .leftmenu {
-    width: 200px;
     text-align: left;
     padding-left: 20px;
     padding: 0;
-    width: 25%;
-    margin-top: 6%;
+    width: 22%;
+    margin-top: 2%;
     }
 
 .leftmenu a {
@@ -573,5 +572,78 @@ h3 {
     margin: 0 auto;
     padding: 0 auto;
 }
+
+#LoggBokBox{
+    float: right;
+    margin-right: 22%;
+    margin-top: 0.5%;
+}
+
+#rubrikLoggbok{
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 3%;
+  padding: 20px;
+  width: 650px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2px;
+  background-color: #375162;
+  color: white;
+  text-align: center;
+}
+
+#loggMessBox{
+  padding: 20px;
+  width: 650px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  background: whitesmoke;
+  font-size: 18px;
+  text-align: left;
+}
+
+#loggMessFält{
+  margin-top: 1%;
+  padding: 20px;
+  width: 650px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:whitesmoke;
+  height: 200px;
+}
+
+#loggMessRuta{
+    height: 100px;
+    width: 650px;
+    border-radius: 3px;
+    border-style: ridge;
+    margin-top: 10px;
+    font-size: 17px;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#knappLoggMess{
+  background-color: white;
+   border-radius: 8px;
+   border: 2px solid #FFC200;
+   color: #393E46;
+   font-weight: bold;
+   width: 650px;
+   height: 60px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 15px;
+   margin-top: 10px;
+}
+
+#knappLoggMess:hover{
+  background-color: #FFC200;
+    color: #393E46;
+}
+
 
 
