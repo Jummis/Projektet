@@ -30,8 +30,9 @@ include_once "saveLoggMess.php";
 <div id = "loggMessBox">
 
 <?php
+        $clientID=$_SESSION['ID'];
 
-        $getData = "SELECT datum, logg_mess FROM Loggbok";
+        $getData = "SELECT datum, logg_mess FROM Loggbok WHERE clientID = '$clientID' ";
 
         $resultData = $connection->query($getData);
 
@@ -64,7 +65,6 @@ include_once "saveLoggMess.php";
   <a href="historik.php">HISTORIK</a>
 </div>
 
- </body>
 
  <footer>
 <p id="kontaktrubrik">HÄLSOCOACHEN</p>
@@ -83,5 +83,7 @@ include_once "saveLoggMess.php";
 </div> 
 
 </footer>
+ </body>
+
 
 </html>
