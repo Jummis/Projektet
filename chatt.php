@@ -32,7 +32,6 @@
         </div>
 
         <div id="chatcontainer">
-<<<<<<< HEAD
             <p3> Dina obersvarade meddelanden</p3> <br>     <p3>Besvarade meddelanden </p3>
             <div id="chatbox">
                 <?php
@@ -45,7 +44,6 @@
                     // sparar resultatet av queryn i en variabel
                     $a = $connection->query($answered);
                     $na = $connection->query($notanswered);
-=======
         <p3> Dina obersvarade meddelanden</p3> <br><p3>Besvarade meddelanden </p3>
         
 
@@ -88,7 +86,6 @@
                 $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
                 $coachimg = '<img id ="userchatt" src="assets/img/u_img_yellow.png">';
 
->>>>>>> 70bf3e199c41c4399f8778ab705edb256e02ec37
                 
                     $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
                     $coachimg = '<img id ="userchatt" src="assets/img/u_img_yellow.png">';

@@ -52,7 +52,7 @@ include 'sessioncoach.php';
           <p3> Min Profil </p3>
         </div>
         <div class = "column">
-          <a href = "coachchatt.php"><img id = "infoIMG" src="assets/forum.png"></a><br><br>
+          <a href = "chatOptionsCoach.php"><img id = "infoIMG" src="assets/forum.png"></a><br><br>
           <p3> Forum </p3>
       </div>
   </body>
