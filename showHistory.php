@@ -9,7 +9,6 @@
         <title> Hälsocoachen - homepage </title>
         <link rel = "stylesheet" href = "assets/main.css">
     </head>
-
     <body>
         <header>
             <ul>
@@ -22,22 +21,15 @@
 
         <div id= "wrapper2">
             <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
-            <p1> Här kan du se alla dina skapade forumtrådar med hälsocoacher.<br> Välj vilken tråd du vill läsa: </p1><br><br>
-        </div> 
+            <p1> Här kan du se din forumhistorik .<br></p1><br><br>
+        </div>
+    
+        <div id="chatcontainer">
+            <div id="chatbox">
+            </div>
+            </div>
 
-        <form name="history" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
-            <div class="historyButtons">
-                <input type="submit" class="button" name = "food" value="KOST">
-                <input type="submit" class="button" name = "training" value="TRÄNING">
-                <input type="submit" class="button" name = "stress" value="STRESS">
-                <input type="submit" class="button" name = "sleep" value="SÖMN">
-                <input type="submit" class="button" name = "alcohol" value="ALKOHOL/TOBAK">
-                <input type="submit" class="button" name = "general" value="ALLMÄNT">
-           </div>
-        </form>
-            
-
-        <div class="leftmenu">
+            <div class="leftmenu">
             <a class = "veryactive">MINA SIDOR</a>
             <a href="files.php">FILER</a>
             <a href="myProfile.php">MIN PROFIL</a>
@@ -46,7 +38,7 @@
         </div>
     </body>
 
-    <footer>
+        <footer>
         <p id="kontaktrubrik">HÄLSOCOACHEN</p>
         <p id="kontaktuppg">Kontaktuppgifter</p>
 
