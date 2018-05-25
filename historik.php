@@ -19,7 +19,7 @@
             </ul>
         </header>
 
-        <div id= "wrapper2">
+        <div id= "wrapper3">
             <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
             <p1> Här kan du se alla dina skapade forumtrådar med hälsocoacher.<br> Välj vilken tråd du vill läsa: </p1><br><br>
 
