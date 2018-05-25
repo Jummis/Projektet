@@ -25,6 +25,7 @@
     </header>
 
         <a id = "Tillbaka" href="../chatOptions.php">Tillbaka till alternativen</a>
+        <a id = "Tillbaka" href="archivegeneral.php">Avsluta och arkivera konversation</a>
         <div id= "welcome">
             <h1> Välkommen till ditt liveforum <?php echo $_SESSION['User']; ?>!</h1>
             <p1> Skicka ett meddelande så kommer någon av<br>
