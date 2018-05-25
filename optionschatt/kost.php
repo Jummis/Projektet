@@ -25,7 +25,7 @@
     </header>
 
         <a id = "Tillbaka" href="../chatOptions.php">Tillbaka till alternativen</a><br>
-        <a id = "Tillbaka" href="archive.php">Avsluta och arkivera konversation</a>
+        <a id = "Tillbaka" href="archivekost.php">Avsluta och arkivera konversation</a>
         <div id= "welcome">
             <h1> Välkommen till ditt liveforum <?php echo $_SESSION['User']; ?>!</h1>
             <p1> Skicka ett meddelande så kommer någon av<br>
@@ -44,15 +44,15 @@
                     $coachimg = '<img id ="userchatt" src="../assets/img/u_img_yellow.png">';
 
                     // besvarade meddelanden 
-                    $answered = "SELECT * FROM Client_Message WHERE forum_type = 'kost' AND clientID = '$userID' AND coachMsgID IS NOT NULL";
+                    $answered = "SELECT * FROM Client_Message WHERE forum_type = 'food' AND clientID = '$userID' AND coachMsgID IS NOT NULL";
                     $a = $connection->query($answered);
 
                     //obesvarade meddelanden
-                    $notanswered = "SELECT * FROM Client_Message WHERE forum_type = 'kost' AND clientID = '$userID' AND coachMsgID IS NULL";
+                    $notanswered = "SELECT * FROM Client_Message WHERE forum_type = 'food' AND clientID = '$userID' AND coachMsgID IS NULL";
                     $na = $connection->query($notanswered);
 
                     //hämtar besvarade meddelanden
-                    $messageID = "SELECT * FROM Client_Message WHERE forum_type = 'kost' AND clientID = '$userID' AND coachMsgID IS NOT NULL";
+                    $messageID = "SELECT * FROM Client_Message WHERE forum_type = 'food' AND clientID = '$userID' AND coachMsgID IS NOT NULL";
                     $messageIDresult = $connection->query($messageID);
        
                     while($row = mysqli_fetch_assoc($a)){       
