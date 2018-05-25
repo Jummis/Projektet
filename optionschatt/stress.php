@@ -36,43 +36,37 @@
         <div id="chatcontainer">
             <p3> Dina obersvarade meddelanden</p3> <br>     <p3>Besvarade meddelanden </p3>
             <div id="chatbox">
-                <?php
+                 <?php
                     $name = $_SESSION['User'];
                     $userID = $_SESSION['ID'];
 
                     $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
                     $coachimg = '<img id ="userchatt" src="../assets/img/u_img_yellow.png">';
 
-                    // besvarade meddelanden 
-                    $answered = "SELECT * FROM Client_Message WHERE forum_type = 'stress' AND clientID = '$userID' AND coachMsgID IS NOT NULL";
-                    $a = $connection->query($answered);
-
                     //obesvarade meddelanden
                     $notanswered = "SELECT * FROM Client_Message WHERE forum_type = 'stress' AND clientID = '$userID' AND coachMsgID IS NULL";
                     $na = $connection->query($notanswered);
 
                     //hämtar besvarade meddelanden
-                    $messageID = "SELECT * FROM Client_Message WHERE forum_type = 'stress' AND clientID = '$userID' AND coachMsgID IS NOT NULL";
-                    $messageIDresult = $connection->query($messageID);
-       
-                    while($row = mysqli_fetch_assoc($a)){       
+                    $answer = "SELECT * FROM Client_Message WHERE forum_type = 'stress' AND clientID = '$userID' AND coachMsgID IS NOT NULL";
+                    $a = $connection->query($answer);  
 
-                        while ($row1 = mysqli_fetch_assoc($messageIDresult)) {
+                        while ($row1 = mysqli_fetch_assoc($a)) {
                             $getData = "SELECT * FROM Coach_Message WHERE clientMsgID = '".$row1['clientMsgID']."'";
                             $resultData = $connection->query($getData);
 
                             while($row2 = mysqli_fetch_assoc($resultData))
-                            {
-                                echo "<p5>" . $row["datum"] ."</p5>";
-                                echo "<h5>" . $userimg . " " . $name."</h5>";  
-                                echo "<p6>" . $row["message_client"] ."</p6>"."<br><br>"; 
-                                echo "<p5>" . $row["submitted"] ."</p5><br><hr>";
-
+                            {                      
                                 $coachID = $row2["coachID"];
                                 $getName= "SELECT * FROM Coach WHERE coachID = '$coachID'";
                                 $resultName = $connection->query($getName);
 
                                 while ($row3 = mysqli_fetch_assoc($resultName)) {
+                                    echo "<p5>" . $row1["datum"] ."</p5>";
+                                    echo "<h5>" . $userimg . " " . $name."</h5>";  
+                                    echo "<p6>" . $row1["message_client"] ."</p6>"."<br><br>"; 
+                                    echo "<p5>" . $row1["submitted"] ."</p5><br><hr>";
+
                                     echo "<p5>" . $row2["datum"] ."</p5>";
                                     echo "<h5>" . $coachimg . " " . $row3["fname"]." (Coach)</h5>";
                                     echo "<p6>" . $row2["message_coach"] ."</p6>"."<br><br>"; 
@@ -80,7 +74,7 @@
                                 }                        
                             }
                         }       
-                    }    
+                       
 
                      while($row = mysqli_fetch_assoc($na)){  
                          if ($row["message_client"] != NULL) {
