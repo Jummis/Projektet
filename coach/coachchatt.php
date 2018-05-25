@@ -53,7 +53,7 @@
                                 echo "<h5>" . $userimg . " " . $row1['fname']."</h5>";  
                                 echo "<p6>" . $row["message_client"] ."</p6>"."<br><br>"; 
                                 echo "<p5>" . $row["submitted"] ."</p5><br>";
-                                echo "<a href = svara.php> Svara meddelande " . $row["clientMsgID"] . "</a><br>";
+                                echo "<p8>" . "MeddelandeID: " . $row["clientMsgID"] ."</p8>"."<br>";
                                 echo "<a href = read.php> Läs konversation med användare " . $row["clientID"] ." </a><hr>";  
                       
                             }
