@@ -30,12 +30,12 @@ include 'sessioncoach.php';
         </div>
 
         <div class="column">
-          <img id = "infoIMG" src="assets/settings.png"><br><br>
+          <a href = "coachsettings.php"><img id = "infoIMG" src="assets/settings.png"><br><br>
           <p3> Inställningar </p3>
         </div>
 
         <div class = "column">
-          <img id = "infoIMG" src="assets/user.png"><br><br>
+          <a href = "coachMyprofile.php"><img id = "infoIMG" src="assets/user.png"><br><br>
           <p3> Min Profil </p3>
         </div>
         
