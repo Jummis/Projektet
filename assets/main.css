@@ -428,7 +428,9 @@ background-color: #FFC200;
     font-size: 14px; }
   
     #sendmessage{
-    width: 630px;
+    width: 500px;
+    float:left;
+    margin-left: 5%;
     height: 60px;
     background-color: white;
     border-radius: 8px;
@@ -701,6 +703,16 @@ h3 {
   background-color: #FFC200;
     color: #393E46;
 }
+
+#update {
+    width: 6%;
+}
+
+.columnUpdate {
+  float: right;
+  width: 50%;
+}
+
 
 
 
