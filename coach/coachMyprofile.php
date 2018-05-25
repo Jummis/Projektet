@@ -1,5 +1,6 @@
 <?php
-include 'sessioncoach.php';
+include "sessioncoach.php";
+include "coachhangepassword.php";
 ?>
 
 <html>
@@ -24,12 +25,16 @@ include 'sessioncoach.php';
       <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
       Nuvarande lösenord: <input type="password" id="currentPassword" name="currentPassword" title="currentPassword" style="color:#888;" 
       placeholder="Fyll i ditt nuvarande lösenord"><br>
+      <br> <p3> <?php echo $passwordErr; ?> </p3>
       
       Nytt lösenord: <input type="password" id="newPassword" name="newPassword" title="newPassword" style="color:#888;" 
       placeholder="Fyll i ditt nya lösenord"><br>
 
       Återge ditt nya lösenord igen: <input type="password" id="confirmPassword" name="confirmPassword" title="confirmPassword" style="color:#888;" 
       placeholder="Fyll i ditt nya lösenord"><br>
+      <br> <p3> <?php echo $passwordErr; ?> </p3>
+
+      <input type="submit" name="submit"value="Updatera lösenord">
 
       </form>
 
