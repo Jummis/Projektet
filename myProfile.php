@@ -1,6 +1,7 @@
 <?php   
     include_once 'connection.php';
     include_once 'session.php';
+    include_once 'showPersInfo.php';
 ?>
 
 <html>
@@ -19,10 +20,24 @@
             </ul>
         </header>
 
+    <div id ="alltInnehållMP">
         <div id= "wrapper2">
             <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
             <p1> Detta är din profil. Här kan du fylla i och uppdatera dina värden. </p1><br><br>
         </div>
+
+        <div id="personligaUppg">
+            <p7>Förnamn<br></p7><?php echo $fname; ?><br><br>
+            <p7>Efternamn<br></p7><?php echo $lname; ?><br><br>
+            <p7>Personnummer<br></p7> <?php echo $pNr; ?><br><br>
+            <p7>Epostadress<br></p7> <?php echo $email; ?><br><br>
+
+            <div id ="profileButton">
+            <a href='updateInfo.php'><input type="submit" id ="updateButton" name="updateButton" value="Uppdatera information" onsubmit="updateInfo.php"></a>
+            </div>
+        </div>
+
+    </div>
 
         <div class="leftmenu">
             <a class = "veryactive">MINA SIDOR</a>
@@ -32,6 +47,7 @@
             <a href="historik.php">HISTORIK</a>
         </div>  
     </body>
+
     <footer>
         <p id="kontaktrubrik">HÄLSOCOACHEN</p>
         <p id="kontaktuppg">Kontaktuppgifter</p>

@@ -62,6 +62,11 @@ p6{
     font-size: 14px;
 }
 
+p7{
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .row{
    padding-bottom: 40px;
 }
@@ -305,13 +310,36 @@ margin-top: 2%;
 }
 
 #wrapper2{
-    padding: 20px;
     text-align: left;
-    width: 800px;
-    margin-top: 10px;
     margin-left: auto;
-    margin-right: 2%;
+    margin-right: 40%;
     float: right;
+}
+
+#personligaUppg{
+    text-align: left;
+    margin-left: auto;
+    margin-right: 53%;
+    float: right;
+}
+
+#alltInnehållMP{
+    padding-bottom: 100px;
+}
+
+#updateButton{
+   background-color:#375162;
+   border-radius: 8px;
+   color: white;
+   width: 250px;
+   height: 50px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 15px;
+   padding: 15px;
+}
+
+#updateButton:hover{
+    background-color: #FFC200;
 }
 
 h1{
