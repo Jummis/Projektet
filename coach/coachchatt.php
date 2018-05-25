@@ -19,7 +19,7 @@
     <header>
         <ul>
             <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
-            <li><a href="myPage.php">MINA SIDOR</a></li>
+            <li><a href="coachMypage.php">MINA SIDOR</a></li>
             <li><a href="chatOptions.php" class="active">LIVEFORUM</a></li>
             <li><a href="logout.php">LOGGA UT</a></li>
             <li><a href="">Något mer</a></li>
@@ -33,26 +33,49 @@
 
         <div id="chatcontainer2">
             <div id="chatbox">
+
                 <?php
-                // hämtar meddelanden från databasen som inte besvarats
-                $getClientData = "SELECT * FROM Client_Message WHERE coachMsgID IS NULL";
+                    $getClientData = "SELECT * FROM Client_Message WHERE coachMsgID IS NULL";
+                    $resultClient = $connection->query($getClientData);
 
-                // sparar resultatet av queryn i en variabel
-                $resultClient = $connection->query($getClientData);
+                    $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
+                    $coachimg = '<img id ="userchatt" src="../assets/img/u_img_yellow.png">';
 
+       
+                    while($row = mysqli_fetch_assoc($resultClient)){       
+
+                            $getData = "SELECT * FROM u WHERE userID = '".$row['clientID']."'";
+                            $resultData = $connection->query($getData);
+
+                            while($row1 = mysqli_fetch_assoc($resultData))
+                            {
+                                echo "<p5>" . $row["datum"] ."</p5>";
+                                echo "<h5>" . $userimg . " " . $row1['fname']."</h5>";  
+                                echo "<p6>" . $row["message_client"] ."</p6>"."<br><br>"; 
+                                echo "<p5>" . $row["submitted"] ."</p5><br>";
+                                echo "<a href = svara.php> Svara meddelande " . $row["clientMsgID"] . "</a><br>";
+                                echo "<a href = read.php> Läs konversation med användare " . $row["clientID"] ." </a><hr>";  
+                      
+                            }
+                        }              
+            ?>
+
+<<<<<<< HEAD
                 $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
                 $coachimg = '<img id ="userchatt" src="../assets/img/u_img_yellow.png">';
-                $clientName= "SELECT fname FROM u";
 
                     while($row = mysqli_fetch_assoc($resultClient)) {  
                             echo "<p5>" . $row["datum"] ."</p5>";  
-                            echo "<h5>" . $userimg . " " . $row["clientID"]. $clientName ."</h5>";                     
+                            echo "<h5>" . $userimg . " " . $row["clientID"] . "</h5>";                     
                             echo "<p6>" . $row["message_client"] ."</p6>"."<br>"."<br>";
                             echo "<p4>" . $row["submitted"] . "</p4>"."<br>";
                             echo "<a href = svara.php> Svara meddelande " . $row["clientMsgID"] . "</a><br>";
                             echo "<a href = read.php> Läs konversation med användare " . $row["clientID"] ." </a><hr>";            
                     }
                 ?>
+=======
+
+>>>>>>> 833abf2bb15b27b33610e0bab3dff10f90c857e6
             </div>
             
             <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">    

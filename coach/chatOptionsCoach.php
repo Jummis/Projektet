@@ -21,6 +21,7 @@
         </ul>
     </header>
 
+        <a id = "Tillbaka" href="coachMyPage.php">Tillbaka</a>
         <div id= "welcome">
             <h1> Välj forumtråd att svara på frågor i</h1><br><br>
         </div>
