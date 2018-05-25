@@ -1,7 +1,6 @@
 <?php   
     include_once 'connection.php';
     include_once 'session.php';
-    include_once 'history-process.php';
 ?>
 
 <html>

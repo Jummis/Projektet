@@ -18,9 +18,9 @@
     <header>
     <ul>
         <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
-        <li><a href="myPage.php">MINA SIDOR</a></li>
-        <li><a href="chatOptions.php" class="active">LIVEFORUM</a></li>
-        <li><a href="logout.php">LOGGA UT</a></li>
+        <li><a href="../myPage.php">MINA SIDOR</a></li>
+        <li><a href="../chatOptions.php" class="active">LIVEFORUM</a></li>
+        <li><a href="../logout.php">LOGGA UT</a></li>
     </ul>
     </header>
 
