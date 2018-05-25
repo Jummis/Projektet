@@ -20,5 +20,18 @@ include 'sessioncoach.php';
           <li><a href="logoutCoach.php">LOGGA UT</a></li>
         </ul>
       </header>
+
+      <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+      Nuvarande lösenord: <input type="password" id="currentPassword" name="currentPassword" title="currentPassword" style="color:#888;" 
+      placeholder="Fyll i ditt nuvarande lösenord"><br>
+      
+      Nytt lösenord: <input type="password" id="newPassword" name="newPassword" title="newPassword" style="color:#888;" 
+      placeholder="Fyll i ditt nya lösenord"><br>
+
+      Återge ditt nya lösenord igen: <input type="password" id="confirmPassword" name="confirmPassword" title="confirmPassword" style="color:#888;" 
+      placeholder="Fyll i ditt nya lösenord"><br>
+
+      </form>
+
     </body>
 </html>
