@@ -34,7 +34,6 @@
         </div>
 
         <div id="chatcontainer">
-            <p3> Dina obersvarade meddelanden</p3> <br>     <p3>Besvarade meddelanden </p3>
             <div id="chatbox">
                 <?php
                     $name = $_SESSION['User'];

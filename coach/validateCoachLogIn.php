@@ -80,7 +80,7 @@ $name_error = $email_error = $password_error = "";
             session_start();
             $_SESSION ['User'] = $Data;
             $_SESSION ['CoachID'] = $DataID;
-            //header ("Location: coachMypage.php"); 
+            header ("Location: coachMypage.php"); 
             $name = $email = $password = "";          
             }
             else 

@@ -486,10 +486,9 @@ background-color: #FFC200;
     font-family: 'Open Sans', sans-serif; 
 }
 
-.historyButtons .button{
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
+.historyButtons .buttonA{
+    display: inline-block;
+    min-width: 1.8%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     background-color: white; 
     border-radius: 8px;
@@ -500,18 +499,17 @@ background-color: #FFC200;
     font-size: 16px;
     height: 50px;
     width: 100px;
-    display: block;
     font-family: 'Open Sans', sans-serif; 
 }
 
-.historyButtons .button:hover{
+.historyButtons .buttonA:hover{
     background-color: #FFC200;
     color: white;
 }
 
-    .optionButtons .button:hover {
-    background-color: #FFC200;
-    color: white;
+.optionButtons .button:hover {
+background-color: #FFC200;
+color: white;
 }
 
 .column {
