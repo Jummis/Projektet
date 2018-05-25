@@ -2,6 +2,7 @@
     include_once 'connection.php';
     include_once 'session.php';
     include_once 'showPersInfo.php';
+    include_once 'updateInfoProcess.php';
 ?>
 
 <html>
@@ -20,22 +21,23 @@
             </ul>
         </header>
 
-    <div id ="alltInnehållMP">
+
         <div id= "wrapper2">
             <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
-            <p1> Detta är din profil. Här kan du fylla i och uppdatera dina värden. </p1><br><br>
+            <p1> Här kan du fylla i och uppdatera dina uppgifter. </p1><br><br>
         </div>
 
+        <form action = "updateInfoProcess.php" method = "POST">
         <div id="personligaUppg">
-            <p7>Förnamn<br></p7><?php echo $fname; ?><br><br>
-            <p7>Efternamn<br></p7><?php echo $lname; ?><br><br>
-            <p7>Personnummer<br></p7> <?php echo $pNr; ?><br><br>
-            <p7>Epostadress<br></p7> <?php echo $email; ?><br><br>
+            <p7>Förnamn<br></p7><input type="text" id = "newfName" name="newfName" value="<?php echo $fname; ?>"><br><br>
+            <p7>Efternamn<br></p7><input type="text" id = "newfName" name="newlName" value="<?php echo $lname; ?>"><br><br>
+            <p7>Personnummer<br></p7><?php echo $pNr; ?><br><br>
+            <p7>Epostadress<br></p7><input type="text" id = "newfName" name="newEmail" value="<?php echo $email; ?>"><br><br>
 
             <div id ="profileButtonSave">
             <a href='updateInfo.php'><input type="submit" id ="updateButton" name="saveButton" value="Spara" onsubmit="updateInfo.php"></a>
             </div>
-        </div>
+        </form>
 
     </div>
 
