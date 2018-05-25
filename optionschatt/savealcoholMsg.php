@@ -13,7 +13,7 @@ date_default_timezone_set('Europe/Stockholm');
         $sql = "SELECT clientMsgID FROM Client_Message WHERE clientID = '$ID' AND message_client IS NULL";
         $sqlresult = $connection->query($sql);
 
-        $alkohol = "alkohol";
+        $alkohol = "alcohol";
 
             if(empty(!$sqlresult))
             { 

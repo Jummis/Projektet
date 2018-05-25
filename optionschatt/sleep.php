@@ -24,7 +24,7 @@
     </ul>
     </header>
 
-        <a id = "Tillbaka" href="../chatOptions.php">Tillbaka till alternativen</a>
+        <a id = "Tillbaka" href="../chatOptions.php">Tillbaka till alternativen</a><br>
         <a id = "Tillbaka" href="archivesleep.php">Avsluta och arkivera konversation</a>
         <div id= "welcome">
             <h1> Välkommen till ditt liveforum <?php echo $_SESSION['User']; ?>!</h1>
