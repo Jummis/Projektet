@@ -65,6 +65,10 @@ p6{
     font-size: 14px;
 }
 
+p8{
+    color: #FFC200;
+}
+
 .row{
    padding-bottom: 40px;
 }
@@ -72,6 +76,10 @@ p6{
 a{
     color: #FFC200;
     text-decoration: none;
+}
+
+a:hover{
+    color: #393E46;
 }
 
 
