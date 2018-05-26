@@ -21,7 +21,8 @@
 </ul>
 </header>
 
-<div id= "wrapper2">
+<div id= "wrapper4">
+<div id = "wrapperMyPage">
 <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
 <p1> Välkommen till dina sidor. Här kan du se 
      dina filer, följa din utveckling<br> och 
@@ -36,6 +37,7 @@
   <a href="myProfile.php">MIN PROFIL</a>
   <a href="loggbok.php">LOGGBOK</a>
   <a href="historik/historik.php">HISTORIK</a>
+</div>
 </div>
 
 </body>

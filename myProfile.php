@@ -26,7 +26,6 @@ include_once 'showPersInfo.php';
             <p1> Detta är din profil. Här kan du fylla i och uppdatera dina värden. </p1><br><br>
         
 
-        <div id="personligaUppg">
             <p7>Förnamn<br></p7><?php echo $fname; ?><br><br>
             <p7>Efternamn<br></p7><?php echo $lname; ?><br><br>
             <p7>Personnummer<br></p7> <?php echo $pNr; ?><br><br>
@@ -35,7 +34,7 @@ include_once 'showPersInfo.php';
             <div id ="profileButton">
             <a href='updateInfo.php'><input type="submit" id ="updateButton" name="updateButton" value="Uppdatera information" onsubmit="updateInfo.php"></a>
             </div>
-        </div></div>
+        </div>
 
     
 
