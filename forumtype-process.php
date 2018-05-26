@@ -1,6 +1,8 @@
 <?php
 include 'connection.php';
 
+
+    //skicka med forum_type till en php funktion som använder den för att anpassa sidan?
     if ($_SERVER["REQUEST_METHOD"] == 'POST') {
         if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['training'])){ 
             $forum_type = "training";

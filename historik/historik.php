@@ -1,21 +1,22 @@
 <?php   
-    include_once 'connection.php';
-    include_once 'session.php';
+    include '../connection.php';
+    include_once '../session.php';
+    include 'historik-process.php';
 ?>
 
 <html>
     <head>
         <title> Hälsocoachen - homepage </title>
-        <link rel = "stylesheet" href = "assets/main.css">
+        <link rel = "stylesheet" href = "../assets/main.css">
     </head>
 
     <body>
         <header>
             <ul>
-                <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
-                <li><a href="myPage.php" class="active">MINA SIDOR</a></li>
-                <li><a href="chatOptions.php">LIVEFORUM</a></li>
-                <li><a href="logout.php">LOGGA UT</a></li>
+                <a id = "Logga" href="../index.php">HÄLSOCOACHEN</a>
+                <li><a href="../myPage.php" class="active">MINA SIDOR</a></li>
+                <li><a href="../chatOptions.php">LIVEFORUM</a></li>
+                <li><a href="../logout.php">LOGGA UT</a></li>
             </ul>
         </header>
 
@@ -37,9 +38,9 @@
 
         <div class="leftmenu">
             <a class = "veryactive">MINA SIDOR</a>
-            <a href="files.php">FILER</a>
-            <a href="myProfile.php">MIN PROFIL</a>
-            <a href="loggbok.php">LOGGBOK</a>
+            <a href="../files.php">FILER</a>
+            <a href="../myProfile.php">MIN PROFIL</a>
+            <a href="../loggbok.php">LOGGBOK</a>
             <a href="historik.php" class="active">HISTORIK</a>
         </div>
     </body>

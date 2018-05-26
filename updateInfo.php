@@ -21,11 +21,10 @@
             </ul>
         </header>
 
-
-        <div id= "wrapper2">
+        <div id = "wrapper4">
+        <div id= "wrapperMyProfile">
             <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
             <p1> Här kan du fylla i och uppdatera dina uppgifter. </p1><br><br>
-        </div>
 
         <form action = "updateInfoProcess.php" method = "POST">
         <div id="personligaUppg">
@@ -38,16 +37,17 @@
             <a href='updateInfo.php'><input type="submit" id ="updateButton" name="saveButton" value="Spara" onsubmit="updateInfo.php"></a>
             </div>
         </form>
-
+    </div>
     </div>
 
         <div class="leftmenu">
-            <a class = "veryactive">MINA SIDOR</a>
+            <a href = "myProfile.php"class = "veryactive">TILLBAKA</a>
             <a href="files.php">FILER</a>
             <a href="myProfile.php" class="active">MIN PROFIL</a>
             <a href="loggbok.php">LOGGBOK</a>
             <a href="historik.php">HISTORIK</a>
         </div>  
+        </div>
     </body>
 
     <footer>
