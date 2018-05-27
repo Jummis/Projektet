@@ -35,7 +35,7 @@ include 'sessioncoach.php';
         </div>
 
         <div class = "column">
-          <a href = "coachMyprofile.php"><img id = "infoIMG" src="assets/user.png"><br><br>
+          <a href = "coachMyprofileChoose.php"><img id = "infoIMG" src="assets/user.png"><br><br>
           <p3> Min Profil </p3>
         </div>
         

@@ -21,31 +21,32 @@
             </ul>
         </header>
 
-        <div id = "wrapper4">
-        <div id= "wrapperMyProfile">
-            <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
-            <p1> Här kan du fylla i och uppdatera dina uppgifter. </p1><br><br>
-
-        <form action = "updateInfoProcess.php" method = "POST">
-        <div id="personligaUppg">
-            <p7>Förnamn<br></p7><input type="text" id = "newfName" name="newfName" value="<?php echo $fname; ?>"><br><br>
-            <p7>Efternamn<br></p7><input type="text" id = "newfName" name="newlName" value="<?php echo $lname; ?>"><br><br>
-            <p7>Personnummer<br></p7><?php echo $pNr; ?><br><br>
-            <p7>Epostadress<br></p7><input type="text" id = "newfName" name="newEmail" value="<?php echo $email; ?>"><br><br>
-
-            <div id ="profileButtonSave">
-            <a href='updateInfo.php'><input type="submit" id ="updateButton" name="saveButton" value="Spara" onsubmit="updateInfo.php"></a>
+        <div id ="wrapper5">
+            <div id= "wrapperupdate">
+                <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
+                <p1> Här kan du uppdatera din användar-information. </p1><br><br>
+                <form action = "updateInfoProcess.php" method = "POST">              
+                    <p7>Förnamn<br></p7><input type="text" id = "newfName" name="newfName" value="<?php echo $fname; ?>"><br><br>
+                    <p7>Efternamn<br></p7><input type="text" id = "newfName" name="newlName" value="<?php echo $lname; ?>"><br><br>
+                    <p7>Personnummer<br></p7><?php echo $pNr; ?><br><br>
+                    <p7>E-postadress<br></p7><input type="text" id = "newfName" name="newEmail" value="<?php echo $email; ?>"><br><br>
+                    <p7>Nuvarande lösenord<br></p7><input type="password" id = "currentPassword" name="currentPassword"><br><br>
+                    <p7>Nytt lösenord<br></p7><input type="password" id = "currentPassword" name="newPassword"><br><br>
+                    <p7>Återge ditt nya lösenord<br></p7><input type="password" id = "currentPassword" name="confirmPassword"><br><br>
+                    <a href='updateInfo.php'><input type="submit" id ="updateButton" name="saveButton" value="Spara" onsubmit="updateInfo.php"></a><br><br>                 
+                    <a href='remove.php'>Ta bort konto</a>  
+                </form>
+                
             </div>
-        </form>
-    </div>
-    </div>
+
+    
 
         <div class="leftmenu">
-            <a href = "myProfile.php"class = "veryactive">TILLBAKA</a>
+            <a class = "veryactive">MINA SIDOR</a>
             <a href="files.php">FILER</a>
             <a href="myProfile.php" class="active">MIN PROFIL</a>
             <a href="loggbok.php">LOGGBOK</a>
-            <a href="historik.php">HISTORIK</a>
+            <a href="historik/historik.php">HISTORIK</a>
         </div>  
         </div>
     </body>

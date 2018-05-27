@@ -28,7 +28,7 @@
 
         <a id = "Tillbaka" href="chatOptionsCoach.php">Tillbaka</a>
         <div id= "welcome">
-            <h1>Hej Coach <?php echo $_SESSION['User']; ?>!</h1><br>
+            <h2>Hej Coach <?php echo $_SESSION['User']; ?>!</h2><br>
         </div>
 
         <div id="chatcontainer2">

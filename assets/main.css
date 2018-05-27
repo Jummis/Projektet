@@ -305,6 +305,7 @@ margin-top: 2%;
 
 #Tillbaka{
     float: left;
+    font-size: 13px;
     margin-left: 3%;
     color: #393E46;
 }
@@ -321,16 +322,29 @@ margin-top: 2%;
     float: right;
 }
 
+#wrapperLogg{
+    text-align: left;
+    float: right;
+    margin-right: 15%;
+}
+
 #wrapper3{
     text-align: left;
     float: right;
     margin-right: 21%;
+    margin-top: 0 auto;
 }
 
 #wrapperMyProfile{
     text-align: left;
     float: right;
     margin-right: 35%;
+}
+
+#wrapperupdate{
+    text-align: left;
+    float: right;
+    margin-right: 43%;
 }
 
 #wrapperfiles{
@@ -349,12 +363,27 @@ margin-top: 2%;
     margin-bottom: 20%;
 }
 
+#wrapper5{
+    margin-bottom: 44%;
+}
+
+#wrapper4Logg{
+    margin-bottom: 40%;
+}
+
 #personligaUppg{
     text-align: left;
     margin-left: auto;
     margin-right: 53.8%;
     float: right;
     color: #393E46;
+}
+
+#wrapper3{
+    text-align: left;
+    float: right;
+    margin-right: 21%;
+    margin-top: 0 auto;
 }
 
 #alltInnehållMP{
@@ -468,9 +497,10 @@ h5{
     font-size: 14px; }
   
     #sendmessage{
-    width: 500px;
+    width: 550px;
     float:left;
     margin-left: 5%;
+    margin-right: 0 auto;
     height: 60px;
     background-color: white;
     border-radius: 8px;
@@ -493,7 +523,6 @@ h5{
     width: 700px;
     margin-top: 30px;
     height: 620px;
-    height: 1000px;
     background-color: #375162;
     margin-left: auto;
     margin-right: auto;
@@ -747,6 +776,8 @@ h3 {
 
 #update {
     width: 6%;
+    margin-top:2%;
+    margin-right: 4%;
 }
 
 .columnUpdate {

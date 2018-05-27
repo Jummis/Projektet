@@ -30,11 +30,11 @@
             <h1> Välkommen till ditt liveforum <?php echo $_SESSION['User']; ?>!</h1>
             <p1> Skicka ett meddelande så kommer någon av<br>
                   våra hälsocoacher snart att svara dig. </p1><br>
-            <h1> Ditt valda hälsotema är: Sömn </h1>
+            
         </div>
 
         <div id="chatcontainer">
-            <p3> Dina obersvarade meddelanden</p3> <br>     <p3>Besvarade meddelanden </p3>
+            <p3> Ditt valda hälsotema är: SÖMN </p3>
             <div id="chatbox">
                  <?php
                     $name = $_SESSION['User'];
@@ -86,10 +86,14 @@
             ?>
             </div>
 
-            <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
-                <textarea placeholder="Vänligen skriv ditt meddelande här" name="usersleepmsg" id="usermsg"></textarea><br>
+            <div class="historyButtons">
+                <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                <textarea placeholder="Vänligen skriv ditt meddelande här" name="usertrainingmsg" id="usermsg"></textarea><br>
                 <input type="submit" name="submitmsg" value="SKICKA" id="sendmessage">
-            </form>
+                <a href = "training.php"> <img id = "update" src = "../assets/img/update-arrows.png"></a>
+                </form>
+                
+            </div> 
         </div>
         <a href='userHome.php'><input type="submit" name="closeForumKnapp" value="LÄMNA FORUM" id="closeForumKnapp" onsubmit="userHome.php"></a>
     </body>

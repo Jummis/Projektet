@@ -1,11 +1,10 @@
 <?php
-include_once "session.php";
-include_once "connection.php";
-
+include_once "sessioncoach.php";
+include_once "../connection.php";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
-        $clientID = $_SESSION['ID'];
+        $coachID = $_SESSION['CoachID'];
         $updateready = "";
 
         $newfName = mysqli_real_escape_string($connection, $_POST['newfName']);
@@ -18,21 +17,21 @@ include_once "connection.php";
 
             if (!empty($newfName))
             {
-                $updatefName = "UPDATE u SET fname = '$newfName' WHERE userID = '".$clientID."'";
+                $updatefName = "UPDATE Coach SET fname = '$newfName' WHERE coachID = '".$coachID."'";
                 $resultNewfName = $connection->query($updatefName);
                 $updateready = "ename";
             }
 
             if (!empty($newlName))
             {
-                $updatelName = "UPDATE u SET lname = '$newlName' WHERE userID = '".$clientID."'";
+                $updatelName = "UPDATE Coach SET lname = '$newlName' WHERE coachID = '".$coachID."'";
                 $resultNewlName = $connection->query($updatelName);
                 $updateready = "lname";
             }
 
             if (!empty($newEmail))
             {
-                $updateEmail = "UPDATE u SET email = '$newEmail' WHERE userID = '".$clientID."'";
+                $updateEmail = "UPDATE Coach SET email = '$newEmail' WHERE coachID = '".$coachID."'";
                 $resultNewEmail = $connection->query($updateEmail);
                 $updateready = "email";
             }
@@ -40,7 +39,7 @@ include_once "connection.php";
             if (!empty($oldpassword && $newpassword && $repnewpasssword))
             {
             
-                $getsalt = "SELECT salt FROM u WHERE userID = '".$clientID."'";
+                $getsalt = "SELECT salt FROM Coach WHERE coachID = '".$coachID."'";
                 $resgetsalt = $connection->query($getsalt); 
 
                 while ($row = $resgetsalt-> fetch_row()){
@@ -50,7 +49,7 @@ include_once "connection.php";
 
                 $Oldpassword = sha1($resultsalt . $oldpassword);
 
-                $getoldpassword = "SELECT password FROM u WHERE userID = '".$clientID."'";
+                $getoldpassword = "SELECT password FROM Coach WHERE coachID = '".$coachID."'";
                 $oldpassworddb = $connection->query($getoldpassword);
 
                 while ($row = $oldpassworddb-> fetch_row()){
@@ -63,7 +62,7 @@ include_once "connection.php";
                     if($newpassword==$repnewpasssword){
                         //Updatera lösenordet i db
                         $new = sha1($resultsalt . $newpassword);
-                        $passchange= "UPDATE u SET password='$new' WHERE userID= '".$clientID."'";
+                        $passchange= "UPDATE Coach SET password='$new' WHERE coachID= '".$coachID."'";
                         $updatePassword=$connection->query($passchange);
                         $updateready = "password";
                         
@@ -77,17 +76,15 @@ include_once "connection.php";
                 }
             }
 
-            if ($updateready != "")
+    if ($updateready != "")
                 {
-                    header ("Location: MyProfile.php");
+                    header ("Location: coachMyProfile.php");
                 }
 
                 else
                 {
                     echo "<p>Något gick fel</p>";
                 }
+    }
 
-        }
-
-        
 ?>

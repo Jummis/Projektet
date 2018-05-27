@@ -33,7 +33,7 @@
         </div>
 
         <div id="chatcontainer">
-            <h1> Ditt valda hälsotema är: Träning </h1>
+            <p3> Ditt valda hälsotema är: TRÄNING </p3>
             <div id="chatbox">
                 <?php
                     $name = $_SESSION['User'];
@@ -88,8 +88,9 @@
                 <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
                 <textarea placeholder="Vänligen skriv ditt meddelande här" name="usertrainingmsg" id="usermsg"></textarea><br>
                 <input type="submit" name="submitmsg" value="SKICKA" id="sendmessage">
-                </form>
                 <a href = "training.php"> <img id = "update" src = "../assets/img/update-arrows.png"></a>
+                </form>
+                
             </div> 
 
             

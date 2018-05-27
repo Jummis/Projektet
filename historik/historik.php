@@ -30,7 +30,7 @@
                     <input type="submit" class="buttonA" name = "training" value="TRÄNING">
                     <input type="submit" class="buttonA" name = "stress" value="STRESS">
                     <input type="submit" class="buttonA" name = "sleep" value="SÖMN">
-                    <input type="submit" class="buttonA" name = "alcohol" value="ALKOHOL/TOBAK">
+                    <input type="submit" class="buttonA" name = "alcohol" value="ALKOHOL">
                     <input type="submit" class="buttonA" name = "general" value="ALLMÄNT">
                 </div>
             </form>

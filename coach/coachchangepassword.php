@@ -2,9 +2,9 @@
 include_once '../connection.php';
 include_once 'sessioncoach.php';
 
-    if ($_SERVER["REQUEST_METHOD"] == 'POST') {
+$passwordErr="";
 
-        $passwordErr="";
+    if ($_SERVER["REQUEST_METHOD"] == 'POST') {
 
         $oldpassword = $connection->real_escape_string($_POST['currentPassword']);
         $newpassword = $connection->real_escape_string($_POST['newPassword']);
@@ -14,27 +14,36 @@ include_once 'sessioncoach.php';
         $getsalt = "SELECT salt FROM Coach WHERE coachId=3";
         $resgetsalt = $connection->query($getsalt); 
 
+        while ($row = $resgetsalt-> fetch_row()){
+                $resultsalt = $row[0];
+                }
+
         //saltar och hashar det angivna lösenordet
-        $Oldpassword = sha1($resgetsalt . $oldpassword);
+        $Oldpassword = sha1($resultsalt . $oldpassword);
+
+        
 
         //Hämtar lösenordet från db
-        $getoldpassword = "SELECT password FROM Coach WHERE coachID=3";
+        $getoldpassword = "SELECT password FROM Coach WHERE coachID=1";
         $oldpassworddb = $connection->query($getoldpassword); 
         
-        if (empty($oldpassword) OR empty($newpassword) OR empty($repnewpassword)) {
+        if (empty($oldpassword) || empty($newpassword) || empty($repnewpassword)) {
         $passwordErr = "Du måste fylla i alla fält!";
         } 
-
-        //Om det angivna lösenordet och lösenordet i db matchar
-        if($Oldpassword==$oldpassworddb){
+        else {
+            //Om det angivna lösenordet och lösenordet i db matchar
+            if($Oldpassword==$oldpassworddb){
             //Om det nya lösenordet och det repeterade lösenordet matchar
             if($newpassword==$repnewpasssword){
                 //Updatera lösenordet i db
-                $passchange= "UPDATE Coach SET password='$newpassword' WHERE coachID=3";
+                $passchange= "UPDATE Coach SET password='$newpassword' WHERE coachID=1";
                 $updatePassword=$connection->query($passchange);
             }
             else $passwordErr="lösenorden matchar inte!"; 
         }
         else $passwordErr="felaktigt lösenord"; 
+
+        }
+        
     }
 ?>

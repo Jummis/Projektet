@@ -16,16 +16,16 @@ include_once "saveLoggMess.php";
         <header>
             <ul>
                 <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
-                <li><a href="myPage.php">MINA SIDOR</a></li>
-                <li><a href="chatOptions.php" class="active">LIVEFORUM</a></li>
+                <li><a href="myPage.php" class="active">MINA SIDOR</a></li>
+                <li><a href="chatOptions.php">LIVEFORUM</a></li>
                 <li><a href="logout.php">LOGGA UT</a></li>  
             </ul>
         </header>
 
-        <div id = "wrapper4">
-            <div id = "wrapperHistorik">
+        <div id = "wrapper4Logg">
+            <div id = "wrapperLogg">
                 <p id="rubrikLoggbok">Dina senaste logginlägg:</p>
-                <div id = "loggMessBox">
+                <div id="historikbox">
 
                 <?php
                     $clientID=$_SESSION['ID'];

@@ -23,7 +23,7 @@
 
         <a id = "Tillbaka" href="coachMyPage.php">Tillbaka</a>
         <div id= "welcome">
-            <h1> Välj forumtråd att svara på frågor i</h1><br><br>
+            <h2> Välj hälsotema att jobba med</h2><br><br>
         </div>
 
         <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
@@ -37,20 +37,4 @@
            </div>
         </form>
     </body>
-
-    <footer>
-        <p id="kontaktrubrik">HÄLSOCOACHEN</p>
-        <p id="kontaktuppg">Kontaktuppgifter</p>
-
-        <div class="row">
-          <div class="column">
-              <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br><br>
-              <p3> 0703457947 </p3>
-          </div>
-          <div class="column">
-              <img src="https://image.ibb.co/jSQmqd/envelope.png"><br><br>
-              <p3> halsocoachen@coach.se </p3>
-          </div>
-        </div> 
-    </footer>
 </html>

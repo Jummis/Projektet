@@ -29,7 +29,7 @@ include "../session.php";
 
 
         <div id = "wrapper4">
-            <div id = "wrapperHistorik">
+            <div id = "wrapperLogg">
                 <p id="rubrikLoggbok">Din historik: Alkohol/Tobak</p>
                 <div id="historikbox">
                     <?php
