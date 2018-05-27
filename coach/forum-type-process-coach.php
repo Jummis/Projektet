@@ -3,31 +3,28 @@ include '../connection.php';
 
     if ($_SERVER["REQUEST_METHOD"] == 'POST') {
         if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['training'])){ 
-            $forum_type = "training";
+            header ("Location: C_options/C_training.php");
         }
 
         if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['food'])) {
-            $forum_type = "food";
+            header ("Location: C_options/C_food.php");
         }
 
         if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['sleep'])) {
-            $forum_type = "sleep";
+            header ("Location: C_options/C_sleep.php");
         }
  
         if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['alcohol'])) {
-            $forum_type = "alcohol";
+            header ("Location: C_options/C_alcohol.php");
         }
 
         if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['stress'])) {
-            $forum_type = "stress";
+            header ("Location: C_options/C_stress.php");
         }
 
         if ($_SERVER["REQUEST_METHOD"] == 'POST' and isset($_POST['general'])) {
-            $forum_type = "general";
+            header ("Location: C_options/C_general.php");
         }
 
-        $insertmessage = "INSERT INTO Coach_Message(forum_type, coachID) VALUES ('".$forum_type."', '".$_SESSION['CoachID']."');";
-        $connection->query($insertmessage);
-        header ("Location: coachchatt.php");
     }
 ?>

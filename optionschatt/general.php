@@ -88,7 +88,7 @@
 
             <div class="historyButtons">
                 <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
-                <textarea placeholder="Vänligen skriv ditt meddelande här" name="usertrainingmsg" id="usermsg"></textarea><br>
+                <textarea placeholder="Vänligen skriv ditt meddelande här" name="usergeneralmsg" id="usermsg"></textarea><br>
                 <input type="submit" name="submitmsg" value="SKICKA" id="sendmessage">
                 <a href = "training.php"> <img id = "update" src = "../assets/img/update-arrows.png"></a>
                 </form>

@@ -1,5 +1,6 @@
 <?php
 include 'sessioncoach.php';
+include '../connection.php';
 ?>
 
 <html>
@@ -21,20 +22,26 @@ include 'sessioncoach.php';
         </ul>
       </header>
 
-      <a id = "Tillbaka" href="coachMyPage.php">Tillbaka</a>
+      <a id = "Tillbaka" href="coachsettings.php">Tillbaka</a>
 
       <div id= "wrapperMyProfile">
 
         
-          <h3> Hantera konton </h3><br>
+          <h3> Hälsoklienter </h3><br><hr>
 
-          <div id ="profileButton">
-              <a href='allclients.php'><input type="submit" id ="updateButton" name="updateButton" value="Alla hälsoklienter" onsubmit="allclients.php"></a>
-            <br><br><a href='searchclient.php'><input type="submit" id ="updateButton" name="updateButton" value="Sök hälsoklient"></a>
-          <br><br><a href='search.php'><input type="submit" id ="updateButton" name="updateButton" value="Sök pågående live-forum"></a>
-          <br><br><a href='searcharchive'><input type="submit" id ="updateButton" name="updateButton" value="Sök arkiverade live-forum"></a>
-          </div>
-      </div>
+          <?php
+
+          $get = "SELECT * FROM u";
+          $result = $connection->query($get);
+
+          while($row = mysqli_fetch_assoc($result)){       
+              echo "<p1> AnvändarID: " . $row["userID"] ."</p1><br>";
+              echo "<p1>" . $row["fname"] ." </p1>";
+              echo "<p1>" . $row["lname"] ."</p1><br>";
+              echo "<p1>" . $row["email"] ."</p1><br>";
+              echo "<p1>" . $row["gender"] ."</p1><br><br><hr>";
+          }
+          ?>
 
 
       </div>

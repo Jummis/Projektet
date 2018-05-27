@@ -31,11 +31,18 @@ include "showCoachInfo.php";
           <p3> Coach: <?php echo $_SESSION['User']; ?> </p3><br>
           <p2> CoachID:  <?php echo $_SESSION['CoachID']; ?> </p2><br><br>
 
-          <div id ="profileButton">
-              <a href=''><input type="submit" id ="updateButton" name="updateButton" value="Schema" onsubmit="updateInfo.php"></a>
-            <br><br><a href='updateCoachInfo.php'><input type="submit" id ="updateButton" name="updateButton" value="Meddelande-Historik" onsubmit="updateInfo.php"></a>
-          <br><br><a href='updateCoachInfo.php'><input type="submit" id ="updateButton" name="updateButton" value="Uppdatera information" onsubmit="updateInfo.php"></a>
-          </div>
+          <p3> Meddelande-Historik </p3>
+
+          <form name="history" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                <div class="historyButtons">
+                    <input type="submit" id ="updateButton" name="updateButton" class="buttonA" name = "food" value="KOST">
+                    <input type="submit" id ="updateButton" name="updateButton" class="buttonA" name = "training" value="TRÄNING">
+                    <input type="submit" id ="updateButton" name="updateButton" class="buttonA" name = "stress" value="STRESS">
+                    <input type="submit" id ="updateButton" name="updateButton" class="buttonA" name = "sleep" value="SÖMN">
+                    <input type="submit" id ="updateButton" name="updateButton" class="buttonA" name = "alcohol" value="ALKOHOL">
+                    <input type="submit" id ="updateButton" name="updateButton" class="buttonA" name = "general" value="ALLMÄNT">
+                </div>
+            </form>
       </div>
 
     </body>

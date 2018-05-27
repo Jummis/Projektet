@@ -32,16 +32,11 @@
                 <input type="birth" id = "inputBox" name="birth" title="birth" style="color:#888;" 
                 placeholder="YYYY-MM-DD" value = "<?php echo $birthnumber;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)"><br><br>
 
-                <div class="rowRadio">
-                    <div class="columnRadio">
-                        <input type="radio" name="gender" id = "gender" value="Man" class = "radio"> <br>
+                <input type="radio" name="gender" id = "gender" value="Man" class = "radio">
                         Man
-                    </div>
-                    <div class="columnRadio">
-                        <input type="radio" name="gender" id = "gender" value="Kvinna" class = "radio"><br>
-                        Kvinna
-                    </div>
-                </div>
+                  
+                        <input type="radio" name="gender" id = "gender" value="Kvinna" class = "radio">
+                        Kvinna<br><br>
                 
                 <input type="text" id = "inputBox" name="email" title="email" style="color:#888;" 
                 placeholder="E-postadress" value = "<?php echo $email;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)"/><br><br>

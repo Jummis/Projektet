@@ -27,23 +27,18 @@ include "showCoachInfo.php";
 
       <div id= "wrapperMyProfile">
 
-        <img id = "user" src="assets/user.png"><br><br>
-          <p3> Hej Coach <?php echo $_SESSION['User']; ?> </p3><br>
-          <p2> Detta är din profil. Här kan du uppdatera dina information. </p2><br><br>
-        
-
-          <p2>Förnamn<br></p2><?php echo $fname; ?><br><br>
-          <p2>Efternamn<br></p2><?php echo $lname; ?><br><br>
-          <p2>Personnummer<br></p2> <?php echo $pNr; ?><br><br>
-          <p2>Epostadress<br></p2> <?php echo $email; ?><br><br>
+        <br><img id = "user" src="assets/user.png"><br><br>
+          <p3> Coach: <?php echo $_SESSION['User']; ?> </p3><br>
+          <p2> CoachID:  <?php echo $_SESSION['CoachID']; ?> </p2><br><br>
 
           <div id ="profileButton">
-            <a href='updateCoachInfo.php'><input type="submit" id ="updateButton" name="updateButton" value="Uppdatera information" onsubmit="updateInfo.php"></a>
+              <a href=''><input type="submit" id ="updateButton" name="updateButton" value="Schema" onsubmit="updateInfo.php"></a>
+            <br><br><a href='C_historik.php'><input type="submit" id ="updateButton" name="updateButton" value="Meddelande-Historik" onsubmit="C_historik.php"></a>
+          <br><br><a href='updateCoachInfo.php'><input type="submit" id ="updateButton" name="updateButton" value="Uppdatera information" onsubmit="updateInfo.php"></a>
           </div>
       </div>
 
     </body>
 </html>
-
 
 

@@ -1,5 +1,5 @@
 <?php
-include_once "sessioncoach.php";
+include_once "../sessioncoach.php";
 date_default_timezone_set('Europe/Stockholm');
 
     if ($_SERVER["REQUEST_METHOD"] == 'POST') {
@@ -9,7 +9,9 @@ date_default_timezone_set('Europe/Stockholm');
         $time = date("h:i");
     
         $ID = $_SESSION['CoachID'];
-        $insertCoachMessage = "INSERT INTO Coach_Message (coachID, submitted, datum, message_coach, clientMsgID) VALUES ('".$ID."', '".$time."', '".$date."', '".$coachmessage."', '".$number."')";
+        $forumtype ="training";
+
+        $insertCoachMessage = "INSERT INTO Coach_Message (coachID, submitted, datum, message_coach, clientMsgID, forum_type) VALUES ('".$ID."', '".$time."', '".$date."', '".$coachmessage."', '".$number."', '".$forumtype."')";
         $connection->query($insertCoachMessage);
 
         $selectID = "SELECT coachMsgID FROM Coach_Message WHERE clientMsgID = '$number'";
@@ -21,6 +23,6 @@ date_default_timezone_set('Europe/Stockholm');
 
         $update = "UPDATE Client_Message SET coachMsgID = '$ID' WHERE clientMsgID = '$number'";    
         $connection->query($update);
-        header ("Location: ../coachchatt.php");
+        header ("Location: C_training.php");
     }
 ?>
