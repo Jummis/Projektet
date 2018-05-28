@@ -25,7 +25,7 @@ include "showCoachInfo.php";
 
       <a id = "Tillbaka" href="coachMyPage.php">Tillbaka</a>
 
-      <div id= "wrapperMyProfile">
+      <div id= "wrappersettings">
 
         <br><img id = "user" src="assets/user.png"><br><br>
           <p3> Coach: <?php echo $_SESSION['User']; ?> </p3><br>

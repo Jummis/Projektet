@@ -23,17 +23,19 @@ include "showCoachInfo.php";
       </header>
 
       <a id = "Tillbaka" href="coachsettings.php">Tillbaka</a>
-
+      
       <div id= "wrapperMyProfile">
-
+      <div id = "wrapper5">
+        <h3> Sök i pågående live-forum </h3><br>
         <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
 
-            <input type = "text" placeholder = "AnvändarID" id = "inputBox" name = "userID">
-            <input type="submit" name="submitmsg" value="LÄS" id="sendmessage">
+            <input type = "text" placeholder = "AnvändarID" id = "inputBox" name = "userID"><br>
+            <input type="submit" name="submitmsg" value="LÄS" id="searchclient">
 
             </form>
+        </div>
 
-        <div id="sendbox">
+        <div id="show">
 
             <?php
                 if ($_SERVER["REQUEST_METHOD"] == 'POST')
@@ -93,6 +95,6 @@ include "showCoachInfo.php";
                     }    
                 }      
             ?>
-
+        </div>
     </body>
 </html>

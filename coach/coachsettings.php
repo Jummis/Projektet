@@ -23,7 +23,7 @@ include 'sessioncoach.php';
 
       <a id = "Tillbaka" href="coachMyPage.php">Tillbaka</a>
 
-      <div id= "wrapperMyProfile">
+      <div id= "wrappersettings">
 
         
           <h3> Hantera konton </h3><br>
@@ -32,7 +32,7 @@ include 'sessioncoach.php';
               <a href='allclients.php'><input type="submit" id ="updateButton" name="updateButton" value="Alla hälsoklienter" onsubmit="allclients.php"></a>
             <br><br><a href='searchclient.php'><input type="submit" id ="updateButton" name="updateButton" value="Sök hälsoklient"></a>
           <br><br><a href='search.php'><input type="submit" id ="updateButton" name="updateButton" value="Sök pågående live-forum"></a>
-          <br><br><a href='searcharchive'><input type="submit" id ="updateButton" name="updateButton" value="Sök arkiverade live-forum"></a>
+          <br><br><a href='searcharchive.php'><input type="submit" id ="updateButton" name="updateButton" value="Sök arkiverade live-forum"></a>
           </div>
       </div>
 

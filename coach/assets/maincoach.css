@@ -98,7 +98,7 @@ a:hover{
 }
 
 
-#wrapper {
+#per {
     border-radius: 20px;
     text-align: center;
     width: 1000px;
@@ -139,7 +139,19 @@ a:hover{
     border: 2px solid #FFC200;
     border-radius: 10px;
     height: 130%;
-    border-radius: 5px;
+    border-radius: 10px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+#wrappersettings{
+    background-color: #375162;
+    border: 2px solid #FFC200;
+    border-radius: 10px;
+    height: 90%;
+    border-radius: 10px;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -234,7 +246,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 #inputBox {
-width: 350px;
+width: 380px;
 height: 40px;
 border-radius: 5px;
 margin-bottom: 5px;
@@ -438,7 +450,25 @@ background-color: #FFC200;
     font-family: 'Open Sans', sans-serif;
     color: #393E46;
     font-size: 15px;
+    }
 
+    #searchclient{
+    width: 380px;
+    height: 60px;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #FFC200;
+    margin-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: #393E46;
+    font-size: 15px;
+    margin-bottom: 0 auto;
+
+    }
+
+    #searchclient:hover {
+    background-color: #FFC200;
+    font-weight: bold;
     }
 
     #sendmessage:hover {
@@ -582,13 +612,31 @@ margin-top: 8px;
     margin: auto;
     margin-bottom:10px;
     padding: 15px;
-    padding-top: 20px;
     background:#fff;
-    height:300px;
+    height:200px;
+    width:350px;
+    border:1px solid #FFC200;
+    border-radius: 8px;
+    overflow:auto; 
+    margin-top: 10%;
+    }
+
+    #show{
+    text-align:left;
+    margin: auto;
+    margin-bottom:10px;
+    padding: 15px;
+    background:#fff;
+    height:400px;
     width:600px;
     border:1px solid #FFC200;
     border-radius: 8px;
     overflow:auto; }
+
+#wrapper5 {
+    height: 30%;
+    margin-bottom: 3%;
+}
 
 
     #updateButton{
