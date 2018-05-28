@@ -15,14 +15,19 @@
     </head>
 
     <body>
-    <header>
-    <ul>
-        <a id = "Logga" href="userHome.php">HÄLSOCOACHEN</a>
-        <li><a href="../myPage.php">MINA SIDOR</a></li>
-        <li><a href="../chatOptions.php" class="active">LIVEFORUM</a></li>
-        <li><a href="../logout.php">LOGGA UT</a></li>
-    </ul>
-    </header>
+<header>
+            <ul>
+            <div id "logoAll">
+                <img id = "holdingHands" src = "../assets/img/hands-holding-heart.png">
+                <a id = "Logga" href="../userHome.php">HÄLSOCOACHEN</a>
+                <li><a href="../myPage.php">MINA SIDOR</a></li>
+                <li><a href="../chatOptions.php" class="active">LIVEFORUM</a></li>
+                <li><a href="../logout.php">LOGGA UT</a></li>  
+                <li><a href=""> </a></li>
+                <li><a href=""> </a></li>
+            </div>
+            </ul>
+        </header>
 
         <a id = "Tillbaka" href="../chatOptions.php">Tillbaka till alternativen</a><br>
         <a id = "Tillbaka" href="archivealcohol.php">Avsluta och arkivera konversation</a>
@@ -30,7 +35,6 @@
             <h1> Välkommen till ditt liveforum <?php echo $_SESSION['User']; ?>!</h1>
             <p1> Skicka ett meddelande så kommer någon av<br>
                   våra hälsocoacher snart att svara dig. </p1><br>
-            <h1> Ditt valda hälsotema är: Alkohol </h1>
         </div>
 
         <div id="chatcontainer">

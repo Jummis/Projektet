@@ -16,13 +16,18 @@
 
     <body>
     <header>
-    <ul>
-        <a id = "Logga" href="userHome.php">HÄLSOCOACHEN</a>
-        <li><a href="../myPage.php">MINA SIDOR</a></li>
-        <li><a href="../chatOptions.php" class="active">LIVEFORUM</a></li>
-        <li><a href="../logout.php">LOGGA UT</a></li>
-    </ul>
-    </header>
+            <ul>
+            <div id "logoAll">
+                <img id = "holdingHands" src = "../assets/img/hands-holding-heart.png">
+                <a id = "Logga" href="../userHome.php">HÄLSOCOACHEN</a>
+                <li><a href="../myPage.php">MINA SIDOR</a></li>
+                <li><a href="../chatOptions.php" class="active">LIVEFORUM</a></li>
+                <li><a href="../logout.php">LOGGA UT</a></li>  
+                <li><a href=""> </a></li>
+                <li><a href=""> </a></li>
+            </div>
+            </ul>
+        </header>
 
         <a id = "Tillbaka" href="../chatOptions.php">Tillbaka till alternativen</a><br>
         <a id = "Tillbaka" href="archivekost.php">Avsluta och arkivera konversation</a>

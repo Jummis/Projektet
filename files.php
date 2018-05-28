@@ -12,10 +12,15 @@
     <body>
         <header>
             <ul>
+            <div id "logoAll">
+                <img id = "holdingHands" src = "assets/img/hands-holding-heart.png">
                 <a id = "Logga" href="userHome.php">HÄLSOCOACHEN</a>
                 <li><a href="myPage.php" class="active">MINA SIDOR</a></li>
                 <li><a href="chatOptions.php">LIVEFORUM</a></li>
-                <li><a href="logout.php">LOGGA UT</a></li>
+                <li><a href="logout.php">LOGGA UT</a></li>  
+                <li><a href=""> </a></li>
+                <li><a href=""> </a></li>
+            </div>
             </ul>
         </header>
 
