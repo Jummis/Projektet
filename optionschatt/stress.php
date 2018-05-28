@@ -17,7 +17,7 @@
     <body>
     <header>
     <ul>
-        <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
+        <a id = "Logga" href="userHome.php">HÄLSOCOACHEN</a>
         <li><a href="../myPage.php">MINA SIDOR</a></li>
         <li><a href="../chatOptions.php" class="active">LIVEFORUM</a></li>
         <li><a href="../logout.php">LOGGA UT</a></li>

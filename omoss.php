@@ -20,14 +20,14 @@
             </ul>
         </header>
 
-        <hr><div id = "backgroundIMG">
+        <div id = "backgroundIMG">
             <img id = "coaches" src ="assets/img/coaches.jpg">
             <h2> Välkommen till oss! </h2>
             <p3> Med ett genuint intresse för andra människors utveckling och välbefinnande skapar vi beständig förbättrad hälsa och livsglädje. <br>
             Vi jobbar som professionella coacher, utbildade inom hälsa och jobbar med coaching mot privatpersoner. <br><br>Kombinerad expertis inom PT, kostrådgivning,
             mindfulness, livsstilsrådgivning, alkoholrådgivning, friskvård och hälsa och mycket annat bildar vi ett komplett team för att hjälpa dig med allt som rör din hälsa.
             <br><br> Vi gör dig friskare. <br> - Dina hälsocoacher </p3>
-        </div><hr>
+        </div>
 
         <h1> Förtroende och Tillit </h1> <p1> Att skapa förtroende och trygghet i kommunikation med er står högst upp i prioriteringsordningen. 
         Ni skall känna att vi är där för er skull. <br> Tillsammans löser vi hinder, sätter drömmar och firar uppnådda målsättningar. </p1>
@@ -37,12 +37,10 @@
         Insikt nås genom att stöta och blöta i tankar, känslor och olika perspektiv. </p1>
 
         <h1>Handling</h1><p1> Utan handling sker ingen förändring, utveckling eller förbättring. <br>
-        Det som gör coaching så unikt och extremt effektivt är det totala fokuset på handling.</p1><br><br>
+        Det som gör coaching så unikt och extremt effektivt är det totala fokuset på handling.</p1><br><br><br>
 
-        <div class="box">
-            <a href = "register.php"><img id="splash" src="https://preview.ibb.co/kn6ZgJ/aa98c1180c514c4d94e23326888a25cc_2.png"></a>
-            <div class="pictxt"> KOM IGÅNG </div>
-        </div>
+            <a href='register.php'><input type="submit" name="komIgång" value="KOM IGÅNG" id="komIgång"</a>
+
     </body>
     <footer>
         <p id="kontaktrubrik">HÄLSOCOACHEN</p>
