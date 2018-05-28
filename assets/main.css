@@ -60,7 +60,8 @@ hr{
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 43px;
+    font-family: 'Tajawal', sans-serif;
 }
 
 p1 {
@@ -693,7 +694,7 @@ margin-bottom: 10%;
 }
 
 #logoAll{
-    position: fixed;
+position: fixed;
 }
 
 
