@@ -26,8 +26,8 @@
             </ul>
         </header>
 
-        <div id= "welcome">
-            <h1> Vad vill du ha hjälp med idag? </h1>
+        <div id= "welcome1">
+            <p11> Vad vill du ha hjälp med idag? </p11><br><br>
             <p1> Vänligen välj ett hälsotema.</p1><br><br><br>
         </div>
 

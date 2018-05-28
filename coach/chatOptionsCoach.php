@@ -14,14 +14,17 @@
     <body>
     <header>
         <ul>
-            <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
-            <li><a href="myPage.php">MINA SIDOR</a></li>
-            <li><a href="chatOptions.php" class="active">LIVEFORUM</a></li>
-            <li><a href="logout.php">LOGGA UT</a></li>
+            <div id "logoAll">
+                <img id = "holdingHands" src = "../assets/img/hands-holding-heart.png">
+                <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
+                <li><a href="coachMyprofile.php">MINA SIDOR</a></li>
+                <li><a href="chatOptions.php" class="active">LIVEFORUM</a></li>
+                <li><a href="logout.php">LOGGA UT</a></li>
+            </div>
         </ul>
     </header>
 
-        <a id = "Tillbaka" href="coachMyPage.php">Tillbaka</a>
+        <a id = "Tillbaka" href="coachMyPage.php">Tillbaka</a><br>
         <div id= "welcome">
             <h2> Välj hälsotema att jobba med</h2><br><br>
         </div>

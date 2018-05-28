@@ -6,8 +6,9 @@ body{
 }
 
 h2{
-    font-size: 30px;
-    color: #375162;
+    font-size: 35px;
+    color: #393E46;
+    text-align: center;
 }
 
 h3{
@@ -19,6 +20,15 @@ h3{
     font-size: 70px;
     color: #393E46;
     margin-top: 80px;
+}
+
+#holdingHands{
+    width: 5%;
+    padding-right: 15px;
+}
+
+#logoAll{
+position: fixed;
 }
 
 .box{
@@ -508,7 +518,7 @@ background-color: #FFC200;
     padding: 20px;
     text-align: center;
     width: 700px;
-    margin-top: 30px;
+    margin-top: 5px;
     height: 650px;
     background-color: #375162;
     margin-left: auto;

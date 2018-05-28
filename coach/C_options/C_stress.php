@@ -25,7 +25,7 @@
         </ul>
     </header>
 
-        <a id = "Tillbaka" href="../chatOptionsCoach.php">Tillbaka</a>
+        <a id = "Tillbaka" href="../chatOptionsCoach.php">Tillbaka</a><br>
         <div id= "welcome">
             <h2>Hej Coach <?php echo $_SESSION['User']; ?>!</h2><br>
         </div>
