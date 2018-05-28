@@ -46,7 +46,7 @@
         <h1>HANLDING</h1><p1> Utan handling sker ingen förändring, utveckling eller förbättring. <br>
         Det som gör coaching så unikt och extremt effektivt är det totala fokuset på handling.</p1><br><br><br><br>
 
-            <a href='register.php'><input type="submit" name="komIgång" value="KOM IGÅNG" id="komIgång"</a>
+            <a href='register.php'><input type="submit" name="komIgång" value="KOM IGÅNG" id="komIgång"></a>
 
     </body>
     <footer>
@@ -63,5 +63,6 @@
                 <p3> halsocoachen@coach.se </p3>
             </div>
         </div> 
+        <p8>Hälsocochen Sjukvård<br> Hälsocoachen Psykolog</p8>
     </footer>
 </html>

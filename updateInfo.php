@@ -69,6 +69,7 @@
                 <img src="https://image.ibb.co/jSQmqd/envelope.png"><br><br>
                 <p3> halsocoachen@coach.se </p3>
             </div>
-        </div> 
+        </div>
+        <p8>Hälsocochen Sjukvård<br> Hälsocoachen Psykolog</p8> 
     </footer>
 </html>
