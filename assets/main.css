@@ -363,7 +363,7 @@ margin-top: 2%;
 #wrapperhistory{
     text-align: left;
     float: right;
-    margin-right: 30%;
+    margin-right: 25%;
     margin-top: 0 auto;
 }
 
@@ -612,6 +612,7 @@ h5{
     font-size: 16px;
     height: 50px;
     width: 100px;
+    margin-right: 10px;
     font-family: 'Open Sans', sans-serif; 
 }
 
