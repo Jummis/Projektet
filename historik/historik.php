@@ -25,9 +25,10 @@
             </ul>
         </header>
 
-        <div id= "wrapper3">
-            <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
-            <p1> Här kan du se alla dina skapade forumtrådar med hälsocoacher.<br> Välj vilken tråd du vill läsa: </p1><br><br>
+        <div id "wrapper3">
+        <div id= "wrapperHistory">
+            <h1> Min historik</h1>
+            <br> Välj vilken tråd du vill läsa:</p1><br><br>
 
             <form name="history" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
                 <div class="historyButtons">
@@ -47,6 +48,7 @@
             <a href="../myProfile.php">MIN PROFIL</a>
             <a href="../loggbok.php">LOGGBOK</a>
             <a href="historik.php" class="active">HISTORIK</a>
+        </div>
         </div>
     </body>
 

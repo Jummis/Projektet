@@ -361,17 +361,17 @@ margin-top: 2%;
     margin-right: 15%;
 }
 
-#wrapper3{
+#wrapperhistory{
     text-align: left;
     float: right;
-    margin-right: 25%;
+    margin-right: 30%;
     margin-top: 0 auto;
 }
 
 #wrapperMyProfile{
     text-align: left;
     float: right;
-    margin-right: 41%;
+    margin-right: 55.5%;
 }
 
 #wrapperupdate{
@@ -383,7 +383,7 @@ margin-top: 2%;
 #wrapperfiles{
     text-align: left;
     float: right;
-    margin-right: 38%;
+    margin-right: 47%;
 }
 
 #wrapperMyPage{

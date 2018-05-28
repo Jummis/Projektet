@@ -27,9 +27,7 @@ include_once 'showPersInfo.php';
 
     <div id ="wrapper4">
         <div id= "wrapperMyProfile">
-            <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
-            <p1> Detta är din profil. Här kan du fylla i och uppdatera dina värden. </p1><br><br>
-        
+            <h1> Min profil</h1>
 
             <p7>Förnamn<br></p7><?php echo $fname; ?><br><br>
             <p7>Efternamn<br></p7><?php echo $lname; ?><br><br>
