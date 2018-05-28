@@ -26,9 +26,11 @@ include "showCoachInfo.php";
 
       <div id= "wrapperMyProfile">
 
-        <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
+          <div id = "wrapper5">
+          <h3> Sök hälsoklient </h3><br>
 
-            <input type = "text" placeholder = "AnvändarID" id = "inputBox" name = "userID">
+        <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
+            <input type = "text" placeholder = "AnvändarID" id = "inputBox" name = "userID"><br>
             <input type = "text" placeholder = "Namn" id = "inputBox" name = "fname"><br>
                         
                         <input type="radio" name="gender" id = "gender" value="Man" class = "radio">
@@ -37,36 +39,37 @@ include "showCoachInfo.php";
                         <input type="radio" name="gender" id = "gender" value="Kvinna" class = "radio">
                         Kvinna<br>
                 
-            <input type="submit" name="submitmsg" value="Sök" id="sendmessage">
-
+            <input type="submit" name="submitmsg" value="Sök" id="searchclient">
             </form>
+
+            </div>
 
         <div id="sendbox">
 
             <?php
                 if ($_SERVER["REQUEST_METHOD"] == 'POST')
                 {
+
                     $userID = $connection->real_escape_string($_POST['userID']);
                     $fname = $connection->real_escape_string($_POST['fname']);
-                    $gender = $connection->real_escape_string($_POST['gender']);
 
-
-                    if (isset ($userID)) {
+                    if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($userID)){
+                        $userID = $connection->real_escape_string($_POST['userID']);
                         $get = "SELECT * FROM u WHERE userID = $userID";
                         $result = $connection->query($get);            
                     }
 
-                    if (isset ($fname)) {
+                    else if ($_SERVER["REQUEST_METHOD"] == 'POST'&& !empty($fname)) {            
                         $get = "SELECT * FROM u WHERE fname = '".$fname."'";
                         $result = $connection->query($get);   
                     }
 
-                    if (isset ($gender)) {
+                   else if ($_SERVER["REQUEST_METHOD"] == 'POST' && isset($_POST['gender'])) {
+                        $gender = $connection->real_escape_string($_POST['gender']);
                         $get = "SELECT * FROM u WHERE gender = '".$gender."'";
                         $result = $connection->query($get);   
                     }
-                    
-       
+                       
                     while($row = mysqli_fetch_assoc($result)){       
                         echo "<p2> AnvändarID: " . $row["userID"] ."</p2><br>";
                         echo "<p2>" . $row["fname"] ." </p2>";
@@ -74,7 +77,7 @@ include "showCoachInfo.php";
                         echo "<p2>" . $row["email"] ."</p2><br>";
                         echo "<p2>" . $row["gender"] ."</p2><br><hr>";                                        
                     }
-                }      
+                }   
             ?>
 
         </div>

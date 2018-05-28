@@ -27,22 +27,22 @@ include '../connection.php';
       <div id= "wrapperMyProfile">
 
         
-          <h3> Hälsoklienter </h3><br><hr>
-
+          <h3> Hälsoklienter </h3><br>
+          <div id="show">
           <?php
 
           $get = "SELECT * FROM u";
           $result = $connection->query($get);
 
           while($row = mysqli_fetch_assoc($result)){       
-              echo "<p1> AnvändarID: " . $row["userID"] ."</p1><br>";
-              echo "<p1>" . $row["fname"] ." </p1>";
-              echo "<p1>" . $row["lname"] ."</p1><br>";
-              echo "<p1>" . $row["email"] ."</p1><br>";
-              echo "<p1>" . $row["gender"] ."</p1><br><br><hr>";
+              echo "<p2> AnvändarID: " . $row["userID"] ."</p2><br>";
+              echo "<p2>" . $row["fname"] ." </p2>";
+              echo "<p2>" . $row["lname"] ."</p2><br>";
+              echo "<p2>" . $row["email"] ."</p2><br>";
+              echo "<p2>" . $row["gender"] ."</p2><br><br><hr>";
           }
           ?>
-
+          </div>
 
       </div>
 
