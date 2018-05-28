@@ -23,17 +23,16 @@ include "showCoachInfo.php";
       </header>
 
       <a id = "Tillbaka" href="coachMyProfile.php">Tillbaka</a>
+          
 
-      <div id= "wrapperMyProfile">
-
-        <img id = "user" src="assets/user.png"><br><br>
+          <div id= "wrapperMyProfile">
+      <div id = "wrapper5">
+            <img id = "user" src="assets/user.png"><br><br>
           <p3> Coach: <?php echo $_SESSION['User']; ?> </p3><br>
           <p2> CoachID:  <?php echo $_SESSION['CoachID']; ?> </p2><br><br>
-
-          <p3> Dina hälsoklienter </p3>
-
-          <div id="sendbox">
-
+            <p3> Dina hälsoklienter </p3>
+        </div>
+        <div id="show">
             <?php
                 $coachID = $_SESSION['CoachID'];
 

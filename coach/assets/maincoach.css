@@ -2,7 +2,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     background-color: white;
-    padding-top: 150px;
+    margin-top: 150px;
 }
 
 h2{
@@ -123,6 +123,7 @@ a:hover{
 
 #wrapperstart {
     border-radius: 20px;
+    margin-top: 10%;
     text-align: center;
     width: 90%;
     height: 80%;
@@ -375,6 +376,7 @@ margin-top: 2%;
     float: left;
     margin-left: 3%;
     color: #393E46;
+    top: 0;
 }
 
 #Tillbaka:hover{
@@ -647,6 +649,11 @@ margin-top: 8px;
 
 #wrapper5 {
     height: 30%;
+    margin: 0;
+}
+
+#wrappersearch {
+    height: 20%;
     margin: 0;
 }
 
