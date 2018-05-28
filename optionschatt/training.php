@@ -30,7 +30,8 @@
         </header>
 
         <a id = "Tillbaka" href="../chatOptions.php">Tillbaka till alternativen</a><br>
-        <a id = "Tillbaka" href="archivetraining.php">Avsluta och arkivera konversation</a>
+        <a id = "Tillbaka" href="../userHome.php">Lämna forum</a>
+        
         <div id= "welcome">
             <h1> Välkommen till ditt liveforum <?php echo $_SESSION['User']; ?>!</h1>
             <p1> Skicka ett meddelande så kommer någon av<br>
@@ -101,7 +102,7 @@
             
             
         </div>
-        <a href='../userHome.php'><input type="submit" name="closeForumKnapp" value="LÄMNA FORUM" id="closeForumKnapp" onsubmit="userHome.php"></a>
+        <a href='archivetraining.php'><input type="submit" name="closeForumKnapp" value="Avsluta forum och arkivera konsversationen" id="closeForumKnapp"></a>
     </body>
     <footer>
         <p id="kontaktrubrik">HÄLSOCOACHEN</p>
