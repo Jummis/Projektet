@@ -90,12 +90,12 @@
                 <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
                 <textarea placeholder="Vänligen skriv ditt meddelande här" name="useralcoholmsg" id="usermsg"></textarea><br>
                 <input type="submit" name="submitmsg" value="SKICKA" id="sendmessage">
-                <a href = "training.php"> <img id = "update" src = "../assets/img/update-arrows.png"></a>
+                <a href = "alocohol.php"> <img id = "update" src = "../assets/img/update-arrows.png"></a>
                 </form>
                 
             </div> 
         </div>
-        <a href='userHome.php'><input type="submit" name="closeForumKnapp" value="LÄMNA FORUM" id="closeForumKnapp" onsubmit="userHome.php"></a>
+        <a href='../userHome.php'><input type="submit" name="closeForumKnapp" value="LÄMNA FORUM" id="closeForumKnapp" onsubmit="userHome.php"></a>
     </body>
     <footer>
         <p id="kontaktrubrik">HÄLSOCOACHEN</p>
