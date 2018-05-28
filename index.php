@@ -23,14 +23,17 @@
         </header>
 
         <div class="box">
-            <div class="PicText"> OPTIMERA DIN LIVSSTIL MED HJÄLP AV EN PROFFESIONELL HÄLSOCOACH</div>
-                <img id="splash" src="https://preview.ibb.co/kn6ZgJ/aa98c1180c514c4d94e23326888a25cc_2.png">
+            <div id="PicText"> OPTIMERA DIN LIVSSTIL MED HJÄLP AV EN PROFFESIONELL HÄLSOCOACH</div>
+                <img id="splash" src="https://preview.ibb.co/kn6ZgJ/aa98c1180c514c4d94e23326888a25cc_2.png"><br>
             </div>
-
-            <div id="box">
+            <br>
+        </div>
+            <hr>
                 <p id="textunderhead">Skapa ett konto hos oss idag och få kontakt<br>
-                                     med en coach via vårat liveforum.<br><br>Smidigt, enkelt och kostnadsfritt!</p>
-            </div><br><br>
+                                     med en coach via vårat liveforum.<br><br>Smidigt, enkelt och kostnadsfritt!</p><br><br>
+            
+
+           
 
             <h1> Så här funkar det </h1>
             <h3> 1. </h3> <p2> Börja med att skapa ett konto. Det är gratis! </p2>
