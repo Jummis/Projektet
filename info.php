@@ -20,9 +20,10 @@
             </ul>
         </header>
 
+        <br>
         <h1> Vad är hälsocoaching? </h1>
-        <p2> Att vända sig till en hälsocoach innebär att bli vägledd till en mer hälsosam livsstil. Det innebär att optimera träning, kost, sömn, stress och alla andra
-        faktorer som är viktiga för att bibehålla en god hälsa. Nedan kan du läsa om hur viktiga dessa faktorer är och hur det påverkar hälsan. </p2><br><br><hr>
+        <p2> Att vända sig till en hälsocoach innebär att bli vägledd till en mer hälsosam livsstil.<br> Det innebär att optimera träning, kost, sömn, stress och alla andra
+        faktorer som är viktiga för att bibehålla en god hälsa.<br> Nedan kan du läsa om hur viktiga dessa faktorer är och hur det påverkar hälsan. </p2><br><br>
         <div class="row">
             <div class="column">
                 <img id = "trainingIMG" src="assets/img/training (1).jpg"><br>
@@ -38,7 +39,7 @@
             </div>
         </div>
 
-        <a href = "register.php"><h1> Bli medlem nu och ta kontakt med din hälsocoach! </h1></a>
+        <h1><a href = "register.php"> Bli medlem nu och ta kontakt med din hälsocoach! </h1></a>
     </body>
 
     <footer>
