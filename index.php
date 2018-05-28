@@ -12,14 +12,17 @@
 
         <header>
             <ul>
+            <div id "logoAll">
                 <img id = "holdingHands" src = "assets/img/hands-holding-heart.png">
                 <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
                 <li><a href="info.php">VAD ÄR HÄLSOCOACHING?</a></li>
                 <li><a href="omoss.php">OM OSS</a></li>
                 <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
+            </div>
             </ul>
         </header>
 
+        <div id = "content">
         <div class="box">
             <div id="PicText"> OPTIMERA DIN LIVSSTIL MED HJÄLP AV EN PROFFESIONELL HÄLSOCOACH</div>
                 <img id="splash" src="https://preview.ibb.co/kn6ZgJ/aa98c1180c514c4d94e23326888a25cc_2.png"><br>
@@ -37,7 +40,8 @@
             <h3> 1. </h3> <p2> Börja med att skapa ett konto. Det är gratis! </p2>
             <h3> 2. </h3> <p2> Välj ett ämne som passar dina funderingar.<br> Du kan välja mellan träning, kost, sömn, stress, alkohol eller allmänt. </p2>
             <h3> 3. </h3> <p2> Få svar på din fråga eller bli coachad för att nå dit du vill. </p2>      
-        </div>    
+        </div>  
+        </div>  
     </body>
     <footer>
         <p id="kontaktrubrik">HÄLSOCOACHEN</p>
