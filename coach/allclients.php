@@ -25,8 +25,7 @@ include '../connection.php';
       <a id = "Tillbaka" href="coachsettings.php">Tillbaka</a>
 
       <div id= "wrapperMyProfile">
-
-        
+   
           <h3> Hälsoklienter </h3><br>
           <div id="show">
           <?php

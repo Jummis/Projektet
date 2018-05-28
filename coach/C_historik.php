@@ -30,7 +30,7 @@ include "showCoachInfo.php";
           <p3> Coach: <?php echo $_SESSION['User']; ?> </p3><br>
           <p2> CoachID:  <?php echo $_SESSION['CoachID']; ?> </p2><br><br>
 
-          <p3> Meddelande-Historik </p3>
+          <p3> Dina hälsoklienter </p3>
 
           <div id="sendbox">
 

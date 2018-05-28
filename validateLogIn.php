@@ -76,7 +76,7 @@ $name_error = $email_error = $password_error = "";
                 $name = $email = $password = "";          
                 }
                 else {
-                    $password_error = "Wrong password!";
+                    $password_error = "Felakigt lösenord";
                 }
             }                      
         }    
