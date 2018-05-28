@@ -33,7 +33,7 @@ include "showCoachInfo.php";
 
           <div id ="profileButton">
               <a href=''><input type="submit" id ="updateButton" name="updateButton" value="Schema" onsubmit="updateInfo.php"></a>
-            <br><br><a href='C_historik.php'><input type="submit" id ="updateButton" name="updateButton" value="Meddelande-Historik" onsubmit="C_historik.php"></a>
+            <br><br><a href='C_historik.php'><input type="submit" id ="updateButton" name="updateButton" value="Dina hälsoklienter" onsubmit="C_historik.php"></a>
           <br><br><a href='updateCoachInfo.php'><input type="submit" id ="updateButton" name="updateButton" value="Uppdatera information" onsubmit="updateInfo.php"></a>
           </div>
       </div>

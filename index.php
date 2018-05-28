@@ -14,8 +14,7 @@
         <header>
             <ul>
             <div id "logoAll">
-                <img id = "holdingHands" src = "assets/img/hands-holding-heart.png">
-                <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
+                <a id = "Logga" href="index.php"> &#x2661; HÄLSOCOACHEN</a>
                 <li><a href="info.php">VAD ÄR HÄLSOCOACHING?</a></li>
                 <li><a href="omoss.php">OM OSS</a></li>
                 <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
