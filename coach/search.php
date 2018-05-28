@@ -35,7 +35,7 @@ include "showCoachInfo.php";
             </form>
         </div>
 
-        <div id="show">
+        <div id="sendbox">
 
             <?php
                 if ($_SERVER["REQUEST_METHOD"] == 'POST')
