@@ -30,7 +30,7 @@
             </div>
             <br>
         </div>
-            <hr>
+            <hr id = "hrFront">
                 <p id="textunderhead">Skapa ett konto hos oss idag och få kontakt<br>
                                      med en coach via vårat liveforum.<br><br>Smidigt, enkelt och kostnadsfritt!</p><br><br>
             
