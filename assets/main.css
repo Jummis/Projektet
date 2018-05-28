@@ -70,6 +70,11 @@ p7{
     color: #393E46;
 }
 
+p9{
+    color: #393E46;
+    font-weight: bold;
+    margin-top: 5px;
+}
 .row{
    padding-bottom: 40px;
 }
@@ -783,6 +788,20 @@ h3 {
 .columnUpdate {
   float: right;
   width: 50%;
+}
+
+#newfName{
+    height: 25px;
+    padding-left: 2px;
+    width: 230px;
+    margin-top: 5px;
+}
+
+#currentPassword{
+    height: 25px;
+    padding-left: 2px;
+    width: 230px;
+    margin-top: 5px;
 }
 
 

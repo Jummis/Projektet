@@ -25,7 +25,7 @@
 <div id = "wrapperMyPage">
 <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
 <p1> Välkommen till dina sidor. Här kan du se 
-     dina filer, följa din utveckling<br> och 
+     dina filer, uppdatera dina uppgifter<br> och 
      fylla i din privata loggbok. </p1>
 <br><br>
 </div>

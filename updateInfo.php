@@ -28,7 +28,7 @@
                 <form action = "updateInfoProcess.php" method = "POST">              
                     <p7>Förnamn<br></p7><input type="text" id = "newfName" name="newfName" value="<?php echo $fname; ?>"><br><br>
                     <p7>Efternamn<br></p7><input type="text" id = "newfName" name="newlName" value="<?php echo $lname; ?>"><br><br>
-                    <p7>Personnummer<br></p7><?php echo $pNr; ?><br><br>
+                    <p7>Personnummer<br></p7><p9><?php echo $pNr; ?></p9><br><br>
                     <p7>E-postadress<br></p7><input type="text" id = "newfName" name="newEmail" value="<?php echo $email; ?>"><br><br>
                     <p7>Nuvarande lösenord<br></p7><input type="password" id = "currentPassword" name="currentPassword"><br><br>
                     <p7>Nytt lösenord<br></p7><input type="password" id = "currentPassword" name="newPassword"><br><br>
