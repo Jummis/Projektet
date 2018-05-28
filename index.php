@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
     </head>
 
     <body>
@@ -23,7 +24,7 @@
         </header>
 
         <div class="box">
-            <div id="PicText"> OPTIMERA DIN LIVSSTIL MED HJÄLP AV EN PROFFESIONELL HÄLSOCOACH</div>
+            <div id="PicText"> OPTIMERA DIN LIVSSTIL MED HJÄLP AV EN PROFESSIONELL HÄLSOCOACH</div>
                 <img id="splash" src="https://preview.ibb.co/kn6ZgJ/aa98c1180c514c4d94e23326888a25cc_2.png"><br>
             </div>
             <br>
