@@ -31,7 +31,7 @@ include 'sessioncoach.php';
 
         <div class="column">
           <a href = "coachsettings.php"><img id = "infoIMG" src="assets/settings.png"><br><br>
-          <p3> Inställningar </p3>
+          <p3> Hantera konton </p3>
         </div>
 
         <div class = "column">

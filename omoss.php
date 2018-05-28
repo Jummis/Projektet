@@ -31,16 +31,17 @@
             mindfulness,<br> livsstilsrådgivning, alkoholrådgivning, friskvård och hälsa<br> och mycket annat bildar vi ett komplett team för att<br> hjälpa dig med allt som rör din hälsa.
             <br><br> Vi gör dig friskare. <br> - Dina hälsocoacher </p3>
         </div>
+        <br>
 
-        <h1> Förtroende och Tillit </h1> <p1> Att skapa förtroende och trygghet i kommunikation med er står högst upp i prioriteringsordningen. 
+        <h1> FÖRTROENDE OCH TILLIT </h1> <p1> Att skapa förtroende och trygghet i kommunikation med er står högst<br>upp i prioriteringsordningen. 
         Ni skall känna att vi är där för er skull. <br> Tillsammans löser vi hinder, sätter drömmar och firar uppnådda målsättningar. </p1>
 
-        <h1> Insinkt </h1> <p1> Det magiska ögonblicket när poletten trillar ner. 
+        <h1> INSIKT </h1> <p1> Det magiska ögonblicket när poletten trillar ner. 
         Det är det gemensamma del-kvittot på att vi har träffat rätt.<br>
         Insikt nås genom att stöta och blöta i tankar, känslor och olika perspektiv. </p1>
 
-        <h1>Handling</h1><p1> Utan handling sker ingen förändring, utveckling eller förbättring. <br>
-        Det som gör coaching så unikt och extremt effektivt är det totala fokuset på handling.</p1><br><br><br>
+        <h1>HANLDING</h1><p1> Utan handling sker ingen förändring, utveckling eller förbättring. <br>
+        Det som gör coaching så unikt och extremt effektivt är det totala fokuset på handling.</p1><br><br><br><br>
 
             <a href='register.php'><input type="submit" name="komIgång" value="KOM IGÅNG" id="komIgång"</a>
 
