@@ -18,6 +18,17 @@ body{
     padding-right: 15px;
 }
 
+.box{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    border-top: 2px solid #FFC200; 
+    border-bottom: 2px solid #FFC200;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
 #komIgång{
     background-color: white;
    border-radius: 8px;
@@ -680,6 +691,7 @@ margin-bottom: 10%;
     float: left;
     margin-left: 40px;
     margin-right: 20px;
+    margin-top: 30px;
 }
 
 #backgroundIMG{

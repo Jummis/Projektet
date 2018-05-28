@@ -23,9 +23,9 @@
         <div id = "backgroundIMG">
             <img id = "coaches" src ="assets/img/coaches.jpg">
             <h2> Välkommen till oss! </h2>
-            <p3> Med ett genuint intresse för andra människors utveckling och välbefinnande skapar vi beständig förbättrad hälsa och livsglädje. <br>
-            Vi jobbar som professionella coacher, utbildade inom hälsa och jobbar med coaching mot privatpersoner. <br><br>Kombinerad expertis inom PT, kostrådgivning,
-            mindfulness, livsstilsrådgivning, alkoholrådgivning, friskvård och hälsa och mycket annat bildar vi ett komplett team för att hjälpa dig med allt som rör din hälsa.
+            <p3> Med ett genuint intresse för andra människors utveckling och<br>välbefinnande, jobbar vi för en förbättrad hälsa och livsglädje. <br><br>
+            Vi jobbar som professionella coacher, utbildade inom hälsa och<br>jobbar med coaching mot privatpersoner. <br><br>Kombinerad expertis inom PT, kostrådgivning,
+            mindfulness,<br> livsstilsrådgivning, alkoholrådgivning, friskvård och hälsa<br> och mycket annat bildar vi ett komplett team för att<br> hjälpa dig med allt som rör din hälsa.
             <br><br> Vi gör dig friskare. <br> - Dina hälsocoacher </p3>
         </div>
 
