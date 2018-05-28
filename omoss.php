@@ -37,8 +37,8 @@
         Ni skall känna att vi är där för er skull. <br> Tillsammans löser vi hinder, sätter drömmar och firar uppnådda målsättningar. </p1>
 
         <h1> INSIKT </h1> <p1> Det magiska ögonblicket när poletten trillar ner. 
-        Det är det gemensamma del-kvittot på att vi har träffat rätt.<br>
-        Insikt nås genom att stöta och blöta i tankar, känslor och olika perspektiv. </p1>
+        Det är det gemensamma del-kvittot<br>på att vi har träffat rätt.
+        Insikt nås genom att stöta och blöta<br>i tankar, känslor och olika perspektiv. </p1>
 
         <h1>HANLDING</h1><p1> Utan handling sker ingen förändring, utveckling eller förbättring. <br>
         Det som gör coaching så unikt och extremt effektivt är det totala fokuset på handling.</p1><br><br><br><br>
