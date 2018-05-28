@@ -40,6 +40,8 @@
             </div>
         </div>
 
+        <p10><a href = "register.php"> Bli medlem nu och ta kontakt med din hälsocoach! </a></p10>
+
     </body>
 
     <footer>
