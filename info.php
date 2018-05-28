@@ -39,7 +39,6 @@
             </div>
         </div>
 
-        <h1><a href = "register.php"> Bli medlem nu och ta kontakt med din hälsocoach! </h1></a>
     </body>
 
     <footer>

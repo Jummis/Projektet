@@ -10,7 +10,7 @@
     </head>
     
     <body>
-        <!--<img id = "headerIMG" src="https://preview.ibb.co/kgnb5d/HEADERBILD.jpg">-->
+
         <header>
             <ul>
             <div id "logoAll">
