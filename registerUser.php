@@ -38,7 +38,7 @@
         else{
             //check if there is already an existing user
             if ($resultCheck > 0){
-                $email_error = "User already existst";
+                $email_error = "Användaren existerar redan";
             }
             else {
                 $unique_salt = unique_salt();
