@@ -24,8 +24,8 @@
             </ul>
         </header>
 
-      <div id= "welcome">
-        <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
+      <div id= "welcomeUserHome">
+        <h1> Hej <?php echo $_SESSION['User']; ?> </h1><br>
         <p1> Hur kan vi hjälpa dig idag?<br><br>
         Gå vidare till liveforumet och berätta<br>
         vad vi kan göra för dig.</p1><br><br><br>

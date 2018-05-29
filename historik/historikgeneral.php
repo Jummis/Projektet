@@ -80,7 +80,7 @@
                 <a href="../files.php">FILER</a>
                 <a href="../myProfile.php">MIN PROFIL</a>
                 <a href="../loggbok.php">LOGGBOK</a>
-                <a href="../historik.php" class = "active">HISTORIK</a>
+                <a href="historik.php" class = "active">HISTORIK</a>
             </div>
         </div>
     </body>

@@ -348,6 +348,11 @@ footer{
     margin-top: 2%;
 }
 
+#welcomeUserHome{
+    text-align: center;
+    padding-top: 40;
+}
+
 #welcome1 {
 text-align: center;
 margin-top: 12%;
@@ -375,38 +380,42 @@ margin-top: 12%;
 #wrapperLogg{
     text-align: left;
     float: right;
-    margin-right: 15%;
+    margin-right: 22%;
 }
 
 #wrapperhistory{
     text-align: left;
     float: right;
     margin-right: 25%;
-    margin-top: 0 auto;
+    margin-top: 25px;
 }
 
 #wrapperMyProfile{
     text-align: left;
     float: right;
     margin-right: 55.5%;
+    margin-top: 25px;
 }
 
 #wrapperupdate{
     text-align: left;
     float: right;
     margin-right: 48%;
+    margin-top: 25px;
 }
 
 #wrapperfiles{
     text-align: left;
     float: right;
     margin-right: 47%;
+    margin-top: 25px;
 }
 
 #wrapperMyPage{
     text-align: left;
     float: right;
-    margin-right: 32%;
+    margin-right: 35%;
+    margin-top: 20px;
 }
 
 #wrapper4{
