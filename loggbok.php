@@ -1,21 +1,19 @@
 <?php
-include_once "connection.php";
-include_once "saveLoggMess.php";
+    include_once "connection.php";
+    include_once "saveLoggMess.php";
 ?>
 
 <html>
-
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <title>Hälsocoachen Loggbok</title>
         <link rel = "stylesheet" href = "assets/main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
-
     <body>
         <header>
             <ul>
-            <div id "logoAll">
+              <div id "logoAll">
                 <img id = "holdingHands" src = "assets/img/hands-holding-heart.png">
                 <a id = "Logga" href="userHome.php">HÄLSOCOACHEN</a>
                 <li><a href="myPage.php" class="active">MINA SIDOR</a></li>
@@ -23,28 +21,25 @@ include_once "saveLoggMess.php";
                 <li><a href="logout.php">LOGGA UT</a></li>  
                 <li><a href=""> </a></li>
                 <li><a href=""> </a></li>
-            </div>
+              </div>
             </ul>
         </header>
-
         <div id = "wrapper4Logg">
             <div id = "wrapperLogg">
                 <p id="rubrikLoggbok">Dina senaste logginlägg:</p>
                 <div id="historikbox">
+                    <?php
+                        $clientID=$_SESSION['ID'];
+                        $getData = "SELECT datum, logg_mess FROM Loggbok WHERE clientID = '$clientID' ";
+                        $resultData = $connection->query($getData);
 
-                <?php
-                    $clientID=$_SESSION['ID'];
-                    $getData = "SELECT datum, logg_mess FROM Loggbok WHERE clientID = '$clientID' ";
-                    $resultData = $connection->query($getData);
-
-                    while($row = mysqli_fetch_assoc($resultData)){
-                        echo "<h5>".$row["datum"]."</h5>";
-                        echo $row["logg_mess"] . "<br>";
-                        echo "<hr>";  
-                    }  
-                ?>
+                        while($row = mysqli_fetch_assoc($resultData)){
+                            echo "<h5>".$row["datum"]."</h5>";
+                            echo $row["logg_mess"] . "<br>";
+                            echo "<hr>";  
+                        }  
+                    ?>
                 </div>
-
                 <div id ="loggMessFält">
                     <form name="loggMessForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
                         <p4 id = "loggMess_error"><?php echo $loggMess_error; ?></p4>
@@ -53,8 +48,6 @@ include_once "saveLoggMess.php";
                     </form>
                 </div>  
             </div>
-
-
             <div class="leftmenu">
                 <a class = "veryactive">MINA SIDOR</a>
                 <a href="files.php">FILER</a>
@@ -63,13 +56,10 @@ include_once "saveLoggMess.php";
                 <a href="historik/historik.php">HISTORIK</a>
             </div>
         </div>
-
     </body>
-
     <footer>
         <p id="kontaktrubrik">HÄLSOCOACHEN</p>
         <p id="kontaktuppg">Kontaktuppgifter</p>
-
         <div class="row">
             <div class="column">
                 <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br><br>

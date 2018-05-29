@@ -1,6 +1,6 @@
 <?php
-include_once 'connection.php';
-include_once 'validateLogin.php';
+    include_once 'connection.php';
+    include_once 'validateLogin.php';
 ?>
 
 <html>
@@ -12,16 +12,15 @@ include_once 'validateLogin.php';
     <body>
         <header>
             <ul>
-            <div id "logoAll">
+              <div id "logoAll">
                 <img id = "holdingHands" src = "assets/img/hands-holding-heart.png">
                 <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
                 <li><a href="info.php">VAD ÄR HÄLSOCOACHING?</a></li>
                 <li><a href="omoss.php">OM OSS</a></li>
                 <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
-                </div>
+              </div>
             </ul>
         </header>
-
         <div id = wrapper><br>
             <img id = "user" src = "https://image.ibb.co/edWLgJ/default_user_image.png"><br><br>
             <p3>Har du inget konto?</p3><p3><a href = 'register.php'> Registrera dig </p3> </a><br>
@@ -36,10 +35,9 @@ include_once 'validateLogin.php';
                 <br> <p3> <?php echo $password_error; ?> </p3>
 
                 <input type="submit" name="submit" id="submit" value="Logga in">
-            </form>  <br><br>
+            </form> <br><br>
         </div>
     </body>
-
     <footer>
         <p id="kontaktrubrik">HÄLSOCOACHEN</p>
         <p id="kontaktuppg">Kontaktuppgifter</p>

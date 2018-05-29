@@ -14,7 +14,7 @@
     <body>
         <header>
             <ul>
-            <div id "logoAll">
+              <div id "logoAll">
                 <img id = "holdingHands" src = "assets/img/hands-holding-heart.png">
                 <a id = "Logga" href="userHome.php">HÄLSOCOACHEN</a>
                 <li><a href="myPage.php">MINA SIDOR</a></li>
@@ -22,7 +22,7 @@
                 <li><a href="logout.php">LOGGA UT</a></li>  
                 <li><a href=""> </a></li>
                 <li><a href=""> </a></li>
-            </div>
+              </div>
             </ul>
         </header>
 

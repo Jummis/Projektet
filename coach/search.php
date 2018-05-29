@@ -56,14 +56,10 @@ include "showCoachInfo.php";
                     $notanswered = "SELECT * FROM Client_Message WHERE clientID = '$userID' AND coachMsgID IS NULL";
                     $na = $connection->query($notanswered);
 
-                    //hämtar besvarade meddelanden
-                    $messageID = "SELECT * FROM Client_Message WHERE clientID = '$userID' AND coachMsgID IS NOT NULL";
-                    $messageIDresult = $connection->query($messageID);
        
                     while($row = mysqli_fetch_assoc($a)){       
 
-                        while ($row1 = mysqli_fetch_assoc($messageIDresult)) {
-                            $getData = "SELECT * FROM Coach_Message WHERE clientMsgID = '".$row1['clientMsgID']."'";
+                            $getData = "SELECT * FROM Coach_Message WHERE clientMsgID = '".$row['clientMsgID']."'";
                             $resultData = $connection->query($getData);
 
                             while($row2 = mysqli_fetch_assoc($resultData))
@@ -87,8 +83,7 @@ include "showCoachInfo.php";
                                              echo "<p5>" . $row4["datum"] ."</p5>";
                                             echo "<h5>" . $userimg . " " . $row3['fname']."</h5>";  
                                             echo "<p6>" . $row4["message_client"] ."</p6>"."<br>"."<br><hr>"; 
-                                        }                                               
-                                    }                             
+                                        }                                                                           
                                 }                                         
                             }
                         }       

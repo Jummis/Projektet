@@ -10,17 +10,16 @@
     <body>
         <header>
             <ul>
-            <div id "logoAll">
+              <div id "logoAll">
                 <img id = "holdingHands" src = "assets/img/hands-holding-heart.png">
                 <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
                 <li><a href="info.php">VAD ÄR HÄLSOCOACHING?</a></li>
                 <li><a href="omoss.php">OM OSS</a></li>
                 <li><a href="login.php">LOGGA IN/REGISTRERA</a></li>
-                </div>
+              </div>
             </ul>
-        </header>
+        </header> <br>
 
-        <br>
         <h1> Vad är hälsocoaching? </h1>
         <p2> Att vända sig till en hälsocoach innebär att bli vägledd till en mer hälsosam livsstil.<br> Det innebär att optimera träning, kost, sömn, stress och alla andra
         faktorer som är viktiga för att bibehålla en god hälsa.<br> Nedan kan du läsa om hur viktiga dessa faktorer är och hur det påverkar hälsan. </p2><br><br>
@@ -41,9 +40,7 @@
         </div>
 
         <p10><a href = "register.php"> Bli medlem nu och ta kontakt med din hälsocoach! </a></p10>
-
     </body>
-
     <footer>
         <p id="kontaktrubrik">HÄLSOCOACHEN</p>
         <p id="kontaktuppg">Kontaktuppgifter</p>

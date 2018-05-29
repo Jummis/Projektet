@@ -4,15 +4,15 @@
 ?>
 
 <html>
-<head>
-    <title> Hälsocoachen - homepage </title>
-    <link rel = "stylesheet" href = "assets/main.css">
-</head>
+    <head>
+        <title> Hälsocoachen - homepage </title>
+        <link rel = "stylesheet" href = "assets/main.css">
+    </head>
 
-<body>
+    <body>
         <header>
             <ul>
-            <div id "logoAll">
+              <div id "logoAll">
                 <img id = "holdingHands" src = "assets/img/hands-holding-heart.png">
                 <a id = "Logga" href="userHome.php">HÄLSOCOACHEN</a>
                 <li><a href="myPage.php" class="active">MINA SIDOR</a></li>
@@ -20,7 +20,7 @@
                 <li><a href="logout.php">LOGGA UT</a></li>  
                 <li><a href=""> </a></li>
                 <li><a href=""> </a></li>
-            </div>
+              </div>
             </ul>
         </header>
 

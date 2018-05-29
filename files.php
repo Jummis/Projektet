@@ -12,7 +12,7 @@
     <body>
         <header>
             <ul>
-            <div id "logoAll">
+              <div id "logoAll">
                 <img id = "holdingHands" src = "assets/img/hands-holding-heart.png">
                 <a id = "Logga" href="userHome.php">HÄLSOCOACHEN</a>
                 <li><a href="myPage.php" class="active">MINA SIDOR</a></li>
@@ -20,28 +20,28 @@
                 <li><a href="logout.php">LOGGA UT</a></li>  
                 <li><a href=""> </a></li>
                 <li><a href=""> </a></li>
-            </div>
+              </div>
             </ul>
         </header>
 
         <div id = "wrapper4">
-        <div id= "wrapperfiles">
+          <div id= "wrapperfiles">
             <h1> Mina filer</h1>
             <p1> Här kan du se de filer som din coach lagt upp för dig. </p1><br><br>
 
-            <div id = "fileContainer">
+              <div id = "fileContainer">
                 <a href="http://gfit.se/downloads/12-veckors-traningsprogram.pdf"><img id=pdfIcon src="https://www.bitcodesoft.com/wp-content/uploads/2018/03/8-pdf.png"<br></a>
                 <a href="http://gfit.se/downloads/12-veckors-traningsprogram.pdf"><img id=pdfIcon src="https://www.bitcodesoft.com/wp-content/uploads/2018/03/8-pdf.png"<br></a>
-            </div>
-        </div>
+              </div>
+          </div>
    
-        <div class="leftmenu">
+          <div class="leftmenu">
             <a class = "veryactive">MINA SIDOR</a>
             <a href="files.php" class="active">FILER</a>
             <a href="myProfile.php" >MIN PROFIL</a>
             <a href="loggbok.php">LOGGBOK</a>
             <a href="historik/historik.php">HISTORIK</a>
-        </div>
+          </div>
         </div>
     </body>
     <footer>
