@@ -1,17 +1,15 @@
 <?php
-include_once "../connection.php";
-include "../session.php";
+    include_once "../connection.php";
+    include "../session.php";
 ?>
 
 <html>
-
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <title>Hälsocoachen Loggbok</title>
         <link rel = "stylesheet" href = "../assets/main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
-
     <body>
         <header>
             <ul>   
@@ -21,7 +19,6 @@ include "../session.php";
                 <li><a href="../logout.php">LOGGA UT</a></li> 
             </ul>
         </header>
-
 
         <div id = "wrapper4">
             <div id = "wrapperLogg">
@@ -66,7 +63,6 @@ include "../session.php";
                             }
                         }       
                        
-
                          while($row = mysqli_fetch_assoc($na)){  
                             if ($row["message_client"] != NULL) {
                                 echo "<p5>" . $row["datum"] ."</p5>";
@@ -103,6 +99,6 @@ include "../session.php";
                 <p3> halsocoachen@coach.se </p3>
             </div>
         </div> 
-                <p8>Hälsocochen Sjukvård<br> Hälsocoachen Psykolog</p8>
+        <p8>Hälsocochen Sjukvård<br> Hälsocoachen Psykolog</p8>
     </footer>
 </html>

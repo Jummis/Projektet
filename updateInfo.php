@@ -14,7 +14,7 @@
     <body>
         <header>
             <ul>
-            <div id "logoAll">
+              <div id "logoAll">
                 <img id = "holdingHands" src = "assets/img/hands-holding-heart.png">
                 <a id = "Logga" href="../userHome.php">HÄLSOCOACHEN</a>
                 <li><a href="myPage.php" class="active">MINA SIDOR</a></li>
@@ -22,7 +22,7 @@
                 <li><a href="logout.php">LOGGA UT</a></li>  
                 <li><a href=""> </a></li>
                 <li><a href=""> </a></li>
-            </div>
+              </div>
             </ul>
         </header>
 
@@ -40,12 +40,8 @@
                     <p7>Återge ditt nya lösenord<br></p7><input type="password" id = "currentPassword" name="confirmPassword"><br><br>
                     <a href='updateInfo.php'><input type="submit" id ="updateButton" name="saveButton" value="Spara" onsubmit="updateInfo.php"></a><br><br>                 
                     <a href='remove.php'>Ta bort konto</a>  
-                </form>
-                
+                </form>           
             </div>
-
-    
-
         <div class="leftmenu">
             <a class = "veryactive">MINA SIDOR</a>
             <a href="files.php">FILER</a>
@@ -55,7 +51,6 @@
         </div>  
         </div>
     </body>
-
     <footer>
         <p id="kontaktrubrik">HÄLSOCOACHEN</p>
         <p id="kontaktuppg">Kontaktuppgifter</p>

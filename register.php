@@ -36,8 +36,8 @@
                 <input type="radio" name="gender" id = "gender" value="Man" class = "radio">
                         Man
                   
-                        <input type="radio" name="gender" id = "gender" value="Kvinna" class = "radio">
-                        Kvinna<br><br>
+                <input type="radio" name="gender" id = "gender" value="Kvinna" class = "radio">
+                Kvinna<br><br>
                 
                 <input type="text" id = "inputBox" name="email" title="email" style="color:#888;" 
                 placeholder="E-postadress" value = "<?php echo $email;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)"/><br><br>

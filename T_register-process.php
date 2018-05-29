@@ -5,12 +5,12 @@ include_once 'connection.php';
         return substr(sha1(mt_rand()),0,22);
     }
 
-$fname = $lname = $email = $password = $birthnumber = "";
-$field_error = "";
+    $fname = $lname = $email = $password = $birthnumber = "";
+    $field_error = "";
 
     //if the register button is clicked
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
+        
         $FirstName = mysqli_real_escape_string($connection, $_POST['firstname']);
         $LastName = mysqli_real_escape_string($connection, $_POST['lastname']);
         $Birthnumber = mysqli_real_escape_string($connection, $_POST['birth']);

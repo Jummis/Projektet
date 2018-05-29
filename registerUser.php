@@ -1,7 +1,7 @@
 <?php
     include_once 'connection.php';
 
-//returns a unique random salt-string
+    //returns a unique random salt-string
     function unique_salt() {    
     return substr(sha1(mt_rand()),0,22);
     }

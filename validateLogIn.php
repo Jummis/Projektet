@@ -1,8 +1,8 @@
 <?php
-include 'connection.php';
+    include 'connection.php';
 
-$name = $email = $password = "";
-$name_error = $email_error = $password_error = "";
+    $name = $email = $password = "";
+    $name_error = $email_error = $password_error = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 

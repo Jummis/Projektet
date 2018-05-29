@@ -6,5 +6,4 @@ include_once "connection.php";
     $delete = "DELETE FROM u WHERE userID = '".$clientID."'";
     $connection->query($delete);
     header ("Location: index.php");
-
 ?>

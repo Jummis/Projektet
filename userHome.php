@@ -10,9 +10,9 @@
   </head>
 
   <body>
-        <header>
+      <header>
             <ul>
-            <div id "logoAll">
+              <div id "logoAll">
                 <img id = "holdingHands" src = "assets/img/hands-holding-heart.png">
                 <a id = "Logga" href="userHome.php">HÄLSOCOACHEN</a>
                 <li><a href="myPage.php">MINA SIDOR</a></li>
@@ -20,19 +20,18 @@
                 <li><a href="logout.php">LOGGA UT</a></li>  
                 <li><a href=""> </a></li>
                 <li><a href=""> </a></li>
-            </div>
+              </div>
             </ul>
         </header>
 
-    <div id= "welcome">
-      <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
-      <p1> Hur kan vi hjälpa dig idag?<br><br>
-      Gå vidare till liveforumet och berätta<br>
-      vad vi kan göra för dig.</p1><br><br><br>
-      <a href='chatOptions.php'><input type="submit" id="chattbutton" name=chattbutton value="TILL LIVEFORUM"></a>
-    </div>
+      <div id= "welcome">
+        <h1> Hej <?php echo $_SESSION['User']; ?> </h1>
+        <p1> Hur kan vi hjälpa dig idag?<br><br>
+        Gå vidare till liveforumet och berätta<br>
+        vad vi kan göra för dig.</p1><br><br><br>
+        <a href='chatOptions.php'><input type="submit" id="chattbutton" name=chattbutton value="TILL LIVEFORUM"></a>
+      </div>
   </body>
-
   <footer>
     <p id="kontaktrubrik">HÄLSOCOACHEN</p>
     <p id="kontaktuppg">Kontaktuppgifter</p>

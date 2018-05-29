@@ -13,7 +13,7 @@
     <body>
         <header>
             <ul>
-            <div id "logoAll">
+              <div id "logoAll">
                 <img id = "holdingHands" src = "../assets/img/hands-holding-heart.png">
                 <a id = "Logga" href="../userHome.php">HÄLSOCOACHEN</a>
                 <li><a href="../myPage.php" class="active">MINA SIDOR</a></li>
@@ -21,15 +21,13 @@
                 <li><a href="../logout.php">LOGGA UT</a></li>  
                 <li><a href=""> </a></li>
                 <li><a href=""> </a></li>
-            </div>
+              </div>
             </ul>
         </header>
-
         <div id "wrapper3">
         <div id= "wrapperHistory">
             <h1> Min historik</h1>
             <br> Välj vilken tråd du vill läsa:</p1><br><br>
-
             <form name="history" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
                 <div class="historyButtons">
                     <input type="submit" class="buttonA" name = "food" value="KOST">
@@ -41,7 +39,6 @@
                 </div>
             </form>
         </div> 
-
         <div class="leftmenu">
             <a class = "veryactive">MINA SIDOR</a>
             <a href="../files.php">FILER</a>
@@ -51,7 +48,6 @@
         </div>
         </div>
     </body>
-
     <footer>
         <p id="kontaktrubrik">HÄLSOCOACHEN</p>
         <p id="kontaktuppg">Kontaktuppgifter</p>
@@ -64,7 +60,8 @@
             <div class="column">
                 <img src="https://image.ibb.co/jSQmqd/envelope.png"><br><br>
                 <p3> halsocoachen@coach.se </p3>
+            </div>
         </div>
-                <p8>Hälsocochen Sjukvård<br> Hälsocoachen Psykolog</p8>
+        <p8>Hälsocochen Sjukvård<br> Hälsocoachen Psykolog</p8>
     </footer>
 </html>
