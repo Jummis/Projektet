@@ -26,7 +26,7 @@ include "showCoachInfo.php";
       <a id = "Tillbaka" href="coachMyPage.php">Tillbaka</a>
 
       <div id= "wrappersettings">
-
+        <div id ="wrapperInnehåll">
         <br><img id = "user" src="assets/user.png"><br><br>
           <p3> Coach: <?php echo $_SESSION['User']; ?> </p3><br>
           <p2> CoachID:  <?php echo $_SESSION['CoachID']; ?> </p2><br><br>
@@ -35,6 +35,7 @@ include "showCoachInfo.php";
               <a href=''><input type="submit" id ="updateButton" name="updateButton" value="Schema" onsubmit="updateInfo.php"></a>
             <br><br><a href='C_historik.php'><input type="submit" id ="updateButton" name="updateButton" value="Dina hälsoklienter" onsubmit="C_historik.php"></a>
           <br><br><a href='updateCoachInfo.php'><input type="submit" id ="updateButton" name="updateButton" value="Uppdatera information" onsubmit="updateInfo.php"></a>
+          </div>
           </div>
       </div>
 
