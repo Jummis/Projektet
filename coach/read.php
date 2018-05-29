@@ -18,7 +18,6 @@
             <li><a href="myPage.php">MINA SIDOR</a></li>
             <li><a href="chatOptions.php" class="active">LIVEFORUM</a></li>
             <li><a href="logout.php">LOGGA UT</a></li>
-            <li><a href="">Något mer</a></li>
         </ul>
     </header>
     <a id = "Tillbaka" href="chatoptionscoach.php">Tillbaka</a>

@@ -34,11 +34,11 @@ include "showCoachInfo.php";
                 <?php
                     $coachID = $_SESSION['CoachID'];
 
-                    $sqlget = "SELECT DISTINCT coachID, clientMsgID FROM Archive_Message_Coach WHERE coachID = '".$coachID."'";
+                    $sqlget = "SELECT DISTINCT coachID, clientMsgID FROM Coach_Message WHERE coachID = '".$coachID."'";
                     $result = $connection->query($sqlget);
 
                         while($row = mysqli_fetch_assoc($result)){  
-                            $sql = "SELECT clientID FROM Archive_Message_Client WHERE clientMsgID = '".$row['clientMsgID']."'";
+                            $sql = "SELECT clientID FROM Client_Message WHERE clientMsgID = '".$row['clientMsgID']."'";
                             $result2 = $connection->query($sql);
                             
                             while ($row1 = mysqli_fetch_row($result2)){
@@ -50,11 +50,10 @@ include "showCoachInfo.php";
                         $resultU = $connection->query($sqlgetU);  
                 
                             while ($row3 = mysqli_fetch_assoc($resultU)){
-                                echo "<h5> AnvändarID: " . $row3['userID']."</h5>"; 
-                                echo "<h5>" . $row3['fname']."</h5>";  
-                                echo "<h5>" . $row3['lname']."</h5><hr>";   
-                            }  
-                           
+                                echo "<p6> AnvändarID: " . $row3['userID']."</p6><br>"; 
+                                echo "<p6>" . $row3['fname']." </p6>";  
+                                echo "<p6>" . $row3['lname']."</p6><hr>";   
+                            }                         
                 ?>
             </div>
         </div>

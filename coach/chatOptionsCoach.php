@@ -17,7 +17,7 @@
                 <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
                 <li><a href="coachMyprofile.php">MINA SIDOR</a></li>
                 <li><a href="chatOptions.php" class="active">LIVEFORUM</a></li>
-                <li><a href="logout.php">LOGGA UT</a></li>
+                <li><a href="logoutcoach.php">LOGGA UT</a></li>
               </div>
           </ul>
         </header>
