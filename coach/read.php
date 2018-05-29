@@ -16,17 +16,18 @@
         <ul>
             <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
             <li><a href="myPage.php">MINA SIDOR</a></li>
-            <li><a href="../chatOptions.php" class="active">LIVEFORUM</a></li>
+            <li><a href="chatOptions.php" class="active">LIVEFORUM</a></li>
             <li><a href="logout.php">LOGGA UT</a></li>
+            <li><a href="">Något mer</a></li>
         </ul>
     </header>
-    <a id = "Tillbaka" href="chatoptionscoach.php">Tillbaka</a>
+    <a id = "Tillbaka" href="coachchatt.php">Tillbaka</a>
     <div id="chatcontainer2">
         <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
             <input type = "text" placeholder = "AnvändarID" id = "inputBox" name = "userID">
             <input type="submit" name="submitmsg" value="LÄS" id="sendmessage">
             </form>
-        <div id="show">
+        <div id="sendbox">
             <?php
                 if ($_SERVER["REQUEST_METHOD"] == 'POST'){
                     $userID = $connection->real_escape_string($_POST['userID']);
@@ -43,19 +44,14 @@
                     //obesvarade meddelanden
                     $notanswered = "SELECT * FROM Client_Message WHERE clientID = '$userID' AND coachMsgID IS NULL";
                     $na = $connection->query($notanswered);
-
-                    //hämtar besvarade meddelanden
-                    $messageID = "SELECT * FROM Client_Message WHERE clientID = '$userID' AND coachMsgID IS NOT NULL";
-                    $messageIDresult = $connection->query($messageID);
        
                     while($row = mysqli_fetch_assoc($a)){       
 
-                        while ($row1 = mysqli_fetch_assoc($messageIDresult)) {
-                            $getData = "SELECT * FROM Coach_Message WHERE clientMsgID = '".$row1['clientMsgID']."'";
+                            $getData = "SELECT * FROM Coach_Message WHERE clientMsgID = '".$row['clientMsgID']."'";
                             $resultData = $connection->query($getData);
 
                             while($row2 = mysqli_fetch_assoc($resultData)){
-                                $getName= "SELECT * FROM Coach WHERE coachID = '".$row2['coachID']."'";
+                                $getName= "SELECT * FROM u WHERE userID = '$userID'";
                                 $resultName = $connection->query($getName);
 
                                 while ($row3 = mysqli_fetch_assoc($resultName)) {
@@ -64,11 +60,15 @@
                                     echo "<p6>" . $row["message_client"] ."</p6>"."<br><br>"; 
                                     echo "<p5>" . $row["submitted"] ."</p5><br><hr>";
 
-                                    echo "<p5>" . $row2["datum"] ."</p5>";
-                                    echo "<h5>" . $coachimg . " " . $row3['fname']." (Coach)</h5>";
-                                    echo "<p6>" . $row2["message_coach"] ."</p6>"."<br><br>"; 
-                                    echo "<p5>" . $row2["submitted"] ."</p5><br><hr>";  
-
+                                    $getNameC= "SELECT * FROM Coach WHERE coachID = '".$row2['coachID']."'";
+                                    $resultNameC = $connection->query($getNameC);
+                                    while ($row5 = mysqli_fetch_assoc($resultNameC)) {
+                                        echo "<p5>" . $row2["datum"] ."</p5>";
+                                        echo "<h5>" . $coachimg . " " . $row5["fname"]." (Coach)</h5>";
+                                        echo "<p6>" . $row2["message_coach"] ."</p6>"."<br><br>"; 
+                                        echo "<p5>" . $row2["submitted"] ."</p5><br><hr>"; 
+                                    }
+                                     
                                     while($row4 = mysqli_fetch_assoc($na)){  
                                         if ($row["message_client"] != NULL) {
                                              echo "<p5>" . $row4["datum"] ."</p5>";
@@ -77,7 +77,6 @@
                                         }                                               
                                     }                             
                                 }                                         
-                            }
                         }       
                     }    
                 }      
