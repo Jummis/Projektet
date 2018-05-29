@@ -115,6 +115,6 @@
                 <p3> halsocoachen@coach.se </p3>
             </div>
         </div> 
-
+        <p8>Hälsocochen Sjukvård<br> Hälsocoachen Psykolog</p8>
     </footer>
 </html>
