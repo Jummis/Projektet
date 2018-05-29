@@ -55,7 +55,7 @@
                             $resultData = $connection->query($getData);
 
                             while($row2 = mysqli_fetch_assoc($resultData)){
-                                $getName= "SELECT * FROM u WHERE userID = '$userID'";
+                                $getName= "SELECT * FROM Coach WHERE coachID = '".$row2['coachID']."'";
                                 $resultName = $connection->query($getName);
 
                                 while ($row3 = mysqli_fetch_assoc($resultName)) {
@@ -65,7 +65,7 @@
                                     echo "<p5>" . $row["submitted"] ."</p5><br><hr>";
 
                                     echo "<p5>" . $row2["datum"] ."</p5>";
-                                    echo "<h5>" . $coachimg . " " . $nameCoach." (Coach)</h5>";
+                                    echo "<h5>" . $coachimg . " " . $row3['fname']." (Coach)</h5>";
                                     echo "<p6>" . $row2["message_coach"] ."</p6>"."<br><br>"; 
                                     echo "<p5>" . $row2["submitted"] ."</p5><br><hr>";  
 
