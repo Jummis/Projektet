@@ -17,7 +17,7 @@
     <body>
         <header>
             <ul>
-            <div id "logoAll">
+              <div id "logoAll">
                 <img id = "holdingHands" src = "../assets/img/hands-holding-heart.png">
                 <a id = "Logga" href="../userHome.php">HÄLSOCOACHEN</a>
                 <li><a href="../myPage.php">MINA SIDOR</a></li>
@@ -25,7 +25,7 @@
                 <li><a href="../logout.php">LOGGA UT</a></li>  
                 <li><a href=""> </a></li>
                 <li><a href=""> </a></li>
-            </div>
+              </div>
             </ul>
         </header>
 
@@ -59,8 +59,7 @@
                             $getData = "SELECT * FROM Coach_Message WHERE clientMsgID = '".$row1['clientMsgID']."'";
                             $resultData = $connection->query($getData);
 
-                            while($row2 = mysqli_fetch_assoc($resultData))
-                            {                      
+                            while($row2 = mysqli_fetch_assoc($resultData)){                      
                                 $coachID = $row2["coachID"];
                                 $getName= "SELECT * FROM Coach WHERE coachID = '$coachID'";
                                 $resultName = $connection->query($getName);
@@ -92,9 +91,9 @@
 
             <div class="historyButtons">
                 <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
-                <textarea placeholder="Vänligen skriv ditt meddelande här" name="usergeneralmsg" id="usermsg"></textarea><br>
-                <input type="submit" name="submitmsg" value="SKICKA" id="sendmessage">
-                <a href = "general.php"> <img id = "update" src = "../assets/img/update-arrows.png"></a>
+                    <textarea placeholder="Vänligen skriv ditt meddelande här" name="usergeneralmsg" id="usermsg"></textarea><br>
+                    <input type="submit" name="submitmsg" value="SKICKA" id="sendmessage">
+                    <a href = "general.php"> <img id = "update" src = "../assets/img/update-arrows.png"></a>
                 </form>
                 
             </div> 
@@ -104,7 +103,6 @@
     <footer>
         <p id="kontaktrubrik">HÄLSOCOACHEN</p>
         <p id="kontaktuppg">Kontaktuppgifter</p>
-
         <div class="row">
             <div class="column">
                 <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br><br>

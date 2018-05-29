@@ -1,7 +1,7 @@
 <?php
-include_once "../connection.php";
-include_once "../session.php";
-date_default_timezone_set('Europe/Stockholm');
+  include_once "../connection.php";
+  include_once "../session.php";
+  date_default_timezone_set('Europe/Stockholm');
 
     if ($_SERVER["REQUEST_METHOD"] == 'POST') {
         $message = $connection->real_escape_string($_POST['usertrainingmsg']);
@@ -15,8 +15,7 @@ date_default_timezone_set('Europe/Stockholm');
 
         $training = "training";
 
-            if(empty(!$sqlresult))
-            { 
+            if(empty(!$sqlresult)){ 
                 $insert = "INSERT INTO Client_Message (clientID, submitted, datum, message_client, forum_type) VALUES ('".$ID."', '".$time."', '".$date."', '".$message."', '".$training."')";
                 $resultat = $connection->query($insert);
             } 

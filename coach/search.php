@@ -90,7 +90,7 @@ include "showCoachInfo.php";
                     }    
                 }      
             ?>
-        </div>
+          </div>
         </div>
     </body>
 </html>

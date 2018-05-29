@@ -1,7 +1,7 @@
 <?php
-include_once "../connection.php";
-include_once "../session.php";
-date_default_timezone_set('Europe/Stockholm');
+        include_once "../connection.php";
+        include_once "../session.php";
+        date_default_timezone_set('Europe/Stockholm');
 
         $general = "general";
         $ID = $_SESSION['ID'];
@@ -23,10 +23,8 @@ date_default_timezone_set('Europe/Stockholm');
                 $deleteCoachMsg = "DELETE FROM Coach_Message WHERE clientMsgID = '".$row['clientMsgID']."'";
                 $sqlresult = $connection->query($deleteCoachMsg);
         }
-
         //Ta bort meddelanden
         $sqldelete = "DELETE FROM Client_Message WHERE clientID = '$ID' AND forum_type = '$general'";
         $sqlresult = $connection->query($sqldelete);
-
         header("Location: ../userHome.php");
 ?>

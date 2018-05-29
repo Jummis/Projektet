@@ -15,9 +15,9 @@
     </head>
 
     <body>
-<header>
+        <header>
             <ul>
-            <div id "logoAll">
+              <div id "logoAll">
                 <img id = "holdingHands" src = "../assets/img/hands-holding-heart.png">
                 <a id = "Logga" href="../userHome.php">HÄLSOCOACHEN</a>
                 <li><a href="../myPage.php">MINA SIDOR</a></li>
@@ -25,7 +25,7 @@
                 <li><a href="../logout.php">LOGGA UT</a></li>  
                 <li><a href=""> </a></li>
                 <li><a href=""> </a></li>
-            </div>
+              </div>
             </ul>
         </header>
 
@@ -38,7 +38,7 @@
         </div>
 
         <div id="chatcontainer">
-                <p3> Ditt valda hälsotema är: STRESS </p3>
+            <p3> Ditt valda hälsotema är: STRESS </p3>
             <div id="chatbox">
                  <?php
                     $name = $_SESSION['User'];
@@ -59,8 +59,7 @@
                             $getData = "SELECT * FROM Coach_Message WHERE clientMsgID = '".$row1['clientMsgID']."'";
                             $resultData = $connection->query($getData);
 
-                            while($row2 = mysqli_fetch_assoc($resultData))
-                            {                      
+                            while($row2 = mysqli_fetch_assoc($resultData)){                      
                                 $coachID = $row2["coachID"];
                                 $getName= "SELECT * FROM Coach WHERE coachID = '$coachID'";
                                 $resultName = $connection->query($getName);
@@ -89,14 +88,12 @@
                     }        
             ?>
             </div>
-
             <div class="historyButtons">
                 <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
-                <textarea placeholder="Vänligen skriv ditt meddelande här" name="userstressmsg" id="usermsg"></textarea><br>
-                <input type="submit" name="submitmsg" value="SKICKA" id="sendmessage">
-                <a href = "stress.php"> <img id = "update" src = "../assets/img/update-arrows.png"></a>
-                </form>
-                
+                    <textarea placeholder="Vänligen skriv ditt meddelande här" name="userstressmsg" id="usermsg"></textarea><br>
+                    <input type="submit" name="submitmsg" value="SKICKA" id="sendmessage">
+                    <a href = "stress.php"> <img id = "update" src = "../assets/img/update-arrows.png"></a>
+                </form>        
             </div> 
         </div>
         <a href='archivestress.php'><input type="submit" name="closeForumKnapp" value="Avsluta forum och arkivera konsversationen" id="closeForumKnapp"></a>
@@ -104,7 +101,6 @@
     <footer>
         <p id="kontaktrubrik">HÄLSOCOACHEN</p>
         <p id="kontaktuppg">Kontaktuppgifter</p>
-
         <div class="row">
             <div class="column">
                 <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br><br>

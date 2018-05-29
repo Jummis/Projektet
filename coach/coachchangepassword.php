@@ -21,8 +21,6 @@ $passwordErr="";
         //saltar och hashar det angivna lösenordet
         $Oldpassword = sha1($resultsalt . $oldpassword);
 
-        
-
         //Hämtar lösenordet från db
         $getoldpassword = "SELECT password FROM Coach WHERE coachID=1";
         $oldpassworddb = $connection->query($getoldpassword); 
@@ -42,8 +40,6 @@ $passwordErr="";
             else $passwordErr="lösenorden matchar inte!"; 
         }
         else $passwordErr="felaktigt lösenord"; 
-
-        }
-        
+        }       
     }
 ?>

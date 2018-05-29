@@ -14,7 +14,6 @@ include '../connection.php';
     </head>
 
     <body> 
-
       <header>
         <ul>
           <a id = "Logga" href="coachMyPage.php">HÄLSOCOACHEN</a>
@@ -22,20 +21,16 @@ include '../connection.php';
         </ul>
       </header>
 
-          <a id = "Tillbaka" href="coachsettings.php">Tillbaka</a>
+        <a id = "Tillbaka" href="coachsettings.php">Tillbaka</a>
+        <div id= "wrapperMyProfile">
+            <h3> Hälsoklienter </h3><br>
 
-              <div id= "wrapperMyProfile">
-                <h3> Hälsoklienter </h3><br>
-
-                  <div id="show">
-                
+             <div id="show">           
                   <?php
+                    $get = "SELECT * FROM u";
+                    $result = $connection->query($get);
 
-                  $get = "SELECT * FROM u";
-                  $result = $connection->query($get);
-
-                    while($row = mysqli_fetch_assoc($result))
-                    {       
+                      while($row = mysqli_fetch_assoc($result)){       
                         echo "<p9> AnvändarID: " . $row["userID"] ."</p9><br>";
                         echo "<p9>" . $row["fname"] ." </p9>";
                         echo "<p9>" . $row["lname"] ."</p9><br>";
@@ -43,9 +38,7 @@ include '../connection.php';
                         echo "<p9>" . $row["gender"] ."</p9><br><br><hr>";
                     }
                   ?>
-                  </div>
-
               </div>
-
+           </div>
     </body>
 </html>

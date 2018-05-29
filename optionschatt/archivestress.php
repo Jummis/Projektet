@@ -1,12 +1,12 @@
 <?php
-include_once "../connection.php";
-include_once "../session.php";
-date_default_timezone_set('Europe/Stockholm');
+  include_once "../connection.php";
+  include_once "../session.php";
+  date_default_timezone_set('Europe/Stockholm');
 
         $stress = "stress";
         $ID = $_SESSION['ID'];
 
-                //Arkivera hälsoklientens meddelanden
+        //Arkivera hälsoklientens meddelanden
         $sqlinsertarchive = "INSERT INTO Archive_Message_Client (clientMsgID, clientID, submitted, datum, message_client, forum_type, coachMsgID) 
         SELECT * FROM Client_Message WHERE clientID = '$ID' AND forum_type = '$stress'";
         $sqlarchive = $connection->query($sqlinsertarchive);

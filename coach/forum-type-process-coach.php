@@ -25,6 +25,5 @@ include '../connection.php';
         if ($_SERVER["REQUEST_METHOD"] == 'POST' && isset($_POST['general'])) {
             header ("Location: C_options/C_general.php");
         }
-
     }
 ?>

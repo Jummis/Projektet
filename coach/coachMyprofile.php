@@ -13,33 +13,25 @@ include "showCoachInfo.php";
       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
-    
     <body> 
-
       <header>
         <ul>
           <a id = "Logga" href="coachMyPage.php">HÄLSOCOACHEN</a>
           <li><a href="logoutCoach.php">LOGGA UT</a></li>
         </ul>
       </header>
-
       <a id = "Tillbaka" href="coachMyPage.php">Tillbaka</a>
-
       <div id= "wrappersettings">
         <div id ="wrapperInnehåll">
-        <br><img id = "user" src="assets/user.png"><br><br>
+          <br><img id = "user" src="assets/user.png"><br><br>
           <p3> Coach: <?php echo $_SESSION['User']; ?> </p3><br>
           <p2> CoachID:  <?php echo $_SESSION['CoachID']; ?> </p2><br><br>
-
-          <div id ="profileButton">
-          <br>
-              
+          <div id ="profileButton"><br>         
             <a href='C_historik.php'><input type="submit" id ="updateButton" name="updateButton" value="Dina hälsoklienter" onsubmit="C_historik.php"></a>
             <br><br><a href='updateCoachInfo.php'><input type="submit" id ="updateButton" name="updateButton" value="Uppdatera information" onsubmit="updateInfo.php"></a>
           </div>
-          </div>
+        </div>
       </div>
-
     </body>
 </html>
 

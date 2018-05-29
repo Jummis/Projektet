@@ -4,7 +4,6 @@ include_once 'validateCoachLogIn.php';
 ?>
 
 <html>
-
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <title>Hälsocoachen</title>
@@ -13,30 +12,23 @@ include_once 'validateCoachLogIn.php';
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
-    
-        <body>
-
+    <body>
           <header>
                 <ul>
                   <a id = "Logga">VÄLKOMMEN HÄLSOCOACH</a> 
                 </ul>
           </header>
-
-                <div id = "wrapperstart"><br>
-                  <img id = "user" src = "https://image.ibb.co/edWLgJ/default_user_image.png"><br><br>
-
-                  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST"><br>
-                        <input type="text" id = "passBox" name="email" title="email" style="color:#888;" 
-                        placeholder="E-postadress" value = "<?php echo $email;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
-                        <br><p3><?php echo $email_error; ?> </p3>
-
-                        <input type="password" id="passBox" name="password" title="password" style="color:#888;" 
-                        placeholder="Lösenord" value = "<?php echo $password;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
-                        <br> <p3> <?php echo $password_error; ?> </p3>
-
-                        <input type="submit" name="submit" id="submit" value="Logga in">
-                </form>
+          <div id = "wrapperstart"><br>
+              <img id = "user" src = "https://image.ibb.co/edWLgJ/default_user_image.png"><br><br>
+              <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST"><br>
+                <input type="text" id = "passBox" name="email" title="email" style="color:#888;" 
+                placeholder="E-postadress" value = "<?php echo $email;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+                <br><p3><?php echo $email_error; ?> </p3>
+                <input type="password" id="passBox" name="password" title="password" style="color:#888;" 
+                placeholder="Lösenord" value = "<?php echo $password;?>" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+                <br><p3> <?php echo $password_error; ?> </p3>
+               <input type="submit" name="submit" id="submit" value="Logga in">
+              </form>
           </div>
-        </body>
-
+    </body>
 </html>

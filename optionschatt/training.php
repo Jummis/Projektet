@@ -4,7 +4,6 @@
     include_once 'savetrainingMsg.php';
     date_default_timezone_set('Europe/Stockholm');
 ?>
-
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -15,9 +14,9 @@
     </head>
 
     <body>
-<header>
+        <header>
             <ul>
-            <div id "logoAll">
+              <div id "logoAll">
                 <img id = "holdingHands" src = "../assets/img/hands-holding-heart.png">
                 <a id = "Logga" href="../userHome.php">HÄLSOCOACHEN</a>
                 <li><a href="../myPage.php">MINA SIDOR</a></li>
@@ -25,7 +24,7 @@
                 <li><a href="../logout.php">LOGGA UT</a></li>  
                 <li><a href=""> </a></li>
                 <li><a href=""> </a></li>
-            </div>
+              </div>
             </ul>
         </header>
 
@@ -60,8 +59,7 @@
                             $getData = "SELECT * FROM Coach_Message WHERE clientMsgID = '".$row1['clientMsgID']."'";
                             $resultData = $connection->query($getData);
 
-                            while($row2 = mysqli_fetch_assoc($resultData))
-                            {                      
+                            while($row2 = mysqli_fetch_assoc($resultData)){                      
                                 $coachID = $row2["coachID"];
                                 $getName= "SELECT * FROM Coach WHERE coachID = '$coachID'";
                                 $resultName = $connection->query($getName);
@@ -80,7 +78,6 @@
                             }
                         }       
                        
-
                      while($row = mysqli_fetch_assoc($na)){  
                          if ($row["message_client"] != NULL) {
                             echo "<p5>" . $row["datum"] ."</p5>";
@@ -92,22 +89,17 @@
             </div>
             <div class="historyButtons">
                 <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
-                <textarea placeholder="Vänligen skriv ditt meddelande här" name="usertrainingmsg" id="usermsg"></textarea><br>
-                <input type="submit" name="submitmsg" value="SKICKA" id="sendmessage">
-                <a href = "training.php"> <img id = "update" src = "../assets/img/update-arrows.png"></a>
-                </form>
-                
-            </div> 
-
-            
-            
+                    <textarea placeholder="Vänligen skriv ditt meddelande här" name="usertrainingmsg" id="usermsg"></textarea><br>
+                    <input type="submit" name="submitmsg" value="SKICKA" id="sendmessage">
+                    <a href = "training.php"> <img id = "update" src = "../assets/img/update-arrows.png"></a>
+                </form>            
+            </div>         
         </div>
         <a href='archivetraining.php'><input type="submit" name="closeForumKnapp" value="Avsluta forum och arkivera konsversationen" id="closeForumKnapp"></a>
     </body>
     <footer>
         <p id="kontaktrubrik">HÄLSOCOACHEN</p>
         <p id="kontaktuppg">Kontaktuppgifter</p>
-
         <div class="row">
             <div class="column">
                 <img src="https://image.ibb.co/bUdviy/phone_call_1.png"><br><br>

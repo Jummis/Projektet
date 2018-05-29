@@ -24,10 +24,8 @@ date_default_timezone_set('Europe/Stockholm');
                 $sqlresult = $connection->query($deleteCoachMsg);
         }
 
-
         //Ta bort meddelanden
         $sqldelete = "DELETE FROM Client_Message WHERE clientID = '$ID' AND forum_type = '$kost'";
         $sqlresult = $connection->query($sqldelete);
-
         header("Location: ../userHome.php");
 ?>

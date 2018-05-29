@@ -15,8 +15,7 @@ date_default_timezone_set('Europe/Stockholm');
 
         $sömn = "sleep";
 
-            if(empty(!$sqlresult))
-            { 
+            if(empty(!$sqlresult)){ 
                 $insert = "INSERT INTO Client_Message (clientID, submitted, datum, message_client, forum_type) VALUES ('".$ID."', '".$time."', '".$date."', '".$message."', '".$sömn."')";
                 $resultat = $connection->query($insert);
             } 

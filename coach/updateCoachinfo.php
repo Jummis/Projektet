@@ -13,7 +13,6 @@ include "showCoachInfo.php";
       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
-    
     <body> 
 
       <header>
@@ -22,7 +21,6 @@ include "showCoachInfo.php";
           <li><a href="logoutCoach.php">LOGGA UT</a></li>
         </ul>
       </header>
-
       <a id = "Tillbaka" href="coachMyProfile.php">Tillbaka</a>
 
       <div id= "wrapperMyProfile">
@@ -42,6 +40,5 @@ include "showCoachInfo.php";
           </div>
         </form>
       </div>
-
     </body>
 </html>
