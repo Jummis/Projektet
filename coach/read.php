@@ -16,27 +16,22 @@
         <ul>
             <a id = "Logga" href="index.php">HÄLSOCOACHEN</a>
             <li><a href="myPage.php">MINA SIDOR</a></li>
-            <li><a href="chatOptions.php" class="active">LIVEFORUM</a></li>
+            <li><a href="../chatOptions.php" class="active">LIVEFORUM</a></li>
             <li><a href="logout.php">LOGGA UT</a></li>
-            <li><a href="">Något mer</a></li>
         </ul>
     </header>
-    <a id = "Tillbaka" href="coachchatt.php">Tillbaka</a>
-    <div id= "welcome">     
-        <h1>Hej Coach <?php echo $_SESSION['User']; ?>!</h1><br>
-    </div>
+    <a id = "Tillbaka" href="../chatoptions.php">Tillbaka</a>
     <div id="chatcontainer2">
         <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
             <input type = "text" placeholder = "AnvändarID" id = "inputBox" name = "userID">
             <input type="submit" name="submitmsg" value="LÄS" id="sendmessage">
             </form>
-        <div id="sendbox">
+        <div id="show">
             <?php
                 if ($_SERVER["REQUEST_METHOD"] == 'POST'){
                     $userID = $connection->real_escape_string($_POST['userID']);
 
                     $nameCoach = $_SESSION['User'];
-                    $coachID = $_SESSION['ID'];
 
                     $userimg = '<img id ="userchatt" src="https://image.ibb.co/edWLgJ/default_user_image.png" alt="default_user_image">';
                     $coachimg = '<img id ="userchatt" src="../assets/img/u_img_yellow.png">';
@@ -70,7 +65,7 @@
                                     echo "<p5>" . $row["submitted"] ."</p5><br><hr>";
 
                                     echo "<p5>" . $row2["datum"] ."</p5>";
-                                    echo "<h5>" . $coachimg . " " . $row3["fname"]." (Coach)</h5>";
+                                    echo "<h5>" . $coachimg . " " . $nameCoach." (Coach)</h5>";
                                     echo "<p6>" . $row2["message_coach"] ."</p6>"."<br><br>"; 
                                     echo "<p5>" . $row2["submitted"] ."</p5><br><hr>";  
 
