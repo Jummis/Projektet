@@ -22,28 +22,30 @@ include '../connection.php';
         </ul>
       </header>
 
-      <a id = "Tillbaka" href="coachsettings.php">Tillbaka</a>
+          <a id = "Tillbaka" href="coachsettings.php">Tillbaka</a>
 
-      <div id= "wrapperMyProfile">
-   
-          <h3> Hälsoklienter </h3><br>
-          <div id="show">
-          <?php
+              <div id= "wrapperMyProfile">
+                <h3> Hälsoklienter </h3><br>
 
-          $get = "SELECT * FROM u";
-          $result = $connection->query($get);
+                  <div id="show">
+                
+                  <?php
 
-          while($row = mysqli_fetch_assoc($result)){       
-              echo "<p2> AnvändarID: " . $row["userID"] ."</p2><br>";
-              echo "<p2>" . $row["fname"] ." </p2>";
-              echo "<p2>" . $row["lname"] ."</p2><br>";
-              echo "<p2>" . $row["email"] ."</p2><br>";
-              echo "<p2>" . $row["gender"] ."</p2><br><br><hr>";
-          }
-          ?>
-          </div>
+                  $get = "SELECT * FROM u";
+                  $result = $connection->query($get);
 
-      </div>
+                    while($row = mysqli_fetch_assoc($result))
+                    {       
+                        echo "<p9> AnvändarID: " . $row["userID"] ."</p9><br>";
+                        echo "<p9>" . $row["fname"] ." </p9>";
+                        echo "<p9>" . $row["lname"] ."</p9><br>";
+                        echo "<p9>" . $row["email"] ."</p9><br>";
+                        echo "<p9>" . $row["gender"] ."</p9><br><br><hr>";
+                    }
+                  ?>
+                  </div>
 
-      </body>
+              </div>
+
+    </body>
 </html>

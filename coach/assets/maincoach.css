@@ -120,6 +120,10 @@ p8{
     color: #FFC200;
 }
 
+p9{
+    color: #393E46;
+}
+
 .row{
    padding-bottom: 40px;
 }
@@ -518,7 +522,6 @@ background-color: #FFC200;
     color: #393E46;
     font-size: 15px;
     margin-bottom: 0 auto;
-
     }
 
     #searchclient:hover {
@@ -682,11 +685,12 @@ margin-top: 8px;
     margin-bottom:10px;
     padding: 15px;
     background:#fff;
-    height:400px;
+    height:350px;
     width:600px;
     border:1px solid #FFC200;
     border-radius: 8px;
-    overflow:auto; }
+    overflow:auto; 
+    margin-top: 30px;}
 
 #wrapper5 {
     height: 30%;
@@ -699,7 +703,7 @@ margin-top: 8px;
 }
 
 
-    #updateButton{
+#updateButton{
    background-color:#375162;
    border-radius: 8px;
    color: white;

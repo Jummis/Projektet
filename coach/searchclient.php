@@ -17,70 +17,74 @@ include "showCoachInfo.php";
 
       <header>
         <ul>
-          <a id = "Logga" href="coachMyPage.php">HÄLSOCOACHEN</a>
-          <li><a href="logoutCoach.php">LOGGA UT</a></li>
+            <a id = "Logga" href="coachMyPage.php">HÄLSOCOACHEN</a>
+            <li><a href="logoutCoach.php">LOGGA UT</a></li>
         </ul>
       </header>
 
-      <a id = "Tillbaka" href="coachsettings.php">Tillbaka</a>
+            <a id = "Tillbaka" href="coachsettings.php">Tillbaka</a>
 
-      <div id= "wrapperMyProfile">
+                <div id= "wrapperMyProfile">
 
-          <div id = "wrapper5">
-          <h3> Sök hälsoklient </h3><br>
+                    <div id = "wrapper5">
+                    <h3> Sök hälsoklient </h3><br>
 
-        <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
-            <input type = "text" placeholder = "AnvändarID" id = "inputBox" name = "userID"><br>
-            <input type = "text" placeholder = "Namn" id = "inputBox" name = "fname"><br>
-                        
-                        <input type="radio" name="gender" id = "gender" value="Man" class = "radio">
-                        Man
+                    <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                    <input type = "text" placeholder = "AnvändarID" id = "inputBox" name = "userID"><br>
+                    <input type = "text" placeholder = "Namn" id = "inputBox" name = "fname"><br><br>
+                                
+                    <input type="radio" name="gender" id = "gender" value="Man" class = "radio">
+                    Man
                   
-                        <input type="radio" name="gender" id = "gender" value="Kvinna" class = "radio">
-                        Kvinna<br>
+                    <input type="radio" name="gender" id = "gender" value="Kvinna" class = "radio">
+                    Kvinna<br><br>
                 
-            <input type="submit" name="submitmsg" value="Sök" id="searchclient">
-            </form>
+                    <input type="submit" name="submitmsg" value="Sök" id="searchclient">
+                    </form>
 
-            </div>
+                </div>
 
-        <div id="sendbox">
+                <div id="sendbox">
 
-            <?php
-                if ($_SERVER["REQUEST_METHOD"] == 'POST')
-                {
+                <?php
+                    if ($_SERVER["REQUEST_METHOD"] == 'POST')
+                    {
 
-                    $userID = $connection->real_escape_string($_POST['userID']);
-                    $fname = $connection->real_escape_string($_POST['fname']);
-
-                    if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($userID)){
                         $userID = $connection->real_escape_string($_POST['userID']);
-                        $get = "SELECT * FROM u WHERE userID = $userID";
-                        $result = $connection->query($get);            
-                    }
+                        $fname = $connection->real_escape_string($_POST['fname']);
 
-                    else if ($_SERVER["REQUEST_METHOD"] == 'POST'&& !empty($fname)) {            
-                        $get = "SELECT * FROM u WHERE fname = '".$fname."'";
-                        $result = $connection->query($get);   
-                    }
+                        if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($userID))
+                        {
+                            $userID = $connection->real_escape_string($_POST['userID']);
+                            $get = "SELECT * FROM u WHERE userID = $userID";
+                            $result = $connection->query($get);            
+                        }
 
-                   else if ($_SERVER["REQUEST_METHOD"] == 'POST' && isset($_POST['gender'])) {
-                        $gender = $connection->real_escape_string($_POST['gender']);
-                        $get = "SELECT * FROM u WHERE gender = '".$gender."'";
-                        $result = $connection->query($get);   
-                    }
-                       
-                    while($row = mysqli_fetch_assoc($result)){       
-                        echo "<p2> AnvändarID: " . $row["userID"] ."</p2><br>";
-                        echo "<p2>" . $row["fname"] ." </p2>";
-                        echo "<p2>" . $row["lname"] ."</p2><br>";
-                        echo "<p2>" . $row["email"] ."</p2><br>";
-                        echo "<p2>" . $row["gender"] ."</p2><br><hr>";                                        
-                    }
-                }   
-            ?>
+                        else if ($_SERVER["REQUEST_METHOD"] == 'POST'&& !empty($fname))
+                        {            
+                            $get = "SELECT * FROM u WHERE fname = '".$fname."'";
+                            $result = $connection->query($get);   
+                        }
 
-        </div>
+                    else if ($_SERVER["REQUEST_METHOD"] == 'POST' && isset($_POST['gender']))
+                    {
+                            $gender = $connection->real_escape_string($_POST['gender']);
+                            $get = "SELECT * FROM u WHERE gender = '".$gender."'";
+                            $result = $connection->query($get);   
+                        }
+                        
+                        while($row = mysqli_fetch_assoc($result))
+                        {       
+                            echo "<p9> AnvändarID: " . $row["userID"] ."</p9><br>";
+                            echo "<p9>" . $row["fname"] ." </p9>";
+                            echo "<p9>" . $row["lname"] ."</p9><br>";
+                            echo "<p9>" . $row["email"] ."</p9><br>";
+                            echo "<p9>" . $row["gender"] ."</p9><br><hr>";                                        
+                        }
+                    }   
+                ?>
+
+                </div>
 
     </body>
 </html>

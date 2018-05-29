@@ -100,7 +100,7 @@
                 
             </div> 
         </div>
-        <a href='archivetraining.php'><input type="submit" name="closeForumKnapp" value="Avsluta forum och arkivera konsversationen" id="closeForumKnapp"></a>
+        <a href='archivekost.php'><input type="submit" name="closeForumKnapp" value="Avsluta forum och arkivera konsversationen" id="closeForumKnapp"></a>
     </body>
     <footer>
         <p id="kontaktrubrik">HÄLSOCOACHEN</p>
