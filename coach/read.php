@@ -20,7 +20,7 @@
             <li><a href="logout.php">LOGGA UT</a></li>
         </ul>
     </header>
-    <a id = "Tillbaka" href="../chatoptions.php">Tillbaka</a>
+    <a id = "Tillbaka" href="chatoptionscoach.php">Tillbaka</a>
     <div id="chatcontainer2">
         <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
             <input type = "text" placeholder = "AnvändarID" id = "inputBox" name = "userID">
