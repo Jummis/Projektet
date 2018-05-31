@@ -45,21 +45,15 @@ include "showCoachInfo.php";
                     $coachimg = '<img id ="userchatt" src="../assets/img/u_img_yellow.png">';
 
                     // besvarade meddelanden 
-                    $answered = "SELECT * FROM Archive_Client_Message WHERE clientID = '$userID' AND coachMsgID IS NOT NULL";
+                    $answered = "SELECT * FROM Archive_Message_Client WHERE clientID = '$userID' AND coachMsgID IS NOT NULL";
                     $a = $connection->query($answered);
 
                     //obesvarade meddelanden
-                    $notanswered = "SELECT * FROM Archive_Client_Message WHERE clientID = '$userID' AND coachMsgID IS NULL";
+                    $notanswered = "SELECT * FROM Archive_Message_Client WHERE clientID = '$userID' AND coachMsgID IS NULL";
                     $na = $connection->query($notanswered);
-
-                    //hämtar besvarade meddelanden
-                    $messageID = "SELECT * FROM Archive_Client_Message WHERE clientID = '$userID' AND coachMsgID IS NOT NULL";
-                    $messageIDresult = $connection->query($messageID);
        
                     while($row = mysqli_fetch_assoc($a)){       
-
-                        while ($row1 = mysqli_fetch_assoc($messageIDresult)) {
-                            $getData = "SELECT * FROM Archive_Coach_Message WHERE clientMsgID = '".$row1['clientMsgID']."'";
+                            $getData = "SELECT * FROM Archive_Message_Coach WHERE clientMsgID = '".$row['clientMsgID']."'";
                             $resultData = $connection->query($getData);
 
                             while($row2 = mysqli_fetch_assoc($resultData)){
@@ -84,7 +78,7 @@ include "showCoachInfo.php";
                                             echo "<p6>" . $row4["message_client"] ."</p6>"."<br>"."<br><hr>"; 
                                         }                                               
                                     }                             
-                                }                                         
+                                                                     
                             }
                         }       
                     }    
