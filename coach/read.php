@@ -21,13 +21,13 @@
             <li><a href="">Något mer</a></li>
         </ul>
     </header>
-    <a id = "Tillbaka" href="coachchatt.php">Tillbaka</a>
+    <a id = "Tillbaka" href="C_options/C_food.php">Tillbaka</a>
     <div id="chatcontainer2">
         <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
             <input type = "text" placeholder = "AnvändarID" id = "inputBox" name = "userID">
             <input type="submit" name="submitmsg" value="LÄS" id="sendmessage">
             </form>
-        <div id="sendbox">
+        <div id="show">
             <?php
                 if ($_SERVER["REQUEST_METHOD"] == 'POST'){
                     $userID = $connection->real_escape_string($_POST['userID']);
@@ -82,11 +82,6 @@
                 }      
             ?>
         </div>
-        <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">    
-            <input type = "text" placeholder = "Ange meddelande ID du svarar på" id = "inputBox2" name = "number"><br>
-            <textarea placeholder="Vänligen skriv ditt meddelande här" name="coachmsg" id="coachmsg"></textarea><br>
-            <input type="submit" name="submitmsg" value="SVARA" id="sendmessage">
-        </form>
       </div>
     </body>
 </html>
