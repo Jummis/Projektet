@@ -18,10 +18,10 @@
             <li><a href="myPage.php">MINA SIDOR</a></li>
             <li><a href="chatOptions.php" class="active">LIVEFORUM</a></li>
             <li><a href="logout.php">LOGGA UT</a></li>
-            <li><a href="">Något mer</a></li>
         </ul>
     </header>
     <a id = "Tillbaka" href="C_options/C_food.php">Tillbaka</a>
+
     <div id="chatcontainer2">
         <form name="chat" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
             <input type = "text" placeholder = "AnvändarID" id = "inputBox" name = "userID">
@@ -58,7 +58,8 @@
                                     echo "<p5>" . $row["datum"] ."</p5>";
                                     echo "<h5>" . $userimg . " " . $row3['fname']."</h5>";  
                                     echo "<p6>" . $row["message_client"] ."</p6>"."<br><br>"; 
-                                    echo "<p5>" . $row["submitted"] ."</p5><br><hr>";
+                                    echo "<p5>" . $row["submitted"] ."</p5><br>";
+                                    echo "<p5> MeddelandeID: " . $row["clientMsgID"] ."</p5><br><hr>";
 
                                     $getNameC= "SELECT * FROM Coach WHERE coachID = '".$row2['coachID']."'";
                                     $resultNameC = $connection->query($getNameC);
@@ -73,7 +74,8 @@
                                         if ($row["message_client"] != NULL) {
                                              echo "<p5>" . $row4["datum"] ."</p5>";
                                             echo "<h5>" . $userimg . " " . $row3['fname']."</h5>";  
-                                            echo "<p6>" . $row4["message_client"] ."</p6>"."<br>"."<br><hr>"; 
+                                            echo "<p6>" . $row4["message_client"] ."</p6>"."<br>"."<br>";
+                                            echo "<p5> MeddelandeID: " . $row["clientMsgID"] ."</p5><br><hr>"; 
                                         }                                               
                                     }                             
                                 }                                         
